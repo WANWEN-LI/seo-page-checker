@@ -2,12 +2,12 @@
 
 **Paste a URL, get a 0–100 score with prioritised fixes for technical SEO, mobile performance and conversion — each issue says what was found, why it matters and how to fix it.**
 
-> Status: work in progress (stage 3 of 4). Screenshots and AI suggestions are coming in the next stage.
+> Status: working tool (stage 4 of 4 in progress). The case study, screenshots and the measured before/after on liwanwen.com are still to come.
 
 ## Install
 
 ```bash
-git clone <repo-url> seo-page-checker && cd seo-page-checker
+git clone https://github.com/WANWEN-LI/seo-page-checker.git && cd seo-page-checker
 python3 -m venv .venv && source .venv/bin/activate   # Python 3.11+
 pip install -r requirements.txt
 cp .env.example .env   # then add your PAGESPEED_API_KEY
