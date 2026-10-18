@@ -2,18 +2,26 @@
 
 **Paste a URL, get a 0–100 score with prioritised fixes for technical SEO, mobile performance and conversion — each issue says what was found, why it matters and how to fix it.**
 
-![Demo: the checker auditing liwanwen.com](portfolio/media/seo-checker-loop.gif)
+![Demo: the checker auditing a demo shop before and after fixes](portfolio/media/seo-checker-loop.gif)
 
-**52-second walkthrough, example reports and the measured before/after:** [liwanwen.com/seo-checker](https://liwanwen.com/seo-checker/)
+**51-second walkthrough, example reports and the measured before/after:** [liwanwen.com/seo-checker](https://liwanwen.com/seo-checker/)
 
-I ran the tool on my own portfolio, applied its fixes and re-checked the live pages. Medians of independent Lighthouse mobile runs:
+### Measured before / after on two live pages
 
-| Page | Tool score | Lighthouse performance | LCP |
-|---|---|---|---|
-| /about | 81 → 93 | 63 → 92 | 14.0 s → 2.4 s |
-| / (home) | 85 → 93 | 75 → 75.5 (no measurable change) | 4.8 s → 4.8 s |
+**1. [Petal / Atelier demo shop](https://liwanwen.com/petal/)**: a concept botanical-soap shop from my portfolio, checked as a product page for "botanical soap".
 
-Raw data is in [`examples/portfolio-after/`](examples/portfolio-after/). No ranking or traffic claims are made without Search Console data.
+| | Before | After |
+|---|---|---|
+| Tool score | 78 | 92 |
+| Lighthouse mobile (median of 3 → 3 runs) | 66 | 100 |
+| LCP (median) | 50.0 s | 1.9 s |
+| Page weight | 9,734 KB | 408 KB |
+
+Applied: WebP images, a keyword title that says it is a demo, canonical, sharing tags, WebPage structured data, sitemap entry. **Deliberately not applied:** reviews and Product markup with prices. The shop is fictional, so both would mislead.
+
+**2. My portfolio, [liwanwen.com](https://liwanwen.com/)**: the About page went from Lighthouse 63 → 92 and LCP 14.0 s → 2.4 s (medians); the home page's speed did not measurably change.
+
+Raw data: [`examples/petal-before/`](examples/petal-before/), [`examples/petal-after/`](examples/petal-after/) and [`examples/portfolio-after/`](examples/portfolio-after/). The case study is in [`portfolio/case-study-en.md`](portfolio/case-study-en.md) ([中文](portfolio/case-study-zh.md)). No ranking or traffic claims are made without Search Console data.
 
 ## Install
 

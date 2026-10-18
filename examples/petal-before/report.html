@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SEO report · http://localhost:4174/</title>
+<title>SEO report · https://liwanwen.com/petal/</title>
 <style>
 :root {
   --page: #f9f9f7; --surface: #fcfcfb; --border: #e4e3de;
@@ -80,27 +80,26 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
 <body>
 <main>
 <h1>Page SEO &amp; conversion report</h1>
-<p class="meta"><b>http://localhost:4174/</b></p>
-<p class="meta">Checked 2026-10-18T13:00:43+00:00 · Keyword: petal soap · Page type: product</p>
+<p class="meta"><b>https://liwanwen.com/petal/</b></p>
+<p class="meta">Checked 2026-10-18T14:59:54+00:00 · Keyword: botanical soap · Page type: product</p>
 
-<div class="notice">
-<p>Performance N/A: PageSpeed Insights disabled for this run (--no-psi).</p><p>Performance N/A; total uses the remaining categories with weights rescaled to sum to 100%.</p></div>
 
 <div class="tiles">
   <div class="tile total">
   <p class="label">Total</p>
-  <p class="value">75<small>/100</small></p>
-  <div class="meter" role="img" aria-label="Total 75 out of 100"><span style="width: 75%"></span></div>
+  <p class="value">78<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Total 78 out of 100"><span style="width: 78%"></span></div>
 <p class="sub">Weighted: Technical 40 · Performance 30 · Content 30</p></div>
     <div class="tile">
   <p class="label">Technical</p>
-  <p class="value">78<small>/100</small></p>
-  <div class="meter" role="img" aria-label="Technical 78 out of 100"><span style="width: 78%"></span></div>
+  <p class="value">83<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Technical 83 out of 100"><span style="width: 83%"></span></div>
 <p class="sub">15 scored checks</p></div>
     <div class="tile">
   <p class="label">Performance</p>
-  <p class="value">N/A</p>
-<p class="sub">PageSpeed not available</p></div>
+  <p class="value">79<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Performance 79 out of 100"><span style="width: 79%"></span></div>
+<p class="sub">0.6 Perf + 0.2 A11y + 0.2 SEO (Lighthouse)</p></div>
     <div class="tile">
   <p class="label">Content &amp; Conversion</p>
   <p class="value">71<small>/100</small></p>
@@ -113,17 +112,24 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
   <thead><tr><th>Status</th><th>Severity</th><th>Check</th><th>What we found · why it matters · how to fix</th></tr></thead>
   <tbody>
   <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-High">High</span></td>
+    <td>Mobile performance score<div class="meta">Performance</div></td>
+    <td>66/100 (Lighthouse, mobile).
+<p class="issue-why"><b>Why:</b> Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.</p><p class="issue-fix"><b>Fix:</b> Open the PSI report and fix the top &#39;Opportunities&#39; (image size, render-blocking JS/CSS).</p></td>
+  </tr>
+  <tr>
     <td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td>
     <td><span class="sev sev-Medium">Medium</span></td>
     <td>Keyword in title<div class="meta">Technical</div></td>
-    <td>Title does not contain the target keyword &#34;petal soap&#34;.
+    <td>Title does not contain the target keyword &#34;botanical soap&#34;.
 <p class="issue-why"><b>Why:</b> Searchers scan titles for the words they typed.</p><p class="issue-fix"><b>Fix:</b> Work the keyword naturally into the first half of the title.</p></td>
   </tr>
   <tr>
     <td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td>
     <td><span class="sev sev-Medium">Medium</span></td>
     <td>Keyword placement<div class="meta">Content &amp; Conversion</div></td>
-    <td>&#34;petal soap&#34; found in: none; missing from: title, h1, first_paragraph.
+    <td>&#34;botanical soap&#34; found in: none; missing from: title, h1, first_paragraph.
 <p class="issue-why"><b>Why:</b> Like an Amazon listing title, the first words people and crawlers read should match the search term.</p><p class="issue-fix"><b>Fix:</b> Use the keyword (or a close variant) naturally in title, h1, first_paragraph.</p></td>
   </tr>
   <tr>
@@ -132,6 +138,13 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
     <td>Reviews / ratings<div class="meta">Content &amp; Conversion</div></td>
     <td>Not found in the page HTML.
 <p class="issue-why"><b>Why:</b> Reviews are the strongest trust signal on a product page.</p><p class="issue-fix"><b>Fix:</b> Show rating and review count near the price; mark up AggregateRating.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>Core Web Vital: LCP<div class="meta">Performance</div></td>
+    <td>LCP = 50.0 s from lab (Lighthouse, single run).
+<p class="issue-why"><b>Why:</b> Google rates LCP good at &lt;= 2.5 s, poor above 4.0 s.</p><p class="issue-fix"><b>Fix:</b> Compress and preload the hero image; reduce render-blocking resources.</p></td>
   </tr>
   <tr>
     <td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td>
@@ -156,13 +169,6 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
   </tr>
   <tr>
     <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
-    <td><span class="sev sev-Medium">Medium</span></td>
-    <td>sitemap.xml<div class="meta">Technical</div></td>
-    <td>No valid sitemap found at: http://localhost:4174/sitemap.xml.
-<p class="issue-why"><b>Why:</b> A sitemap helps search engines discover all your pages, especially on new sites.</p><p class="issue-fix"><b>Fix:</b> Generate sitemap.xml listing every public page and reference it in robots.txt.</p></td>
-  </tr>
-  <tr>
-    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
     <td><span class="sev sev-Low">Low</span></td>
     <td>Open Graph tags<div class="meta">Technical</div></td>
     <td>Missing: og:title, og:description, og:image.
@@ -175,19 +181,12 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
     <td>No twitter:card meta.
 <p class="issue-why"><b>Why:</b> X falls back to OG tags but uses a small preview without twitter:card.</p><p class="issue-fix"><b>Fix:</b> Add &lt;meta name=&#34;twitter:card&#34; content=&#34;summary_large_image&#34;&gt;.</p></td>
   </tr>
-  <tr>
-    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
-    <td><span class="sev sev-Low">Low</span></td>
-    <td>robots.txt<div class="meta">Technical</div></td>
-    <td>http://localhost:4174/robots.txt returned HTTP 404.
-<p class="issue-why"><b>Why:</b> Not required, but robots.txt is the standard place to point crawlers to your sitemap.</p><p class="issue-fix"><b>Fix:</b> Add a robots.txt with &#39;User-agent: *&#39;, &#39;Allow: /&#39; and a &#39;Sitemap:&#39; line.</p></td>
-  </tr>
   </tbody>
 </table></div>
 
 
 <details>
-  <summary>Passed and informational checks (15)</summary>
+  <summary>Passed and informational checks (20)</summary>
   <div class="table-wrap"><table>
     <thead><tr><th>Status</th><th>Check</th><th>Finding</th></tr></thead>
     <tbody>
@@ -199,8 +198,13 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
     <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Robots meta<div class="meta">Technical</div></td><td>No robots meta (default is index, follow).</td></tr>
     <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>HTML lang attribute<div class="meta">Technical</div></td><td>lang=&#34;en&#34;.</td></tr>
     <tr><td><span class="status s-info"><i aria-hidden="true">i</i>Info</span></td><td>Links<div class="meta">Technical</div></td><td>0 internal and 0 external unique links.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>robots.txt<div class="meta">Technical</div></td><td>https://liwanwen.com/robots.txt found.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>sitemap.xml<div class="meta">Technical</div></td><td>Valid sitemap at https://liwanwen.com/sitemap.xml.</td></tr>
     <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Broken links (4xx)<div class="meta">Technical</div></td><td>Checked 0 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).</td></tr>
-    <tr><td><span class="status s-not_checked"><i aria-hidden="true">–</i>Not checked</span></td><td>PageSpeed Insights<div class="meta">Performance</div></td><td>PageSpeed Insights disabled for this run (--no-psi).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Accessibility score<div class="meta">Performance</div></td><td>96/100 (Lighthouse, mobile).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Lighthouse SEO score<div class="meta">Performance</div></td><td>100/100 (Lighthouse, mobile).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Core Web Vital: CLS<div class="meta">Performance</div></td><td>CLS = 0.003 from lab (Lighthouse, single run).</td></tr>
+    <tr><td><span class="status s-not_checked"><i aria-hidden="true">–</i>Not checked</span></td><td>Core Web Vital: INP<div class="meta">Performance</div></td><td>INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).</td></tr>
     <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Value proposition above the fold<div class="meta">Content &amp; Conversion</div></td><td>H1 &#34;A little bloom. An everyday ritual.&#34; appears in the first 1500 characters with 240 words of copy.</td></tr>
     <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Call to action above the fold<div class="meta">Content &amp; Conversion</div></td><td>4 action link(s)/button(s) in the opening section, e.g. &#34;Discover the €5.99 welcome offer ↗&#34;.</td></tr>
     <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Readability<div class="meta">Content &amp; Conversion</div></td><td>298 words, avg 9.6 words/sentence, 0 sentence(s) over 25 words, 0 paragraph(s) over 100 words; Flesch reading ease 58.2 (English formula).</td></tr>
@@ -210,6 +214,13 @@ footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
   </table></div>
 </details>
 
+<h2>PageSpeed Insights (mobile)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+<tr><td>Lighthouse performance</td><td class="num">66</td><td>lab</td></tr><tr><td>Lighthouse seo</td><td class="num">100</td><td>lab</td></tr><tr><td>Lighthouse accessibility</td><td class="num">96</td><td>lab</td></tr><tr><td>LCP <span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td><td class="num">50.0 s</td><td>lab (Lighthouse, single run)</td></tr><tr><td>CLS <span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td class="num">0.003</td><td>lab (Lighthouse, single run)</td></tr><tr><td>INP <span class="status s-not_checked"><i aria-hidden="true">–</i>Not checked</span></td><td class="num">n/a</td><td>INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).</td></tr>  </tbody>
+</table></div>
+<p class="meta">Lighthouse 13.5.0 · fetched 2026-10-18T14:59:58.572Z. Lab scores vary between runs.</p>
 <footer>Generated by Listing &amp; Page SEO Checker v0.1.0 · Scoring rules are documented in the project README.
 Scores reflect automated heuristics on the fetched HTML and Google PageSpeed Insights at the time of the check.</footer>
 </main>

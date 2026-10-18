@@ -47,7 +47,7 @@ ul { padding-left:20px; } li { margin:4px 0; }
 <h1>Page SEO &amp; Conversion Checker</h1>
 <p class="lead">Paste a URL and get a 0–100 score plus a ranked list of fixes for technical SEO, mobile speed and conversion. Every issue says what was found, why it matters and how to fix it.</p>
 <p><a class="btn" href="https://github.com/WANWEN-LI/seo-page-checker">View the code on GitHub</a></p>
-<figure class="demo"><video controls playsinline preload="none" poster="../assets/seo-checker/seo-poster.jpg" width="1600" height="900" aria-label="52-second walkthrough of the Page SEO and Conversion Checker"><source src="../assets/seo-checker/seo-full.mp4" type="video/mp4"></video><figcaption>52-second walkthrough. Screens are from the real tool and real reports; no step is simulated.</figcaption></figure>
+<figure class="demo"><video controls playsinline preload="none" poster="../assets/seo-checker/seo-poster.jpg" width="1600" height="900" aria-label="51-second walkthrough of the Page SEO and Conversion Checker"><source src="../assets/seo-checker/seo-full.mp4" type="video/mp4"></video><figcaption>51-second walkthrough. Screens come from the real tool and real reports, and nothing in it is simulated. The example shop is a portfolio demo.</figcaption></figure>
 
 <h2>What it checks</h2>
 <div class="grid">
@@ -62,21 +62,36 @@ ul { padding-left:20px; } li { margin:4px 0; }
   <tbody>
     <!-- SCORES: filled from examples/*/raw.json when the page is published -->
     <tr><td>liwanwen.com (this site), before fixes</td><td>Portfolio</td><td class="num">{{PORTFOLIO_BEFORE}}</td><td><a href="reports/portfolio-before-home.html">Home</a> · <a href="reports/portfolio-before-about.html">About</a></td></tr>
-    <tr><td>Petal / Atelier demo shop (my own project)</td><td>Shop</td><td class="num">{{PETAL}}</td><td><a href="reports/petal-store.html">Open</a></td></tr>
+    <tr><td>Petal / Atelier demo shop, before fixes</td><td>Product</td><td class="num">{{PETAL}}</td><td><a href="reports/petal-before.html">Open</a></td></tr>
     <tr><td>IKEA Italia, KALLAX product page</td><td>Product</td><td class="num">{{IKEA}}</td><td><a href="reports/ikea-product.html">Open</a></td></tr>
   </tbody>
 </table></div>
-<p class="note">The IKEA report comes from a single read-only check of a public page ({{IKEA_DATE}}), run to show how the tool handles a large e-commerce product page. It is not affiliated with or endorsed by IKEA. The Petal / Atelier shop is a local demo, so its Performance score is N/A: PageSpeed only tests public URLs.</p>
+<p class="note">The IKEA report comes from a single read-only check of a public page ({{IKEA_DATE}}), run to show how the tool handles a large e-commerce product page. It is not affiliated with or endorsed by IKEA. Petal / Atelier is a concept shop from my portfolio; its prices are illustrative and nothing is sold.</p>
 
-<h2>Before / after on this site</h2>
-<p>I ran the tool on my own portfolio, applied its top fixes and re-checked the live pages on {{AFTER_DATE}}. Fixes: compressing a 2.3 MB portrait to 57 KB, loading videos only when they scroll into view, and adding canonical tags, a sitemap, robots.txt, structured data, sharing tags and unique titles and descriptions.</p>
+<h2>Before / after: two live pages</h2>
+<h3>1. Petal / Atelier demo shop · <a href="/petal/">liwanwen.com/petal</a></h3>
+<p>Checked as a product page with the keyword “botanical soap”. Applied: four PNG product images converted to WebP, a title that names the keyword and says it is a demo, a canonical tag, sharing tags, WebPage structured data, a footer link to the portfolio and a sitemap entry. <strong>Deliberately not applied:</strong> reviews and Product markup with prices, because the shop is fictional and both would be misleading.</p>
+<div class="wrap"><table>
+  <thead><tr><th>Metric</th><th>Before</th><th>After</th></tr></thead>
+  <tbody>
+    <tr><td>Tool score</td><td class="num">{{P_TOTAL_B}}</td><td class="num">{{P_TOTAL_A}}</td></tr>
+{{P_CAT_ROWS}}
+    <tr><td>Lighthouse mobile (median of {{P_NB}} → {{P_NA}} runs)</td><td class="num">{{P_PERF_B}}</td><td class="num">{{P_PERF_A}}</td></tr>
+    <tr><td>LCP (median)</td><td class="num">{{P_LCP_B}} s</td><td class="num">{{P_LCP_A}} s</td></tr>
+    <tr><td>Page weight</td><td class="num">{{P_KB_B}} KB</td><td class="num">{{P_KB_A}} KB</td></tr>
+  </tbody>
+</table></div>
+<p class="note">Fixed: {{P_FIXED}}. Still open, by choice: {{P_OPEN}}. <a href="reports/petal-compare.html">Full comparison report</a></p>
+
+<h3>2. My own portfolio · liwanwen.com</h3>
+<p>Same tool and process on four pages of this site, re-checked on {{AFTER_DATE}}. Fixes: compressing a 2.3 MB image to 57 KB, loading videos only when they scroll into view, and adding canonical tags, a sitemap, robots.txt, structured data, sharing tags and unique titles and descriptions.</p>
 <div class="wrap"><table>
   <thead><tr><th>Page</th><th>Tool score</th><th>Lighthouse mobile (median)</th><th>LCP (median)</th><th>Report</th></tr></thead>
   <tbody>
 {{BA_ROWS}}
   </tbody>
 </table></div>
-<p class="note">Lighthouse lab scores move between runs, so the speed columns are medians of independent runs (n = before → after). The About page gained the most because its 2.3 MB portrait was the largest download. The home page's speed did not measurably change, and Photography came out slightly slower; I haven't found the cause yet. I make no claims about rankings or traffic until Search Console has real data.</p>
+<p class="note">Lighthouse lab scores move between runs, so the speed columns are medians of independent runs (n = before → after). The About page gained the most because a 2.3 MB image was its largest download. The home page's speed did not measurably change, and Photography came out slightly slower; I haven't found the cause yet. I make no claims about rankings or traffic until Search Console has real data.</p>
 
 <h2>How the score works</h2>
 <ul>

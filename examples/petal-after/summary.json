@@ -1,0 +1,178 @@
+{
+  "note": "Lighthouse mobile lab runs via PageSpeed Insights on https://liwanwen.com/petal/. Independent runs only (distinct fetchTime), spaced about 75 s apart.",
+  "before": [
+    {
+      "perf": 66,
+      "lcp_ms": 49955,
+      "fetch_time": "2026-10-18T14:59:58.572Z",
+      "source": "tool run"
+    },
+    {
+      "perf": 66,
+      "lcp_ms": 49984,
+      "fetch_time": "2026-10-18T15:01:24.463Z",
+      "source": "PSI repeat",
+      "total_kb": 9734,
+      "top_transfers": [
+        [
+          "/petal/images/hero.png",
+          2504
+        ],
+        [
+          "/petal/images/sage.png",
+          2500
+        ],
+        [
+          "/petal/images/rose.png",
+          2430
+        ],
+        [
+          "/petal/images/chamomile.png",
+          2279
+        ],
+        [
+          "/.netlify/scripts/hud?variant=public",
+          11
+        ]
+      ]
+    },
+    {
+      "perf": 66,
+      "lcp_ms": 50024,
+      "fetch_time": "2026-10-18T15:02:49.055Z",
+      "source": "PSI repeat",
+      "total_kb": 9734,
+      "top_transfers": [
+        [
+          "/petal/images/hero.png",
+          2504
+        ],
+        [
+          "/petal/images/sage.png",
+          2500
+        ],
+        [
+          "/petal/images/rose.png",
+          2430
+        ],
+        [
+          "/petal/images/chamomile.png",
+          2279
+        ],
+        [
+          "/.netlify/scripts/hud?variant=public",
+          11
+        ]
+      ]
+    }
+  ],
+  "after": [
+    {
+      "perf": 100,
+      "lcp_ms": 1920,
+      "fetch_time": "2026-10-18T15:08:51.272Z",
+      "source": "tool run"
+    },
+    {
+      "perf": 99,
+      "lcp_ms": 1956,
+      "fetch_time": "2026-10-18T15:10:18.846Z",
+      "source": "PSI repeat",
+      "total_kb": 408,
+      "top_transfers": [
+        [
+          "/petal/images/hero.webp",
+          182
+        ],
+        [
+          "/petal/images/rose.webp",
+          75
+        ],
+        [
+          "/petal/images/chamomile.webp",
+          65
+        ],
+        [
+          "/petal/images/sage.webp",
+          64
+        ],
+        [
+          "/.netlify/scripts/hud?variant=public",
+          11
+        ]
+      ]
+    },
+    {
+      "perf": 100,
+      "lcp_ms": 1886,
+      "fetch_time": "2026-10-18T15:11:42.959Z",
+      "source": "PSI repeat",
+      "total_kb": 408,
+      "top_transfers": [
+        [
+          "/petal/images/hero.webp",
+          182
+        ],
+        [
+          "/petal/images/rose.webp",
+          75
+        ],
+        [
+          "/petal/images/chamomile.webp",
+          65
+        ],
+        [
+          "/petal/images/sage.webp",
+          64
+        ],
+        [
+          "/.netlify/scripts/hud?variant=public",
+          11
+        ]
+      ]
+    }
+  ],
+  "median": {
+    "before_perf": 66,
+    "after_perf": 100,
+    "before_lcp_s": 50.0,
+    "after_lcp_s": 1.9,
+    "before_total_kb": 9734,
+    "after_total_kb": 408
+  },
+  "tool_total": {
+    "before": 78,
+    "after": 92
+  },
+  "categories": {
+    "Technical": [
+      83,
+      100
+    ],
+    "Performance": [
+      79,
+      99
+    ],
+    "Content & Conversion": [
+      71,
+      76
+    ]
+  },
+  "fixed": [
+    "Mobile performance score",
+    "Canonical URL",
+    "Core Web Vital: LCP",
+    "Keyword in title",
+    "Structured data (JSON-LD)",
+    "Open Graph tags",
+    "Twitter/X card"
+  ],
+  "improved": [
+    "Keyword placement"
+  ],
+  "regressed": [],
+  "still_open": [
+    "Product structured data",
+    "Reviews / ratings"
+  ]
+}

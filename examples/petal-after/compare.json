@@ -1,0 +1,148 @@
+{
+  "before": {
+    "url": "https://liwanwen.com/petal/",
+    "checked_at": "2026-10-18T14:59:54+00:00",
+    "total": 78
+  },
+  "after": {
+    "url": "https://liwanwen.com/petal/",
+    "checked_at": "2026-10-18T15:08:45+00:00",
+    "total": 92
+  },
+  "total_delta": 14,
+  "categories": [
+    {
+      "id": "technical",
+      "label": "Technical",
+      "before": 83,
+      "after": 100,
+      "delta": 17
+    },
+    {
+      "id": "performance",
+      "label": "Performance",
+      "before": 79,
+      "after": 99,
+      "delta": 20
+    },
+    {
+      "id": "content",
+      "label": "Content & Conversion",
+      "before": 71,
+      "after": 76,
+      "delta": 5
+    }
+  ],
+  "fixed": [
+    {
+      "id": "lh_performance",
+      "label": "Mobile performance score",
+      "category": "performance",
+      "severity": "High",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "66/100 (Lighthouse, mobile).",
+      "finding_after": "100/100 (Lighthouse, mobile)."
+    },
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "No <link rel=\"canonical\"> found.",
+      "finding_after": "Canonical: https://liwanwen.com/petal/"
+    },
+    {
+      "id": "cwv_lcp",
+      "label": "Core Web Vital: LCP",
+      "category": "performance",
+      "severity": "Medium",
+      "before": "fail",
+      "after": "pass",
+      "finding_before": "LCP = 50.0 s from lab (Lighthouse, single run).",
+      "finding_after": "LCP = 1.9 s from lab (Lighthouse, single run)."
+    },
+    {
+      "id": "title_keyword",
+      "label": "Keyword in title",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "fail",
+      "after": "pass",
+      "finding_before": "Title does not contain the target keyword \"botanical soap\".",
+      "finding_after": "Title contains \"botanical soap\"."
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "No JSON-LD found.",
+      "finding_after": "1 block(s), types: WebPage."
+    },
+    {
+      "id": "open_graph",
+      "label": "Open Graph tags",
+      "category": "technical",
+      "severity": "Low",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "Missing: og:title, og:description, og:image.",
+      "finding_after": "og:title, og:description, og:image present."
+    },
+    {
+      "id": "twitter_card",
+      "label": "Twitter/X card",
+      "category": "technical",
+      "severity": "Low",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "No twitter:card meta.",
+      "finding_after": "twitter:card = \"summary_large_image\"."
+    }
+  ],
+  "improved": [
+    {
+      "id": "keyword_placement",
+      "label": "Keyword placement",
+      "category": "content",
+      "severity": "Medium",
+      "before": "fail",
+      "after": "warn",
+      "finding_before": "\"botanical soap\" found in: none; missing from: title, h1, first_paragraph.",
+      "finding_after": "\"botanical soap\" found in: title, first_paragraph; missing from: h1."
+    }
+  ],
+  "regressed": [],
+  "still_open": [
+    {
+      "id": "trust_product_schema",
+      "label": "Product structured data",
+      "category": "content",
+      "severity": "Medium",
+      "before": "fail",
+      "after": "fail",
+      "finding_before": "Not found in the page HTML.",
+      "finding_after": "Not found in the page HTML."
+    },
+    {
+      "id": "trust_reviews",
+      "label": "Reviews / ratings",
+      "category": "content",
+      "severity": "Medium",
+      "before": "fail",
+      "after": "fail",
+      "finding_before": "Not found in the page HTML.",
+      "finding_after": "Not found in the page HTML."
+    }
+  ],
+  "new_checks": [],
+  "removed_checks": [],
+  "notes": [
+    "Lighthouse lab scores vary between runs (often by several points); treat small Performance changes as noise unless repeated."
+  ]
+}

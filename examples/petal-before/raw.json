@@ -1,17 +1,17 @@
 {
   "tool_version": "0.1.0",
-  "checked_at": "2026-10-18T13:00:43+00:00",
+  "checked_at": "2026-10-18T14:59:54+00:00",
   "input": {
-    "url": "http://localhost:4174/",
-    "keyword": "petal soap",
+    "url": "https://liwanwen.com/petal/",
+    "keyword": "botanical soap",
     "page_type": "product"
   },
   "fetch": {
-    "url": "http://localhost:4174/",
-    "final_url": "http://localhost:4174/",
+    "url": "https://liwanwen.com/petal/",
+    "final_url": "https://liwanwen.com/petal/",
     "status_code": 200,
-    "content_type": "text/html",
-    "elapsed_ms": 1002,
+    "content_type": "text/html; charset=UTF-8",
+    "elapsed_ms": 736,
     "redirects": [],
     "error_type": null,
     "error": null
@@ -182,7 +182,7 @@
       "label": "Keyword in title",
       "status": "fail",
       "severity": "Medium",
-      "finding": "Title does not contain the target keyword \"petal soap\".",
+      "finding": "Title does not contain the target keyword \"botanical soap\".",
       "why": "Searchers scan titles for the words they typed.",
       "fix": "Work the keyword naturally into the first half of the title.",
       "data": {}
@@ -330,27 +330,31 @@
       "id": "robots_txt",
       "category": "technical",
       "label": "robots.txt",
-      "status": "warn",
+      "status": "pass",
       "severity": "Low",
-      "finding": "http://localhost:4174/robots.txt returned HTTP 404.",
-      "why": "Not required, but robots.txt is the standard place to point crawlers to your sitemap.",
-      "fix": "Add a robots.txt with 'User-agent: *', 'Allow: /' and a 'Sitemap:' line.",
-      "data": {}
+      "finding": "https://liwanwen.com/robots.txt found.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "sitemaps_declared": [
+          "https://liwanwen.com/sitemap.xml"
+        ]
+      }
     },
     {
       "id": "sitemap",
       "category": "technical",
       "label": "sitemap.xml",
-      "status": "warn",
+      "status": "pass",
       "severity": "Medium",
-      "finding": "No valid sitemap found at: http://localhost:4174/sitemap.xml.",
-      "why": "A sitemap helps search engines discover all your pages, especially on new sites.",
-      "fix": "Generate sitemap.xml listing every public page and reference it in robots.txt.",
+      "finding": "Valid sitemap at https://liwanwen.com/sitemap.xml.",
+      "why": "",
+      "fix": "",
       "data": {
         "tried": [
           {
-            "url": "http://localhost:4174/sitemap.xml",
-            "status_code": 404,
+            "url": "https://liwanwen.com/sitemap.xml",
+            "status_code": 200,
             "error": null
           }
         ]
@@ -373,13 +377,80 @@
       }
     },
     {
-      "id": "psi_unavailable",
+      "id": "lh_performance",
       "category": "performance",
-      "label": "PageSpeed Insights",
+      "label": "Mobile performance score",
+      "status": "warn",
+      "severity": "High",
+      "finding": "66/100 (Lighthouse, mobile).",
+      "why": "Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.",
+      "fix": "Open the PSI report and fix the top 'Opportunities' (image size, render-blocking JS/CSS).",
+      "data": {
+        "score": 66
+      }
+    },
+    {
+      "id": "lh_accessibility",
+      "category": "performance",
+      "label": "Accessibility score",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "96/100 (Lighthouse, mobile).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "score": 96
+      }
+    },
+    {
+      "id": "lh_seo",
+      "category": "performance",
+      "label": "Lighthouse SEO score",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "100/100 (Lighthouse, mobile).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "score": 100
+      }
+    },
+    {
+      "id": "cwv_lcp",
+      "category": "performance",
+      "label": "Core Web Vital: LCP",
+      "status": "fail",
+      "severity": "Medium",
+      "finding": "LCP = 50.0 s from lab (Lighthouse, single run).",
+      "why": "Google rates LCP good at <= 2.5 s, poor above 4.0 s.",
+      "fix": "Compress and preload the hero image; reduce render-blocking resources.",
+      "data": {
+        "value": 49955,
+        "source": "lab (Lighthouse, single run)"
+      }
+    },
+    {
+      "id": "cwv_cls",
+      "category": "performance",
+      "label": "Core Web Vital: CLS",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "CLS = 0.003 from lab (Lighthouse, single run).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "value": 0.003,
+        "source": "lab (Lighthouse, single run)"
+      }
+    },
+    {
+      "id": "cwv_inp",
+      "category": "performance",
+      "label": "Core Web Vital: INP",
       "status": "not_checked",
       "severity": "Low",
-      "finding": "PageSpeed Insights disabled for this run (--no-psi).",
-      "why": "Performance score is reported as N/A and excluded from the total.",
+      "finding": "INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).",
+      "why": "",
       "fix": "",
       "data": {}
     },
@@ -434,7 +505,7 @@
       "label": "Keyword placement",
       "status": "fail",
       "severity": "Medium",
-      "finding": "\"petal soap\" found in: none; missing from: title, h1, first_paragraph.",
+      "finding": "\"botanical soap\" found in: none; missing from: title, h1, first_paragraph.",
       "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
       "fix": "Use the keyword (or a close variant) naturally in title, h1, first_paragraph.",
       "data": {
@@ -511,12 +582,12 @@
     }
   ],
   "score": {
-    "total": 75,
+    "total": 78,
     "categories": {
       "technical": {
         "label": "Technical",
-        "score": 78,
-        "earned": 22.5,
+        "score": 83,
+        "earned": 24.0,
         "possible": 29.0,
         "breakdown": [
           {
@@ -593,15 +664,15 @@
           },
           {
             "id": "robots_txt",
-            "status": "warn",
+            "status": "pass",
             "weight": 1,
-            "points": 0.5
+            "points": 1.0
           },
           {
             "id": "sitemap",
-            "status": "warn",
+            "status": "pass",
             "weight": 2,
-            "points": 1.0
+            "points": 2.0
           },
           {
             "id": "broken_links",
@@ -613,8 +684,12 @@
       },
       "performance": {
         "label": "Performance",
-        "score": null,
-        "breakdown": {}
+        "score": 79,
+        "breakdown": {
+          "lh_performance": 66,
+          "lh_accessibility": 96,
+          "lh_seo": 100
+        }
       },
       "content": {
         "label": "Content & Conversion",
@@ -678,17 +753,30 @@
       "performance": 0.3,
       "content": 0.3
     },
-    "notes": [
-      "Performance N/A; total uses the remaining categories with weights rescaled to sum to 100%."
-    ]
+    "notes": []
   },
   "pagespeed": {
-    "ok": false,
-    "error": "PageSpeed Insights disabled for this run (--no-psi).",
-    "skipped": true
+    "ok": true,
+    "error": null,
+    "summary": {
+      "scores": {
+        "performance": 66,
+        "seo": 100,
+        "accessibility": 96
+      },
+      "lab": {
+        "LCP": 49955,
+        "CLS": 0.003,
+        "TBT": 0
+      },
+      "field_page": {},
+      "field_origin": {},
+      "lighthouse_version": "13.5.0",
+      "fetch_time": "2026-10-18T14:59:58.572Z",
+      "final_url": "https://liwanwen.com/petal/"
+    },
+    "strategy": "mobile"
   },
   "ai": null,
-  "errors": [
-    "Performance N/A: PageSpeed Insights disabled for this run (--no-psi)."
-  ]
+  "errors": []
 }

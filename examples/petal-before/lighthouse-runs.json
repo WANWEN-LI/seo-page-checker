@@ -1,0 +1,66 @@
+[
+  {
+    "perf": 66,
+    "lcp_ms": 49955,
+    "fetch_time": "2026-10-18T14:59:58.572Z",
+    "source": "tool run"
+  },
+  {
+    "perf": 66,
+    "lcp_ms": 49984,
+    "fetch_time": "2026-10-18T15:01:24.463Z",
+    "source": "PSI repeat",
+    "total_kb": 9734,
+    "top_transfers": [
+      [
+        "/petal/images/hero.png",
+        2504
+      ],
+      [
+        "/petal/images/sage.png",
+        2500
+      ],
+      [
+        "/petal/images/rose.png",
+        2430
+      ],
+      [
+        "/petal/images/chamomile.png",
+        2279
+      ],
+      [
+        "/.netlify/scripts/hud?variant=public",
+        11
+      ]
+    ]
+  },
+  {
+    "perf": 66,
+    "lcp_ms": 50024,
+    "fetch_time": "2026-10-18T15:02:49.055Z",
+    "source": "PSI repeat",
+    "total_kb": 9734,
+    "top_transfers": [
+      [
+        "/petal/images/hero.png",
+        2504
+      ],
+      [
+        "/petal/images/sage.png",
+        2500
+      ],
+      [
+        "/petal/images/rose.png",
+        2430
+      ],
+      [
+        "/petal/images/chamomile.png",
+        2279
+      ],
+      [
+        "/.netlify/scripts/hud?variant=public",
+        11
+      ]
+    ]
+  }
+]
