@@ -30,7 +30,20 @@ def main(out: Path) -> None:
     ikea = load(EX / "ikea-product" / "raw.json")
     home, about = by_url(portfolio, "liwanwen.com/"), by_url(portfolio, "/about")
 
+    lh = load(EX / "portfolio-after" / "lighthouse-summary.json")["pages"]
+    after = load(EX / "portfolio-after" / "raw.json")
+    rows = []
+    for path, name in (("/", "home"), ("/about", "about"), ("/projects", "projects"), ("/photography", "photography")):
+        c = load(EX / "portfolio-after" / f"compare-{name}.json"); m = lh[path]
+        rows.append(f'    <tr><td>{path}</td><td class="num">{c["before"]["total"]} → {c["after"]["total"]}</td>'
+                    f'<td class="num">{m["median"]["before_perf"]:g} → {m["median"]["after_perf"]:g} '
+                    f'<span class="note">(n={len(m["before"])}→{len(m["after"])})</span></td>'
+                    f'<td class="num">{m["median"]["before_lcp_s"]} s → {m["median"]["after_lcp_s"]} s</td>'
+                    f'<td><a href="reports/compare-{name}.html">Compare</a></td></tr>')
+
     values = {
+        "{{BA_ROWS}}": "\n".join(rows),
+        "{{AFTER_DATE}}": after[0]["checked_at"][:10],
         "{{PORTFOLIO_BEFORE}}": f"{home['score']['total']} (home) · {about['score']['total']} (about)",
         "{{PETAL}}": str(petal["score"]["total"]),
         "{{IKEA}}": str(ikea["score"]["total"]),
@@ -51,6 +64,7 @@ def main(out: Path) -> None:
         EX / "portfolio-before" / "liwanwen.com_about.html": "portfolio-before-about.html",
         EX / "petal-store" / "report.html": "petal-store.html",
         EX / "ikea-product" / "report.html": "ikea-product.html",
+        **{EX / "portfolio-after" / f"compare-{n}.html": f"compare-{n}.html" for n in ("home", "about", "projects", "photography")},
     }
     for src, name in copies.items():
         shutil.copy(src, out / "reports" / name)

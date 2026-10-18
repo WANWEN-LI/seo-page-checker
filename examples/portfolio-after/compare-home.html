@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Before / after · https://liwanwen.com/</title>
+<style>
+:root {
+  --page: #f9f9f7; --surface: #fcfcfb; --border: #e4e3de;
+  --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #75746f;
+  --meter: #2a78d6; --meter-track: #e8e7e2;
+  --good: #0ca30c; --warning: #fab219; --critical: #d03b3b; --neutral: #8a8984;
+  --good-text: #006300; --critical-text: #b32727;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #0d0d0d; --surface: #1a1a19; --border: #33332f;
+    --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #9a998f;
+    --meter: #3987e5; --meter-track: #383835;
+    --good-text: #4fd14f; --critical-text: #f07a7a;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #0d0d0d; --surface: #1a1a19; --border: #33332f;
+  --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #9a998f;
+  --meter: #3987e5; --meter-track: #383835;
+  --good-text: #4fd14f; --critical-text: #f07a7a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 12px; }
+h3 { font-size: 15px; margin: 24px 0 8px; color: var(--ink-2); }
+a { color: var(--meter); }
+.meta { color: var(--ink-2); font-size: 13px; margin: 0; word-break: break-all; }
+.meta b { color: var(--ink); font-weight: 600; }
+.notice { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--warning);
+  border-radius: 8px; padding: 10px 14px; margin: 16px 0 0; font-size: 14px; }
+.notice p { margin: 2px 0; }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.tile .label { font-size: 13px; color: var(--ink-2); margin: 0; }
+.tile .value { font-size: 34px; font-weight: 650; margin: 4px 0 0; font-variant-numeric: tabular-nums; }
+.tile .value small { font-size: 14px; color: var(--ink-3); font-weight: 500; }
+.tile .sub { font-size: 12px; color: var(--ink-3); margin: 6px 0 0; }
+.tile.total { border-color: var(--meter); }
+.meter { height: 6px; border-radius: 3px; background: var(--meter-track); margin-top: 10px; overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--meter); border-radius: 3px; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-2); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.status { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; font-weight: 600; font-size: 13px; }
+.status i { font-style: normal; display: inline-grid; place-items: center; width: 18px; height: 18px;
+  border-radius: 50%; color: #fff; font-size: 11px; font-weight: 700; }
+.s-pass i { background: var(--good); } .s-warn i { background: var(--warning); color: #3a2a00; }
+.s-fail i { background: var(--critical); } .s-info i, .s-not_checked i { background: var(--neutral); }
+.sev { font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--border);
+  color: var(--ink-2); white-space: nowrap; }
+.sev-High { color: var(--ink); border-color: var(--ink-3); }
+.issue-why, .issue-fix { color: var(--ink-2); margin: 4px 0 0; font-size: 13px; }
+.issue-fix b, .issue-why b { color: var(--ink); font-weight: 600; }
+details { margin-top: 12px; }
+summary { cursor: pointer; color: var(--ink-2); font-size: 14px; }
+.delta-up { color: var(--good-text); font-weight: 600; } .delta-down { color: var(--critical-text); font-weight: 600; }
+.delta-flat { color: var(--ink-3); }
+footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .table-wrap { overflow-x: auto; }
+  table { min-width: 620px; }
+  table.compact { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Before / after comparison</h1>
+<p class="meta"><b>Before:</b> https://liwanwen.com/ · 2026-10-18T12:24:08+00:00</p>
+<p class="meta"><b>After:</b> https://liwanwen.com/ · 2026-10-18T13:53:25+00:00</p>
+
+<div class="notice"><p>Lighthouse lab scores vary between runs (often by several points); treat small Performance changes as noise unless repeated.</p></div>
+<h2>Scores</h2>
+<div class="table-wrap"><table class="compact">
+  <thead><tr><th>Score</th><th>Before</th><th>After</th><th>Change</th></tr></thead>
+  <tbody>
+    <tr><td><b>Total</b></td><td class="num">85</td><td class="num">93</td><td class="num"><span class="delta-up">▲ +8</span></td></tr>
+    <tr><td>Technical</td><td class="num">84</td><td class="num">100</td><td class="num"><span class="delta-up">▲ +16</span></td></tr>
+    <tr><td>Performance</td><td class="num">84</td><td class="num">84</td><td class="num"><span class="delta-flat">0</span></td></tr>
+    <tr><td>Content &amp; Conversion</td><td class="num">87</td><td class="num">93</td><td class="num"><span class="delta-up">▲ +6</span></td></tr>
+  </tbody>
+</table></div>
+
+<h2>Fixed (7)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Check</th><th>Severity</th><th>Before</th><th>After</th><th>Finding now</th></tr></thead>
+  <tbody>
+  <tr><td>Canonical URL</td><td><span class="sev sev-Medium">Medium</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>Canonical: https://liwanwen.com/<div class="meta">Before: No &lt;link rel=&#34;canonical&#34;&gt; found.</div></td></tr>
+  <tr><td>Structured data (JSON-LD)</td><td><span class="sev sev-Medium">Medium</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>1 block(s), types: Person.<div class="meta">Before: No JSON-LD found.</div></td></tr>
+  <tr><td>sitemap.xml</td><td><span class="sev sev-Medium">Medium</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>Valid sitemap at https://liwanwen.com/sitemap.xml.<div class="meta">Before: No valid sitemap found at: https://liwanwen.com/sitemap.xml.</div></td></tr>
+  <tr><td>Open Graph tags</td><td><span class="sev sev-Low">Low</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>og:title, og:description, og:image present.<div class="meta">Before: Missing: og:title, og:description, og:image.</div></td></tr>
+  <tr><td>Person structured data</td><td><span class="sev sev-Low">Low</span></td><td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>Found.<div class="meta">Before: Not found in the page HTML.</div></td></tr>
+  <tr><td>Twitter/X card</td><td><span class="sev sev-Low">Low</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>twitter:card = &#34;summary&#34;.<div class="meta">Before: No twitter:card meta.</div></td></tr>
+  <tr><td>robots.txt</td><td><span class="sev sev-Low">Low</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td>
+    <td>https://liwanwen.com/robots.txt found.<div class="meta">Before: https://liwanwen.com/robots.txt returned HTTP 404.</div></td></tr>
+  </tbody>
+</table></div>
+<h2>Improved (not yet passing) (0)</h2>
+<p class="meta">None.</p><h2>Regressed (0)</h2>
+<p class="meta">None.</p><h2>Still open (3)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Check</th><th>Severity</th><th>Before</th><th>After</th><th>Finding now</th></tr></thead>
+  <tbody>
+  <tr><td>Mobile performance score</td><td><span class="sev sev-High">High</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td>75/100 (Lighthouse, mobile).</td></tr>
+  <tr><td>Core Web Vital: LCP</td><td><span class="sev sev-Medium">Medium</span></td><td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td><td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td>
+    <td>LCP = 4.9 s from lab (Lighthouse, single run).<div class="meta">Before: LCP = 4.8 s from lab (Lighthouse, single run).</div></td></tr>
+  <tr><td>Keyword placement</td><td><span class="sev sev-Medium">Medium</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td>&#34;Wanwen Li&#34; found in: title; missing from: h1, first_paragraph.</td></tr>
+  </tbody>
+</table></div>
+<footer>Generated by Listing &amp; Page SEO Checker v0.1.0 · Scoring rules are documented in the project README.
+Scores reflect automated heuristics on the fetched HTML and Google PageSpeed Insights at the time of the check.</footer>
+</main>
+</body>
+</html>

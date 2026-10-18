@@ -7,3 +7,4 @@ data/history/
 .DS_Store
 .claude/
 site/build/
+.netlify/

@@ -1,0 +1,157 @@
+{
+  "before": {
+    "url": "https://liwanwen.com/projects",
+    "checked_at": "2026-10-18T12:24:50+00:00",
+    "total": 84
+  },
+  "after": {
+    "url": "https://liwanwen.com/projects",
+    "checked_at": "2026-10-18T13:54:07+00:00",
+    "total": 92
+  },
+  "total_delta": 8,
+  "categories": [
+    {
+      "id": "technical",
+      "label": "Technical",
+      "before": 79,
+      "after": 97,
+      "delta": 18
+    },
+    {
+      "id": "performance",
+      "label": "Performance",
+      "before": 88,
+      "after": 89,
+      "delta": 1
+    },
+    {
+      "id": "content",
+      "label": "Content & Conversion",
+      "before": 87,
+      "after": 87,
+      "delta": 0
+    }
+  ],
+  "fixed": [
+    {
+      "id": "canonical",
+      "label": "Canonical URL",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "No <link rel=\"canonical\"> found.",
+      "finding_after": "Canonical: https://liwanwen.com/projects"
+    },
+    {
+      "id": "title_length",
+      "label": "Title length",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "Title is 20 characters (short; it may not describe the page well): \"Projects | Wanwen Li\".",
+      "finding_after": "Title is 57 characters: \"Projects by Wanwen Li | Marketing Automation & Data Tools\"."
+    },
+    {
+      "id": "sitemap",
+      "label": "sitemap.xml",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "No valid sitemap found at: https://liwanwen.com/sitemap.xml.",
+      "finding_after": "Valid sitemap at https://liwanwen.com/sitemap.xml."
+    },
+    {
+      "id": "open_graph",
+      "label": "Open Graph tags",
+      "category": "technical",
+      "severity": "Low",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "Missing: og:title, og:description, og:image.",
+      "finding_after": "og:title, og:description, og:image present."
+    },
+    {
+      "id": "twitter_card",
+      "label": "Twitter/X card",
+      "category": "technical",
+      "severity": "Low",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "No twitter:card meta.",
+      "finding_after": "twitter:card = \"summary\"."
+    },
+    {
+      "id": "robots_txt",
+      "label": "robots.txt",
+      "category": "technical",
+      "severity": "Low",
+      "before": "warn",
+      "after": "pass",
+      "finding_before": "https://liwanwen.com/robots.txt returned HTTP 404.",
+      "finding_after": "https://liwanwen.com/robots.txt found."
+    }
+  ],
+  "improved": [],
+  "regressed": [],
+  "still_open": [
+    {
+      "id": "lh_performance",
+      "label": "Mobile performance score",
+      "category": "performance",
+      "severity": "High",
+      "before": "warn",
+      "after": "warn",
+      "finding_before": "81/100 (Lighthouse, mobile).",
+      "finding_after": "83/100 (Lighthouse, mobile)."
+    },
+    {
+      "id": "cwv_lcp",
+      "label": "Core Web Vital: LCP",
+      "category": "performance",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "warn",
+      "finding_before": "LCP = 3.9 s from lab (Lighthouse, single run).",
+      "finding_after": "LCP = 3.7 s from lab (Lighthouse, single run)."
+    },
+    {
+      "id": "keyword_placement",
+      "label": "Keyword placement",
+      "category": "content",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "warn",
+      "finding_before": "\"Wanwen Li\" found in: title; missing from: h1, first_paragraph.",
+      "finding_after": "\"Wanwen Li\" found in: title; missing from: h1, first_paragraph."
+    },
+    {
+      "id": "json_ld",
+      "label": "Structured data (JSON-LD)",
+      "category": "technical",
+      "severity": "Medium",
+      "before": "warn",
+      "after": "warn",
+      "finding_before": "No JSON-LD found.",
+      "finding_after": "No JSON-LD found."
+    },
+    {
+      "id": "trust_person_schema",
+      "label": "Person structured data",
+      "category": "content",
+      "severity": "Low",
+      "before": "fail",
+      "after": "fail",
+      "finding_before": "Not found in the page HTML.",
+      "finding_after": "Not found in the page HTML."
+    }
+  ],
+  "new_checks": [],
+  "removed_checks": [],
+  "notes": [
+    "Lighthouse lab scores vary between runs (often by several points); treat small Performance changes as noise unless repeated."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "note": "Lighthouse mobile lab runs via PageSpeed Insights. Only independent runs (distinct fetchTime) are included. Before = same deployed content measured on liwanwen.com and on nimble-cactus-619ce1.netlify.app.",
+  "pages": {
+    "/": {
+      "before": [
+        {
+          "perf": 75,
+          "lcp_ms": 4807,
+          "source": "tool run, liwanwen.com, 2026-10-18T12:24:08+00:00"
+        },
+        {
+          "perf": 75,
+          "lcp_ms": 4752,
+          "source": "tool run, netlify.app, 2026-10-18T05:22:55+00:00"
+        },
+        {
+          "perf": 74,
+          "lcp_ms": 4900,
+          "source": "PSI diagnostic call, liwanwen.com, 2026-10-18 ~12:30 UTC"
+        }
+      ],
+      "after": [
+        {
+          "perf": 75,
+          "lcp_ms": 4896,
+          "source": "tool run, liwanwen.com, 2026-10-18T13:53:25+00:00"
+        },
+        {
+          "perf": 76,
+          "lcp_ms": 4648,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:55:06.145Z"
+        },
+        {
+          "perf": 92,
+          "lcp_ms": 2813,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:57:54.048Z"
+        },
+        {
+          "perf": 73,
+          "lcp_ms": 4960,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:59:32.447Z"
+        }
+      ],
+      "median": {
+        "before_perf": 75,
+        "after_perf": 75.5,
+        "before_lcp_s": 4.8,
+        "after_lcp_s": 4.8
+      }
+    },
+    "/about": {
+      "before": [
+        {
+          "perf": 63,
+          "lcp_ms": 14031,
+          "source": "tool run, liwanwen.com, 2026-10-18T12:24:31+00:00"
+        },
+        {
+          "perf": 63,
+          "lcp_ms": 14039,
+          "source": "tool run, netlify.app, 2026-10-18T05:23:17+00:00"
+        },
+        {
+          "perf": 63,
+          "lcp_ms": 13967,
+          "source": "tool run, netlify.app, 2026-10-18T05:29:59+00:00"
+        },
+        {
+          "perf": 63,
+          "lcp_ms": 13900,
+          "source": "PSI diagnostic call, liwanwen.com, 2026-10-18 ~12:30 UTC"
+        }
+      ],
+      "after": [
+        {
+          "perf": 91,
+          "lcp_ms": 2474,
+          "source": "tool run, liwanwen.com, 2026-10-18T13:53:50+00:00"
+        },
+        {
+          "perf": 92,
+          "lcp_ms": 2442,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:55:18.049Z"
+        },
+        {
+          "perf": 94,
+          "lcp_ms": 2437,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:55:28.168Z"
+        }
+      ],
+      "median": {
+        "before_perf": 63.0,
+        "after_perf": 92,
+        "before_lcp_s": 14.0,
+        "after_lcp_s": 2.4
+      }
+    },
+    "/projects": {
+      "before": [
+        {
+          "perf": 81,
+          "lcp_ms": 3899,
+          "source": "tool run, liwanwen.com, 2026-10-18T12:24:50+00:00"
+        },
+        {
+          "perf": 83,
+          "lcp_ms": 3719,
+          "source": "tool run, netlify.app, 2026-10-18T05:23:36+00:00"
+        }
+      ],
+      "after": [
+        {
+          "perf": 83,
+          "lcp_ms": 3725,
+          "source": "tool run, liwanwen.com, 2026-10-18T13:54:07+00:00"
+        },
+        {
+          "perf": 82,
+          "lcp_ms": 3785,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:55:36.772Z"
+        },
+        {
+          "perf": 83,
+          "lcp_ms": 3755,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:55:46.610Z"
+        }
+      ],
+      "median": {
+        "before_perf": 82.0,
+        "after_perf": 83,
+        "before_lcp_s": 3.8,
+        "after_lcp_s": 3.8
+      }
+    },
+    "/photography": {
+      "before": [
+        {
+          "perf": 86,
+          "lcp_ms": 3653,
+          "source": "tool run, liwanwen.com, 2026-10-18T12:25:14+00:00"
+        },
+        {
+          "perf": 88,
+          "lcp_ms": 3404,
+          "source": "tool run, netlify.app, 2026-10-18T05:23:56+00:00"
+        }
+      ],
+      "after": [
+        {
+          "perf": 69,
+          "lcp_ms": 9906,
+          "source": "tool run, liwanwen.com, 2026-10-18T13:54:29+00:00"
+        },
+        {
+          "perf": 83,
+          "lcp_ms": 4083,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:55:57.388Z"
+        },
+        {
+          "perf": 83,
+          "lcp_ms": 3357,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:58:06.287Z"
+        },
+        {
+          "perf": 84,
+          "lcp_ms": 3928,
+          "source": "PSI repeat, fetchTime 2026-10-18T13:59:45.392Z"
+        }
+      ],
+      "median": {
+        "before_perf": 87.0,
+        "after_perf": 83.0,
+        "before_lcp_s": 3.5,
+        "after_lcp_s": 4.0
+      }
+    }
+  }
+}

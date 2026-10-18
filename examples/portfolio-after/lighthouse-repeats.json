@@ -1,0 +1,148 @@
+{
+  "/": [
+    {
+      "perf": 76,
+      "lcp_ms": 4648,
+      "fetch_time": "2026-10-18T13:55:06.145Z",
+      "top_transfers": [
+        [
+          "/assets/wanwen-avatar-beret.jpg",
+          226
+        ],
+        [
+          "/assets/petal/demo-poster.jpg",
+          112
+        ],
+        [
+          "/assets/lhf/lhf-poster.jpg",
+          110
+        ]
+      ]
+    },
+    {
+      "perf": 92,
+      "lcp_ms": 2813,
+      "fetch_time": "2026-10-18T13:57:54.048Z",
+      "top_transfers": []
+    },
+    {
+      "perf": 73,
+      "lcp_ms": 4960,
+      "fetch_time": "2026-10-18T13:59:32.447Z",
+      "top_transfers": []
+    }
+  ],
+  "/about": [
+    {
+      "perf": 92,
+      "lcp_ms": 2442,
+      "fetch_time": "2026-10-18T13:55:18.049Z",
+      "top_transfers": [
+        [
+          "/assets/portrait-natural-700.webp",
+          58
+        ],
+        [
+          "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqU",
+          32
+        ],
+        [
+          "/.netlify/scripts/hud?variant=public",
+          11
+        ]
+      ]
+    },
+    {
+      "perf": 94,
+      "lcp_ms": 2437,
+      "fetch_time": "2026-10-18T13:55:28.168Z",
+      "top_transfers": [
+        [
+          "/assets/portrait-natural-700.webp",
+          58
+        ],
+        [
+          "https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqU",
+          32
+        ],
+        [
+          "/.netlify/scripts/hud?variant=public",
+          11
+        ]
+      ]
+    }
+  ],
+  "/projects": [
+    {
+      "perf": 82,
+      "lcp_ms": 3785,
+      "fetch_time": "2026-10-18T13:55:36.772Z",
+      "top_transfers": [
+        [
+          "/assets/lhf/lhf-full.mp4",
+          5537
+        ],
+        [
+          "/assets/petal/demo-full.mp4",
+          5366
+        ],
+        [
+          "/assets/petal/demo-poster.jpg",
+          112
+        ]
+      ]
+    },
+    {
+      "perf": 83,
+      "lcp_ms": 3755,
+      "fetch_time": "2026-10-18T13:55:46.610Z",
+      "top_transfers": [
+        [
+          "/assets/lhf/lhf-full.mp4",
+          5537
+        ],
+        [
+          "/assets/petal/demo-full.mp4",
+          5366
+        ],
+        [
+          "/assets/petal/demo-poster.jpg",
+          112
+        ]
+      ]
+    }
+  ],
+  "/photography": [
+    {
+      "perf": 83,
+      "lcp_ms": 4083,
+      "fetch_time": "2026-10-18T13:55:57.388Z",
+      "top_transfers": [
+        [
+          "/assets/portrait-natural.png",
+          2315
+        ],
+        [
+          "/assets/travel/tuscany-dove-sm.jpg",
+          140
+        ],
+        [
+          "/assets/travel/tuscany-roads-sm.jpg",
+          103
+        ]
+      ]
+    },
+    {
+      "perf": 83,
+      "lcp_ms": 3357,
+      "fetch_time": "2026-10-18T13:58:06.287Z",
+      "top_transfers": []
+    },
+    {
+      "perf": 84,
+      "lcp_ms": 3928,
+      "fetch_time": "2026-10-18T13:59:45.392Z",
+      "top_transfers": []
+    }
+  ]
+}

@@ -2,7 +2,18 @@
 
 **Paste a URL, get a 0–100 score with prioritised fixes for technical SEO, mobile performance and conversion — each issue says what was found, why it matters and how to fix it.**
 
-> Status: working tool (stage 4 of 4 in progress). The case study, screenshots and the measured before/after on liwanwen.com are still to come.
+![Demo: the checker auditing liwanwen.com](portfolio/media/seo-checker-loop.gif)
+
+**52-second walkthrough, example reports and the measured before/after:** [liwanwen.com/seo-checker](https://liwanwen.com/seo-checker/)
+
+I ran the tool on my own portfolio, applied its fixes and re-checked the live pages. Medians of independent Lighthouse mobile runs:
+
+| Page | Tool score | Lighthouse performance | LCP |
+|---|---|---|---|
+| /about | 81 → 93 | 63 → 92 | 14.0 s → 2.4 s |
+| / (home) | 85 → 93 | 75 → 75.5 (no measurable change) | 4.8 s → 4.8 s |
+
+Raw data is in [`examples/portfolio-after/`](examples/portfolio-after/). No ranking or traffic claims are made without Search Console data.
 
 ## Install
 
@@ -123,11 +134,51 @@ The rules live in [`seo_checker/scoring.py`](seo_checker/scoring.py); this secti
 
 - **No JavaScript rendering.** The tool sees the server-sent HTML. Content injected by JS (for example image galleries loaded from a data file) is invisible to it, and to some crawlers as well.
 - **"Above the fold" is approximated** as the first 1,500 characters of visible text, because the page is not rendered at a real viewport size.
-- **Readability formulas are for English.**
+- **Readability is scored for English pages only.** Pages with another `lang` show readability as "not checked".
+- **Trust-signal words** (shipping, returns, reviews) are matched in English, Italian, French, German, Spanish and Dutch only.
+- **Bot-check and queue pages are detected heuristically** (title and text patterns) and not scored. Some challenge pages may slip through, and an unusual real page could be flagged.
+- **One page at a time.** Duplicate titles or meta descriptions across pages of the same site are not detected.
+- **Lighthouse varies between runs, and PageSpeed caches repeated requests for a short time.** The before/after report compares single runs; for conclusions about speed, take several runs spaced a minute or more apart and compare the medians, as in `examples/portfolio-after/lighthouse-summary.json`.
+- **Run it locally.** It fetches whatever URL it is given and has no protection for public hosting (for example against requests to private network addresses).
 - **PageSpeed Insights only tests public URLs.** Local or staging pages get Performance = N/A.
 - **Without a PageSpeed API key**, Google rate-limits anonymous requests (HTTP 429 seen in testing).
-- **Heuristics, not ground truth:** CTA, price and review detection uses keyword and pattern matching, so false positives and negatives are possible.
-- **Out of scope:** keyword search volume, backlinks and rankings, which need paid data. See "Planned".
+- **Heuristics, not ground truth:** CTA, price and review detection uses keyword and pattern matching, so false positives and negatives are possible. For example, on the IKEA example page an image-zoom button ("…normal view") was counted as a call to action.
+- **Out of scope:** keyword search volume, backlinks and rankings, which need paid data. See "Planned" below.
+
+## Implemented / not implemented / planned
+
+**Implemented**
+
+| Feature | Notes |
+|---|---|
+| Technical SEO checks | title, meta description, H1 and heading order, alt text, canonical, robots meta, lang, OG and Twitter tags, JSON-LD, broken links, robots.txt, sitemap |
+| Mobile performance | PageSpeed Insights API; Lighthouse scores and Core Web Vitals, labelled lab or field |
+| Content & conversion checks | value proposition, CTA, keyword placement, readability, trust signals by page type |
+| Transparent 0–100 score | rules in `scoring.py` and above |
+| Reports | self-contained HTML and raw JSON |
+| History and before/after | per-check comparison: fixed / improved / regressed / still open |
+| Streamlit UI and CLI | `app.py`, `python -m seo_checker` |
+| Polite fetching | robots.txt, 1 request/s per host, timeouts, classified errors, bot-check page detection |
+| AI suggestions (optional) | implemented and unit-tested with a mocked client; not yet run against the live API in this project |
+| Tests | 59 unit tests |
+
+**Not implemented**
+
+| Feature | Why |
+|---|---|
+| JavaScript rendering | server-sent HTML only, to stay fast and simple |
+| Site-wide crawl and cross-page duplicate detection | the tool checks the URLs it is given, by design |
+| Hosted public demo | would need SSRF protection, rate limiting and quota control first |
+| Pages behind a login | public pages only |
+
+**Planned**
+
+| Feature | Notes |
+|---|---|
+| Search Console data | real impressions, clicks and queries for liwanwen.com once enough data exists |
+| Built-in repeated Lighthouse runs | medians of spaced runs instead of a single run |
+| Duplicate title and description detection across a site's pages | |
+| Keyword volume, backlinks, rankings | require paid data sources |
 
 ## Tests
 

@@ -19,18 +19,47 @@
 +<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&amp;display=swap">
 @@ -12,0 +26 @@
 +<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wanwen Li","url":"https://liwanwen.com/","image":"https://liwanwen.com/assets/wanwen-avatar-beret.jpg","sameAs":["https://github.com/WANWEN-LI"]}</script>
-@@ -110 +124 @@
+@@ -108 +122 @@
 -<video data-loop autoplay muted loop playsinline preload="auto" poster="assets/petal/demo-poster.jpg" aria-label="15-second loop of the Petal / Atelier email journey">
 +<video data-loop muted loop playsinline preload="none" poster="assets/petal/demo-poster.jpg" aria-label="15-second loop of the Petal / Atelier email journey">
-@@ -174 +188 @@
+@@ -172 +186 @@
 -<video data-loop autoplay muted loop playsinline preload="auto" poster="assets/lhf/lhf-poster.jpg" aria-label="12-second loop of London Home Finder">
 +<video data-loop muted loop playsinline preload="none" poster="assets/lhf/lhf-poster.jpg" aria-label="12-second loop of London Home Finder">
-@@ -519 +533 @@
+@@ -277 +291 @@
+-<a class="reference-project-card seo-project-card" href="projects.html#seo">
++<a class="reference-project-card seo-project-card" href="seo-checker/">
+@@ -310,4 +324,4 @@
+-<span data-en="SEO & growth tools" data-zh="SEO 与增长工具">SEO & growth tools</span>
+-</h3>
+-<span>
+-<span data-en="Search / Discovery / Planned" data-zh="搜索 / 获客 / 计划中">Search / Discovery / Planned</span>
++<span data-en="Page SEO &amp; Conversion Checker" data-zh="页面 SEO 与转化体检工具">Page SEO &amp; Conversion Checker</span>
++</h3>
++<span>
++<span data-en="Search / Conversion / Built" data-zh="搜索 / 转化 / 已完成">Search / Conversion / Built</span>
+@@ -319 +333 @@
+-<span data-en="Planned project" data-zh="计划中的项目">Planned project</span>
++<span data-en="Built · results on this site" data-zh="已完成 · 本站实测">Built · results on this site</span>
+@@ -450 +464 @@
+-<a class="stack-card stack-seo" href="projects.html#seo" style="--stack-order:4">
++<a class="stack-card stack-seo" href="seo-checker/" style="--stack-order:4">
+@@ -453 +467 @@
+-<span data-en="SEO & growth tools" data-zh="SEO 与增长工具">SEO & growth tools</span>
++<span data-en="Page SEO &amp; Conversion Checker" data-zh="页面 SEO 与转化体检工具">Page SEO &amp; Conversion Checker</span>
+@@ -456,4 +470,4 @@
+-<span data-en="Search exploration / Planned" data-zh="搜索探索 / 计划中">Search exploration / Planned</span>
+-</p>
+-<p>
+-<span data-en="Bringing marketplace experience to search and content discovery. The next step is to define and test a focused, useful tool." data-zh="把电商经验带到搜索与内容发现。下一步是明确范围，构建并验证一个专注、实用的工具。">Bringing marketplace experience to search and content discovery. The next step is to define and test a focused, useful tool.</span>
++<span data-en="Search / Built" data-zh="搜索 / 已完成">Search / Built</span>
++</p>
++<p>
++<span data-en="A Python checker for technical SEO, mobile speed and conversion basics, tested on this site." data-zh="用 Python 检查技术 SEO、手机端速度和转化要素，已在本站实测。">A Python checker for technical SEO, mobile speed and conversion basics, tested on this site.</span>
+@@ -517 +531 @@
 -<img src="assets/portrait-natural.png" alt="Wanwen’s approved personal portrait preview" width="1254" height="1254" loading="lazy">
 +<img src="assets/portrait-natural-700.webp" alt="Wanwen’s approved personal portrait preview" width="700" height="700" loading="lazy">
-@@ -560,2 +573,0 @@
--<script>(function(){var r=matchMedia("(prefers-reduced-motion: reduce)");function s(){document.querySelectorAll("video[data-loop]").forEach(function(v){if(r.matches){v.removeAttribute("autoplay");v.pause();
--try{v.currentTime=0}catch(e){}}else{v.play&&v.play().catch(function(){})}})}s();r.addEventListener&&r.addEventListener("change",s)})();</script>
+@@ -558 +571,0 @@
+-<script>(function(){var r=matchMedia("(prefers-reduced-motion: reduce)");function s(){document.querySelectorAll("video[data-loop]").forEach(function(v){if(r.matches){v.removeAttribute("autoplay");v.pause();try{v.currentTime=0}catch(e){}}else{v.play&&v.play().catch(function(){})}})}s();r.addEventListener&&r.addEventListener("change",s)})();</script>
 --- before/about.html
 +++ after/about.html
 @@ -6 +6,11 @@
@@ -56,6 +85,9 @@
 @@ -70 +83 @@
 -<img src="assets/portrait-natural.png" width="1254" height="1254" alt="Wanwen Li wearing her blue knitted hat">
 +<img src="assets/portrait-natural-700.webp" width="700" height="700" fetchpriority="high" alt="Wanwen Li wearing her blue knitted hat">
+@@ -196 +209 @@
+-<span data-en="I test every branch, write down what is simulated and what isn’t, and keep the business outcome in view. Next: SEO and search discovery." data-zh="测试每一条分支，写清哪些是模拟、哪些是真实运行，始终关注业务结果。下一步：SEO 与搜索获客。">I test every branch, write down what is simulated and what isn’t, and keep the business outcome in view. Next: SEO and search discovery.</span>
++<span data-en="I test every branch, write down what is simulated and what isn’t, and keep the business outcome in view. Recently: a page SEO &amp; conversion checker, tested on this site." data-zh="测试每一条分支，写清哪些是模拟、哪些是真实运行，始终关注业务结果。最近完成：页面 SEO 与转化体检工具，已在本站实测。">I test every branch, write down what is simulated and what isn’t, and keep the business outcome in view. Recently: a page SEO &amp; conversion checker, tested on this site.</span>
 --- before/projects.html
 +++ after/projects.html
 @@ -6 +6,11 @@
@@ -100,6 +132,11 @@
 +<link rel="preconnect" href="https://fonts.googleapis.com">
 +<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 +<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&amp;display=swap">
+--- before/projects-data.js
++++ after/projects-data.js
+@@ -3 +3 @@
+- {id:'seo',status:{en:'Planned',zh:'计划中'},category:{en:'Search & discovery',zh:'搜索与获客'},name:{en:'SEO & growth tools',zh:'SEO 与增长工具'},description:{en:'Bring marketplace experience to experiments in search, content discovery and getting useful products in front of the right people.',zh:'把电商经验带到搜索、内容发现与产品获客实验中，让有用的产品被合适的人看到。'},notes:{en:'The direction is defined; the specific product is still to be scoped. Future cases will document the problem, implementation, validation and actual results.',zh:'目前已确定探索方向，具体产品范围还在梳理。后续案例将记录问题、实现、验证与真实结果。'}}
++ {id:'search-console',status:{en:'Planned',zh:'计划中'},category:{en:'Search & discovery',zh:'搜索与获客'},name:{en:'Search Console experiments',zh:'Search Console 实验'},description:{en:'Use real Search Console data from this site to see which pages and queries bring visitors, then test changes.',zh:'用本站真实的 Search Console 数据，看哪些页面和搜索词带来访问，再测试改动。'},notes:{en:'Starts once Search Console has collected enough data for this site. Results will only quote real exports.',zh:'等 Search Console 积累足够数据后开始。结果只引用真实导出的数据。'}}
 --- before/style.css
 +++ after/style.css
 @@ -1 +1 @@
@@ -119,11 +156,14 @@
 +Sitemap: https://liwanwen.com/sitemap.xml
 --- before/sitemap.xml
 +++ after/sitemap.xml
-@@ -0,0 +1,7 @@
+@@ -0,0 +1,8 @@
 +<?xml version="1.0" encoding="UTF-8"?>
 +<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 +  <url><loc>https://liwanwen.com/</loc><lastmod>2026-10-18</lastmod></url>
 +  <url><loc>https://liwanwen.com/about</loc><lastmod>2026-10-18</lastmod></url>
 +  <url><loc>https://liwanwen.com/projects</loc><lastmod>2026-10-18</lastmod></url>
 +  <url><loc>https://liwanwen.com/photography</loc><lastmod>2026-10-18</lastmod></url>
++  <url><loc>https://liwanwen.com/seo-checker/</loc><lastmod>2026-10-18</lastmod></url>
 +</urlset>
+
+# New files: assets/portrait-natural-700.webp, seo-checker/index.html, seo-checker/reports/*.html (4 reports)
