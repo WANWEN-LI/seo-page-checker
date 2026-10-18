@@ -5,3 +5,4 @@ __pycache__/
 .env
 data/history/
 .DS_Store
+.claude/

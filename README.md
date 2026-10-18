@@ -2,7 +2,7 @@
 
 **Paste a URL, get a 0–100 score with prioritised fixes for technical SEO, mobile performance and conversion — each issue says what was found, why it matters and how to fix it.**
 
-> Status: work in progress (stage 2 of 4). Screenshots, HTML reports, before/after comparison, UI and AI suggestions are coming in later stages.
+> Status: work in progress (stage 3 of 4). Screenshots and AI suggestions are coming in the next stage.
 
 ## Install
 
@@ -15,17 +15,50 @@ cp .env.example .env   # then add your PAGESPEED_API_KEY
 
 ## Usage
 
+### Web UI
+
 ```bash
-python -m seo_checker https://example.com/ --keyword "ceramic vase" --page-type product --out report.json
+streamlit run app.py        # opens http://localhost:8501
+```
+
+There are three tabs:
+- **Check pages**: enter up to 10 URLs, plus an optional keyword and page type. You get the scores, the issues sorted by severity, and download buttons for the HTML and JSON reports.
+- **Before / after**: pick two saved runs of the same page and see the score changes and which issues were fixed, improved, regressed or are still open.
+- **History**: every saved run.
+
+### Command line
+
+```bash
+# check, save to history, write a shareable HTML report
+python -m seo_checker https://example.com/ --keyword "ceramic vase" --page-type product --save --html report.html
+
+# compare the latest two saved runs of a page (or pass two JSON files)
+python -m seo_checker compare --url https://example.com/ --html compare.html
+python -m seo_checker compare before.json after.json
+
+# list saved runs
+python -m seo_checker history [URL]
 ```
 
 | Flag | Meaning |
 |---|---|
-| `--keyword` | target search term; enables keyword checks |
-| `--page-type` | `product`, `landing` or `portfolio`; selects the trust signals that are expected |
-| `--no-psi` | skip the PageSpeed Insights call |
-| `--no-link-check` | skip broken-link requests |
+| `--keyword` | target search term; turns on the keyword checks |
+| `--page-type` | `product`, `landing` or `portfolio`; decides which trust signals are expected |
+| `--save` | store the run in `data/history/<host>/<path>/` for before/after comparison |
+| `--html` | write an HTML report (a folder when several URLs are given) |
 | `--out` | write the raw JSON report to a file |
+| `--no-psi` | skip the PageSpeed Insights call |
+| `--no-link-check` | skip the broken-link requests |
+
+### Before / after rules
+
+Runs are matched check by check:
+- **Fixed**: a check went from fail or warn to pass.
+- **Improved**: fail went to warn.
+- **Regressed**: the status got worse.
+- **Still open**: the status didn't change and isn't a pass.
+
+A check that is `info` or `not_checked` in either run is left out, so a change is never claimed without two real measurements. The report adds a warning when the URL, keyword or page type differs between the two runs, and it points out that Lighthouse lab scores vary from run to run.
 
 ## What it checks
 

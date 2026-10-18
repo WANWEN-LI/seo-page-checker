@@ -1,0 +1,76 @@
+{% extends "_base.html.j2" %}
+{% from "_macros.html.j2" import status_badge, sev_badge, score_tile %}
+{% block title %}SEO report · {{ r.input.url }}{% endblock %}
+{% block body %}
+<h1>Page SEO &amp; conversion report</h1>
+<p class="meta"><b>{{ r.input.url }}</b></p>
+<p class="meta">Checked {{ r.checked_at }} · Keyword: {{ r.input.keyword or "none" }} · Page type: {{ r.input.page_type or "not set" }}</p>
+
+{% if r.errors or (r.score and r.score.notes) %}
+<div class="notice">
+  {% for e in r.errors %}<p>{{ e }}</p>{% endfor %}
+  {% if r.score %}{% for n in r.score.notes %}<p>{{ n }}</p>{% endfor %}{% endif %}
+</div>
+{% endif %}
+
+{% if r.score %}
+<div class="tiles">
+  {{ score_tile("Total", r.score.total, "Weighted: Technical 40 · Performance 30 · Content 30", True) }}
+  {% for key in ["technical", "performance", "content"] %}
+    {% set c = r.score.categories[key] %}
+    {{ score_tile(c.label, c.score, sub_for[key]) }}
+  {% endfor %}
+</div>
+
+<h2>Issues to fix ({{ issues | length }})</h2>
+{% if issues %}
+<div class="table-wrap"><table>
+  <thead><tr><th>Status</th><th>Severity</th><th>Check</th><th>What we found · why it matters · how to fix</th></tr></thead>
+  <tbody>
+  {% for c in issues %}
+  <tr>
+    <td>{{ status_badge(c.status) }}</td>
+    <td>{{ sev_badge(c.severity) }}</td>
+    <td>{{ c.label }}<div class="meta">{{ cat_label[c.category] }}</div></td>
+    <td>{{ c.finding }}
+      {% if c.why %}<p class="issue-why"><b>Why:</b> {{ c.why }}</p>{% endif %}
+      {% if c.fix %}<p class="issue-fix"><b>Fix:</b> {{ c.fix }}</p>{% endif %}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+{% else %}<p>No failing or warning checks.</p>{% endif %}
+
+{% if ai %}
+<h2>AI suggestions</h2>
+{{ ai | safe }}
+{% endif %}
+
+<details>
+  <summary>Passed and informational checks ({{ others | length }})</summary>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Status</th><th>Check</th><th>Finding</th></tr></thead>
+    <tbody>
+    {% for c in others %}
+    <tr><td>{{ status_badge(c.status) }}</td><td>{{ c.label }}<div class="meta">{{ cat_label[c.category] }}</div></td><td>{{ c.finding }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table></div>
+</details>
+
+{% if psi %}
+<h2>PageSpeed Insights (mobile)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+    {% for k, v in psi.scores.items() %}<tr><td>Lighthouse {{ k }}</td><td class="num">{{ v if v is not none else "n/a" }}</td><td>lab</td></tr>{% endfor %}
+    {% for c in cwv %}<tr><td>{{ c.name }} {{ status_badge(c.status) }}</td><td class="num">{{ c.value }}</td><td>{{ c.source }}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+<p class="meta">Lighthouse {{ psi.lighthouse_version }} · fetched {{ psi.fetch_time }}. Lab scores vary between runs.</p>
+{% endif %}
+{% else %}
+<h2>No score</h2>
+<p>The page could not be audited; see the reason above.</p>
+{% endif %}
+{% endblock %}

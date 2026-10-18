@@ -1,0 +1,36 @@
+{% extends "_base.html.j2" %}
+{% from "_macros.html.j2" import status_badge, sev_badge, delta %}
+{% block title %}Before / after · {{ cmp.after.url }}{% endblock %}
+{% block body %}
+<h1>Before / after comparison</h1>
+<p class="meta"><b>Before:</b> {{ cmp.before.url }} · {{ cmp.before.checked_at }}</p>
+<p class="meta"><b>After:</b> {{ cmp.after.url }} · {{ cmp.after.checked_at }}</p>
+
+{% if cmp.notes %}<div class="notice">{% for n in cmp.notes %}<p>{{ n }}</p>{% endfor %}</div>{% endif %}
+
+<h2>Scores</h2>
+<div class="table-wrap"><table class="compact">
+  <thead><tr><th>Score</th><th>Before</th><th>After</th><th>Change</th></tr></thead>
+  <tbody>
+    <tr><td><b>Total</b></td><td class="num">{{ na(cmp.before.total) }}</td><td class="num">{{ na(cmp.after.total) }}</td><td class="num">{{ delta(cmp.total_delta) }}</td></tr>
+    {% for c in cmp.categories %}
+    <tr><td>{{ c.label }}</td><td class="num">{{ na(c.before) }}</td><td class="num">{{ na(c.after) }}</td><td class="num">{{ delta(c.delta) }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table></div>
+
+{% for title, rows in [("Fixed", cmp.fixed), ("Improved (not yet passing)", cmp.improved), ("Regressed", cmp.regressed), ("Still open", cmp.still_open)] %}
+<h2>{{ title }} ({{ rows | length }})</h2>
+{% if rows %}
+<div class="table-wrap"><table>
+  <thead><tr><th>Check</th><th>Severity</th><th>Before</th><th>After</th><th>Finding now</th></tr></thead>
+  <tbody>
+  {% for x in rows %}
+  <tr><td>{{ x.label }}</td><td>{{ sev_badge(x.severity) }}</td><td>{{ status_badge(x.before) }}</td><td>{{ status_badge(x.after) }}</td>
+    <td>{{ x.finding_after }}{% if x.finding_before != x.finding_after %}<div class="meta">Before: {{ x.finding_before }}</div>{% endif %}</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+{% else %}<p class="meta">None.</p>{% endif %}
+{% endfor %}
+{% endblock %}

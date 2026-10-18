@@ -1,0 +1,27 @@
+{% macro status_badge(s) -%}
+{%- set icon = {"pass": "✓", "warn": "!", "fail": "✕", "info": "i", "not_checked": "–"}[s] -%}
+{%- set text = {"pass": "Pass", "warn": "Warning", "fail": "Fail", "info": "Info", "not_checked": "Not checked"}[s] -%}
+<span class="status s-{{ s }}"><i aria-hidden="true">{{ icon }}</i>{{ text }}</span>
+{%- endmacro %}
+
+{% macro sev_badge(sev) -%}<span class="sev sev-{{ sev }}">{{ sev }}</span>{%- endmacro %}
+
+{% macro score_tile(label, value, sub="", total=False) -%}
+<div class="tile{% if total %} total{% endif %}">
+  <p class="label">{{ label }}</p>
+  {% if value is none %}
+  <p class="value">N/A</p>
+  {% else %}
+  <p class="value">{{ value }}<small>/100</small></p>
+  <div class="meter" role="img" aria-label="{{ label }} {{ value }} out of 100"><span style="width: {{ value }}%"></span></div>
+  {% endif %}
+  {% if sub %}<p class="sub">{{ sub }}</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro delta(d) -%}
+{%- if d is none -%}<span class="delta-flat">n/a</span>
+{%- elif d > 0 -%}<span class="delta-up">▲ +{{ d }}</span>
+{%- elif d < 0 -%}<span class="delta-down">▼ {{ d }}</span>
+{%- else -%}<span class="delta-flat">0</span>{%- endif -%}
+{%- endmacro %}
