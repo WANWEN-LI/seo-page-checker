@@ -13,6 +13,7 @@ import re
 from typing import Any
 
 from bs4 import BeautifulSoup, NavigableString, Tag
+from bs4.element import CData, Comment, Declaration, Doctype, ProcessingInstruction
 
 from .models import Check
 from .technical import _clean
@@ -26,13 +27,18 @@ LONG_PARAGRAPH_WORDS = 100
 HIDDEN_TAGS = ("script", "style", "noscript", "template", "svg", "head")
 CTA_VERBS = re.compile(
     r"\b(buy|shop|add to (cart|bag|basket)|order|book|get started|start|sign ?up|subscribe|join|"
-    r"contact|get in touch|hire|email me|let'?s talk|request|download|try|demo|learn more|view|see|explore)\b",
+    r"contact|get in touch|hire|email me|let'?s talk|request|download|try|demo|learn more|view|see|explore|"
+    r"discover|find|choose|get|claim|reserve)\b",
     re.I,
 )
 CTA_CLASS = re.compile(r"\b(btn|button|cta)\b", re.I)
 PRICE = re.compile(r"(?:[$€£¥]\s?\d[\d.,]*|\d[\d.,]*\s?(?:€|EUR|USD|GBP|kr|zł))", re.I)
-REVIEWS = re.compile(r"\b(reviews?|ratings?|rated|stars?|testimonials?)\b", re.I)
-SHIPPING = re.compile(r"\b(shipping|delivery|dispatch|returns?|refunds?)\b", re.I)
+# English plus it / fr / de / es / nl terms, so non-English shops are not marked as missing them
+REVIEWS = re.compile(r"\b(reviews?|ratings?|rated|stars?|testimonials?|recension\w*|valutazion\w*|stelle|avis|étoiles|"
+                     r"bewertung\w*|sterne|reseñas|opiniones|valoraciones|estrellas|beoordeling\w*|sterren)\b", re.I)
+SHIPPING = re.compile(r"\b(shipping|delivery|dispatch|returns?|refunds?|spedizion\w*|consegn\w*|resi|reso|rimbors\w*|"
+                      r"livraison|retours?|rembourse\w*|versand|lieferung|rückgabe|rücksendung|envíos?|envios?|entregas?|"
+                      r"devoluci\w+|verzending|levering)\b", re.I)
 SOCIAL_PROOF = re.compile(r"\b(testimonials?|reviews?|clients?|customers?|trusted by|case stud(y|ies)|"
                           r"results?|featured in|as seen in)\b", re.I)
 PROOF_OF_WORK = re.compile(r"\b(projects?|case stud(y|ies)|portfolio)\b", re.I)
@@ -68,7 +74,7 @@ def above_the_fold(soup: BeautifulSoup) -> dict[str, Any]:
         if chars >= FOLD_CHARS:
             break
         if isinstance(node, NavigableString):
-            if _is_hidden(node):
+            if isinstance(node, (Comment, CData, Declaration, Doctype, ProcessingInstruction)) or _is_hidden(node):
                 continue
             s = " ".join(node.split())
             if s:
@@ -275,7 +281,12 @@ def evaluate(facts: dict[str, Any], tech_facts: dict[str, Any], keyword: str | N
 
     # Readability
     r = facts["readability"]
-    if r["words"] < MIN_WORDS_FOR_READABILITY:
+    lang = ((tech_facts.get("head") or {}).get("lang") or "").lower()
+    if lang and not lang.startswith("en"):
+        checks.append(_c("readability", "Readability", "not_checked", "Low",
+                         f"Page language is '{lang}'; the sentence-length thresholds and Flesch formula used here are "
+                         f"calibrated for English, so readability is not scored.", **r))
+    elif r["words"] < MIN_WORDS_FOR_READABILITY:
         checks.append(_c("readability", "Readability", "not_checked", "Low",
                          f"Only {r['words']} words in <p> elements in the HTML; too little text to assess.", **r))
     else:

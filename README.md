@@ -76,6 +76,14 @@ A check that is `info` or `not_checked` in either run is left out, so a change i
   - landing: social proof, contact
   - portfolio: contact, evidence of work, Person schema
 
+## AI suggestions (optional)
+
+Set `ANTHROPIC_API_KEY` in `.env` and pass `--ai` (or tick the box in the UI). The tool then sends Claude (`claude-opus-5-5`) the audit JSON: measured facts, the failing checks, and short excerpts of the page's title, H1 and opening text. It gets back:
+- 2–3 rewrites of the title and of the meta description. **The tool counts the characters itself** rather than trusting the model's count.
+- Up to 5 fixes ranked by impact ÷ effort. **Each fix must point to a failing check id from the audit**; any fix that doesn't is dropped, and the report shows how many were dropped.
+
+The request opts into Anthropic's server-side refusal fallback (`fallbacks: "default"`). Without a key the tool runs normally and the report says AI suggestions were skipped. Every call is billed by Anthropic to your API key.
+
 ## Scoring rules
 
 The rules live in [`seo_checker/scoring.py`](seo_checker/scoring.py); this section mirrors them.

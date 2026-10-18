@@ -1,0 +1,694 @@
+{
+  "tool_version": "0.1.0",
+  "checked_at": "2026-10-18T13:00:43+00:00",
+  "input": {
+    "url": "http://localhost:4174/",
+    "keyword": "petal soap",
+    "page_type": "product"
+  },
+  "fetch": {
+    "url": "http://localhost:4174/",
+    "final_url": "http://localhost:4174/",
+    "status_code": 200,
+    "content_type": "text/html",
+    "elapsed_ms": 1002,
+    "redirects": [],
+    "error_type": null,
+    "error": null
+  },
+  "facts": {
+    "title": "Petal / Atelier — A little bloom, every day",
+    "meta_description": "Botanical soaps, thoughtful gifts and a €5.99 discovery membership. Interactive portfolio demo; no real payment or shipping.",
+    "headings": {
+      "h1": [
+        "A little bloom. An everyday ritual."
+      ],
+      "h2": [
+        "Flowers, reimagined.",
+        "Start with a gift. Stay for the little joys."
+      ],
+      "h3": [
+        "Rose Letters",
+        "Chamomile Notes",
+        "A Quiet Garden",
+        "A lovely first email awaits.",
+        ""
+      ],
+      "outline": [
+        [
+          1,
+          "A little bloom. An everyday ritual."
+        ],
+        [
+          2,
+          "Flowers, reimagined."
+        ],
+        [
+          3,
+          "Rose Letters"
+        ],
+        [
+          3,
+          "Chamomile Notes"
+        ],
+        [
+          3,
+          "A Quiet Garden"
+        ],
+        [
+          2,
+          "Start with a gift. Stay for the little joys."
+        ],
+        [
+          3,
+          "A lovely first email awaits."
+        ],
+        [
+          3,
+          ""
+        ]
+      ]
+    },
+    "images": {
+      "total": 4,
+      "with_alt": 4,
+      "empty_alt": 0,
+      "missing_alt": 0,
+      "missing_alt_src": []
+    },
+    "head": {
+      "canonical": null,
+      "robots": null,
+      "lang": "en"
+    },
+    "social": {
+      "og:title": null,
+      "og:description": null,
+      "og:image": null,
+      "twitter:card": null,
+      "twitter:title": null,
+      "twitter:description": null,
+      "twitter:image": null
+    },
+    "json_ld": {
+      "count": 0,
+      "valid_blocks": 0,
+      "types": [],
+      "errors": []
+    },
+    "links": {
+      "internal": [],
+      "external": []
+    },
+    "content": {
+      "fold": {
+        "text": "Meet your next favourite scent. A welcome discovery gift with your first membership. PETAL / ATELIER The collection The Petal Club BOTANICAL SOAP & LITTLE RITUALS FLOWERS, IN ANOTHER BEAUTIFUL FORM. A little bloom. An everyday ritual. Petal-filled soaps, fresh botanical scents and beautifully wrapped little gifts. Discover something lovely for your everyday. Discover the €5.99 welcome offer ↗ PETALS, PAPER & EVERYDAY PLEASURES. Botanical soaps. Thoughtfully wrapped. Concept store · All prices illustrative THE BOTANICAL COLLECTION Flowers, reimagined. A little scent for your sink. A lovely gift for someone on your mind. Find your favourite scent ↗ Rose Letters €9.50 €8.08 with 15% member savings Rose-petal botanical soap · 100g Soft petals. A beautifully wrapped pause. Your scent: Rose ✓ Chamomile Notes €8.50 €7.23 with 15% member savings Chamomile botanical soap · 100g A softer moment, in cream and gold. Choose chamomile → A Quiet Garden €9.00 €7.65 with 15% member savings Herbal botanical soap · 100g Fresh greenery, wrapped with care. Choose herbal → THE PETAL CLUB Start with a gift. Stay for the little joys. Create your demo account, then choose a membership. Your first welcome gift includes three mini soaps inspired by our signature Rose, Chamomile and Herbal collection. 30-day discovery pass Monthly membership €5.99 one time · 30 days One welcome gift: 3 × 10g mini soaps, sent once on first joining. 15% off store products while your membership is active. Standard shipping included on orders €30+",
+        "chars": 1525,
+        "ctas": [
+          {
+            "label": "Discover the €5.99 welcome offer ↗",
+            "href": "#subscribe",
+            "styled_as_button": true
+          },
+          {
+            "label": "Find your favourite scent ↗",
+            "href": "#subscribe",
+            "styled_as_button": false
+          },
+          {
+            "label": "Choose chamomile →",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Choose herbal →",
+            "href": "",
+            "styled_as_button": true
+          }
+        ],
+        "headings": [
+          "A little bloom. An everyday ritual.",
+          "Flowers, reimagined.",
+          "Start with a gift. Stay for the little joys."
+        ]
+      },
+      "first_paragraph": "Petal-filled soaps, fresh botanical scents and beautifully wrapped little gifts. Discover something lovely for your everyday.",
+      "readability": {
+        "words": 298,
+        "sentences": 31,
+        "paragraphs": 12,
+        "avg_sentence_words": 9.6,
+        "long_sentences": 0,
+        "avg_paragraph_words": 24.8,
+        "long_paragraphs": 0,
+        "flesch_reading_ease": 58.2
+      },
+      "trust": {
+        "price": true,
+        "price_examples": [
+          "€5.99",
+          "€9.50",
+          "€8.08"
+        ],
+        "reviews": false,
+        "shipping_returns": true,
+        "contact": true,
+        "contact_examples": [],
+        "social_proof": false,
+        "proof_of_work": true,
+        "person_schema": false,
+        "product_schema": false
+      }
+    }
+  },
+  "checks": [
+    {
+      "id": "title_length",
+      "category": "technical",
+      "label": "Title length",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Title is 43 characters: \"Petal / Atelier — A little bloom, every day\".",
+      "why": "",
+      "fix": "",
+      "data": {
+        "length": 43,
+        "value": "Petal / Atelier — A little bloom, every day"
+      }
+    },
+    {
+      "id": "title_keyword",
+      "category": "technical",
+      "label": "Keyword in title",
+      "status": "fail",
+      "severity": "Medium",
+      "finding": "Title does not contain the target keyword \"petal soap\".",
+      "why": "Searchers scan titles for the words they typed.",
+      "fix": "Work the keyword naturally into the first half of the title.",
+      "data": {}
+    },
+    {
+      "id": "meta_description",
+      "category": "technical",
+      "label": "Meta description",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Meta description is 124 characters.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "length": 124,
+        "value": "Botanical soaps, thoughtful gifts and a €5.99 discovery membership. Interactive portfolio demo; no real payment or shipping."
+      }
+    },
+    {
+      "id": "h1_count",
+      "category": "technical",
+      "label": "Single H1",
+      "status": "pass",
+      "severity": "High",
+      "finding": "Exactly one H1: \"A little bloom. An everyday ritual.\".",
+      "why": "",
+      "fix": "",
+      "data": {
+        "h1": [
+          "A little bloom. An everyday ritual."
+        ]
+      }
+    },
+    {
+      "id": "heading_hierarchy",
+      "category": "technical",
+      "label": "Heading hierarchy",
+      "status": "pass",
+      "severity": "Low",
+      "finding": "8 headings, no skipped levels.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "image_alt",
+      "category": "technical",
+      "label": "Image alt text",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "4/4 images (100%) have an alt attribute (0 empty, i.e. marked decorative).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "coverage_pct": 100
+      }
+    },
+    {
+      "id": "canonical",
+      "category": "technical",
+      "label": "Canonical URL",
+      "status": "warn",
+      "severity": "Medium",
+      "finding": "No <link rel=\"canonical\"> found.",
+      "why": "Without a canonical, URL variants (query strings, http/https) can split ranking signals.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred absolute URL>\">.",
+      "data": {}
+    },
+    {
+      "id": "robots_meta",
+      "category": "technical",
+      "label": "Robots meta",
+      "status": "pass",
+      "severity": "High",
+      "finding": "No robots meta (default is index, follow).",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "lang",
+      "category": "technical",
+      "label": "HTML lang attribute",
+      "status": "pass",
+      "severity": "Low",
+      "finding": "lang=\"en\".",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "open_graph",
+      "category": "technical",
+      "label": "Open Graph tags",
+      "status": "warn",
+      "severity": "Low",
+      "finding": "Missing: og:title, og:description, og:image.",
+      "why": "Without OG tags, shared links on LinkedIn/WhatsApp/Slack show a poor or empty preview.",
+      "fix": "Add the missing og:* meta tags; og:image should be at least 1200x630.",
+      "data": {
+        "missing": [
+          "og:title",
+          "og:description",
+          "og:image"
+        ]
+      }
+    },
+    {
+      "id": "twitter_card",
+      "category": "technical",
+      "label": "Twitter/X card",
+      "status": "warn",
+      "severity": "Low",
+      "finding": "No twitter:card meta.",
+      "why": "X falls back to OG tags but uses a small preview without twitter:card.",
+      "fix": "Add <meta name=\"twitter:card\" content=\"summary_large_image\">.",
+      "data": {}
+    },
+    {
+      "id": "json_ld",
+      "category": "technical",
+      "label": "Structured data (JSON-LD)",
+      "status": "warn",
+      "severity": "Medium",
+      "finding": "No JSON-LD found.",
+      "why": "Structured data can unlock rich results (price, rating, profile) in search.",
+      "fix": "Add JSON-LD matching the page: Product, Person, Organization, etc.",
+      "data": {}
+    },
+    {
+      "id": "link_counts",
+      "category": "technical",
+      "label": "Links",
+      "status": "info",
+      "severity": "Low",
+      "finding": "0 internal and 0 external unique links.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "internal": 0,
+        "external": 0
+      }
+    },
+    {
+      "id": "robots_txt",
+      "category": "technical",
+      "label": "robots.txt",
+      "status": "warn",
+      "severity": "Low",
+      "finding": "http://localhost:4174/robots.txt returned HTTP 404.",
+      "why": "Not required, but robots.txt is the standard place to point crawlers to your sitemap.",
+      "fix": "Add a robots.txt with 'User-agent: *', 'Allow: /' and a 'Sitemap:' line.",
+      "data": {}
+    },
+    {
+      "id": "sitemap",
+      "category": "technical",
+      "label": "sitemap.xml",
+      "status": "warn",
+      "severity": "Medium",
+      "finding": "No valid sitemap found at: http://localhost:4174/sitemap.xml.",
+      "why": "A sitemap helps search engines discover all your pages, especially on new sites.",
+      "fix": "Generate sitemap.xml listing every public page and reference it in robots.txt.",
+      "data": {
+        "tried": [
+          {
+            "url": "http://localhost:4174/sitemap.xml",
+            "status_code": 404,
+            "error": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "broken_links",
+      "category": "technical",
+      "label": "Broken links (4xx)",
+      "status": "pass",
+      "severity": "High",
+      "finding": "Checked 0 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "broken": [],
+        "server_errors": [],
+        "unchecked": [],
+        "checked": 0
+      }
+    },
+    {
+      "id": "psi_unavailable",
+      "category": "performance",
+      "label": "PageSpeed Insights",
+      "status": "not_checked",
+      "severity": "Low",
+      "finding": "PageSpeed Insights disabled for this run (--no-psi).",
+      "why": "Performance score is reported as N/A and excluded from the total.",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "value_prop",
+      "category": "content",
+      "label": "Value proposition above the fold",
+      "status": "pass",
+      "severity": "High",
+      "finding": "H1 \"A little bloom. An everyday ritual.\" appears in the first 1500 characters with 240 words of copy.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "cta_fold",
+      "category": "content",
+      "label": "Call to action above the fold",
+      "status": "pass",
+      "severity": "High",
+      "finding": "4 action link(s)/button(s) in the opening section, e.g. \"Discover the €5.99 welcome offer ↗\".",
+      "why": "",
+      "fix": "",
+      "data": {
+        "ctas": [
+          {
+            "label": "Discover the €5.99 welcome offer ↗",
+            "href": "#subscribe",
+            "styled_as_button": true
+          },
+          {
+            "label": "Find your favourite scent ↗",
+            "href": "#subscribe",
+            "styled_as_button": false
+          },
+          {
+            "label": "Choose chamomile →",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Choose herbal →",
+            "href": "",
+            "styled_as_button": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "keyword_placement",
+      "category": "content",
+      "label": "Keyword placement",
+      "status": "fail",
+      "severity": "Medium",
+      "finding": "\"petal soap\" found in: none; missing from: title, h1, first_paragraph.",
+      "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
+      "fix": "Use the keyword (or a close variant) naturally in title, h1, first_paragraph.",
+      "data": {
+        "places": {
+          "title": false,
+          "h1": false,
+          "first_paragraph": false
+        }
+      }
+    },
+    {
+      "id": "readability",
+      "category": "content",
+      "label": "Readability",
+      "status": "pass",
+      "severity": "Low",
+      "finding": "298 words, avg 9.6 words/sentence, 0 sentence(s) over 25 words, 0 paragraph(s) over 100 words; Flesch reading ease 58.2 (English formula).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "words": 298,
+        "sentences": 31,
+        "paragraphs": 12,
+        "avg_sentence_words": 9.6,
+        "long_sentences": 0,
+        "avg_paragraph_words": 24.8,
+        "long_paragraphs": 0,
+        "flesch_reading_ease": 58.2
+      }
+    },
+    {
+      "id": "trust_price",
+      "category": "content",
+      "label": "Price visible",
+      "status": "pass",
+      "severity": "High",
+      "finding": "Found (e.g. €5.99, €9.50, €8.08).",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "trust_reviews",
+      "category": "content",
+      "label": "Reviews / ratings",
+      "status": "fail",
+      "severity": "Medium",
+      "finding": "Not found in the page HTML.",
+      "why": "Reviews are the strongest trust signal on a product page.",
+      "fix": "Show rating and review count near the price; mark up AggregateRating.",
+      "data": {}
+    },
+    {
+      "id": "trust_shipping_returns",
+      "category": "content",
+      "label": "Shipping & returns info",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Found.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "trust_product_schema",
+      "category": "content",
+      "label": "Product structured data",
+      "status": "fail",
+      "severity": "Medium",
+      "finding": "Not found in the page HTML.",
+      "why": "Product schema enables price and rating rich results in Google.",
+      "fix": "Add Product JSON-LD with offers.",
+      "data": {}
+    }
+  ],
+  "score": {
+    "total": 75,
+    "categories": {
+      "technical": {
+        "label": "Technical",
+        "score": 78,
+        "earned": 22.5,
+        "possible": 29.0,
+        "breakdown": [
+          {
+            "id": "title_length",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "title_keyword",
+            "status": "fail",
+            "weight": 2,
+            "points": 0.0
+          },
+          {
+            "id": "meta_description",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "h1_count",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "heading_hierarchy",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          },
+          {
+            "id": "image_alt",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "canonical",
+            "status": "warn",
+            "weight": 2,
+            "points": 1.0
+          },
+          {
+            "id": "robots_meta",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "lang",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          },
+          {
+            "id": "open_graph",
+            "status": "warn",
+            "weight": 1,
+            "points": 0.5
+          },
+          {
+            "id": "twitter_card",
+            "status": "warn",
+            "weight": 1,
+            "points": 0.5
+          },
+          {
+            "id": "json_ld",
+            "status": "warn",
+            "weight": 2,
+            "points": 1.0
+          },
+          {
+            "id": "robots_txt",
+            "status": "warn",
+            "weight": 1,
+            "points": 0.5
+          },
+          {
+            "id": "sitemap",
+            "status": "warn",
+            "weight": 2,
+            "points": 1.0
+          },
+          {
+            "id": "broken_links",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          }
+        ]
+      },
+      "performance": {
+        "label": "Performance",
+        "score": null,
+        "breakdown": {}
+      },
+      "content": {
+        "label": "Content & Conversion",
+        "score": 71,
+        "earned": 12.0,
+        "possible": 17.0,
+        "breakdown": [
+          {
+            "id": "value_prop",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "cta_fold",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "keyword_placement",
+            "status": "fail",
+            "weight": 2,
+            "points": 0.0
+          },
+          {
+            "id": "readability",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          },
+          {
+            "id": "trust_price",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "trust_reviews",
+            "status": "fail",
+            "weight": 2,
+            "points": 0.0
+          },
+          {
+            "id": "trust_shipping_returns",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "trust_product_schema",
+            "status": "fail",
+            "weight": 1,
+            "points": 0.0
+          }
+        ]
+      }
+    },
+    "weights": {
+      "technical": 0.4,
+      "performance": 0.3,
+      "content": 0.3
+    },
+    "notes": [
+      "Performance N/A; total uses the remaining categories with weights rescaled to sum to 100%."
+    ]
+  },
+  "pagespeed": {
+    "ok": false,
+    "error": "PageSpeed Insights disabled for this run (--no-psi).",
+    "skipped": true
+  },
+  "ai": null,
+  "errors": [
+    "Performance N/A: PageSpeed Insights disabled for this run (--no-psi)."
+  ]
+}

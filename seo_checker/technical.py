@@ -165,6 +165,31 @@ def extract_links(soup: BeautifulSoup, page_url: str) -> dict[str, Any]:
     return {"internal": sorted(internal), "external": sorted(external)}
 
 
+_INTERSTITIAL_TITLE = re.compile(
+    r"just a moment|attention required|access denied|checking your browser|hang tight|sit tight|"
+    r"please wait|pardon our interruption|are you a robot|verify you are (a )?human|you are in (the )?queue|"
+    r"request unsuccessful|security check", re.I)
+_INTERSTITIAL_TEXT = re.compile(
+    r"captcha|queue-it|cf-browser-verification|enable javascript and cookies to continue|"
+    r"verify you are (a )?human|incapsula|perimeterx|px-captcha|routing to checkout|customization instructions", re.I)
+
+
+def detect_interstitial(facts: dict[str, Any], visible_text: str) -> str | None:
+    """Return a reason when the HTML looks like a bot check / waiting room rather than the real page.
+
+    A 200 response is not proof we got the page: CDNs and queue systems serve challenge pages
+    with status 200. Scoring those would describe the challenge, not the site.
+    """
+    title = facts.get("title") or ""
+    if _INTERSTITIAL_TITLE.search(title):
+        return f'title "{title}"'
+    few_links = len(facts["links"]["internal"]) + len(facts["links"]["external"]) < 5
+    m = _INTERSTITIAL_TEXT.search(visible_text or "")
+    if m and few_links and not facts["headings"]["h1"]:
+        return f'page text mentions "{m.group(0)}" and has almost no links'
+    return None
+
+
 def extract_all(html: str, page_url: str) -> dict[str, Any]:
     soup = parse(html)
     return {

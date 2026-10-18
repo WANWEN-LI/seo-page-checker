@@ -34,6 +34,15 @@ def print_summary(report: dict) -> None:
         print(f"  SCORE  {sc['total'] if sc['total'] is not None else 'N/A'}/100  ({cats})", file=sys.stderr)
         for n in sc["notes"]:
             print(f"  NOTE   {n}", file=sys.stderr)
+    ai = report.get("ai")
+    if ai:
+        if not ai["ok"]:
+            print(f"  AI     {ai['error']}", file=sys.stderr)
+        else:
+            for t in ai["titles"]:
+                print(f"  AI     title ({t['chars']} chars): {t['text']}", file=sys.stderr)
+            for i, f in enumerate(ai["fixes"], 1):
+                print(f"  AI     fix {i} [{f['impact']} impact / {f['effort']} effort] {f['title']}", file=sys.stderr)
 
 
 def _write(path: str, text: str) -> None:
@@ -48,13 +57,14 @@ def cmd_check(argv: list[str]) -> int:
     ap.add_argument("--page-type", choices=PAGE_TYPES)
     ap.add_argument("--no-link-check", action="store_true", help="skip broken-link requests")
     ap.add_argument("--no-psi", action="store_true", help="skip the PageSpeed Insights API call")
+    ap.add_argument("--ai", action="store_true", help="add Claude suggestions (needs ANTHROPIC_API_KEY)")
     ap.add_argument("--save", action="store_true", help="store each run in data/history for later comparison")
     ap.add_argument("--html", help="write an HTML report (a directory when several URLs are given)")
     ap.add_argument("--out", help="write JSON to this file instead of stdout")
     args = ap.parse_args(argv)
 
     fetcher = Fetcher()
-    reports = [analyze(u, args.keyword, args.page_type, fetcher, not args.no_link_check, not args.no_psi) for u in args.urls]
+    reports = [analyze(u, args.keyword, args.page_type, fetcher, not args.no_link_check, not args.no_psi, args.ai) for u in args.urls]
     for r in reports:
         print_summary(r)
         if args.save:

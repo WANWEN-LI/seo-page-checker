@@ -1,0 +1,1028 @@
+{
+  "tool_version": "0.1.0",
+  "checked_at": "2026-10-18T12:58:47+00:00",
+  "input": {
+    "url": "https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/",
+    "keyword": "scaffale",
+    "page_type": "product"
+  },
+  "fetch": {
+    "url": "https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/",
+    "final_url": "https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/",
+    "status_code": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "elapsed_ms": 1366,
+    "redirects": [],
+    "error_type": null,
+    "error": null
+  },
+  "facts": {
+    "title": "KALLAX Scaffale, bianco, 77x147 cm - IKEA Italia",
+    "meta_description": "KALLAX Scaffale, bianco, 77x147 cm. Puoi creare una soluzione in orizzontale o in verticale, usarla contro la parete o come divisorio di una stanza e aggiungere cassetti, ripiani, contenitori e accessori. KALLAX si adatta ai tuoi gusti, al tuo spazio, al tuo budget e alle tue esigenze.",
+    "headings": {
+      "h1": [
+        "KALLAX Scaffale, bianco, 77x147 cm"
+      ],
+      "h2": [
+        "Scegli colore:",
+        "Progettalo tu stesso",
+        "Come ottenerlo",
+        "Raccogli 13 punti con IKEA Family",
+        "Perché a volte può capitare di cambiare idea",
+        "La combinazione perfetta",
+        "Recensioni",
+        "Recensioni dei clienti",
+        "Accessori per KALLAX",
+        "Visti di recente",
+        "Prodotti correlati",
+        "Scopri altre opzioni",
+        "Consigliato per te",
+        "Qualità",
+        "Dai un'occhiata",
+        "Altro da Scaffali KALLAX",
+        "Piè di pagina"
+      ],
+      "h3": [
+        "Qualità ed estetica",
+        "Iscriviti a IKEA Family",
+        "Entra in IKEA Business Network",
+        "Aiuto e contatti",
+        "Acquistare in IKEA",
+        "Il mio account",
+        "A proposito di IKEA"
+      ],
+      "outline": [
+        [
+          1,
+          "KALLAX Scaffale, bianco, 77x147 cm"
+        ],
+        [
+          2,
+          "Scegli colore:"
+        ],
+        [
+          2,
+          "Progettalo tu stesso"
+        ],
+        [
+          2,
+          "Come ottenerlo"
+        ],
+        [
+          2,
+          "Raccogli 13 punti con IKEA Family"
+        ],
+        [
+          2,
+          "Perché a volte può capitare di cambiare idea"
+        ],
+        [
+          2,
+          "La combinazione perfetta"
+        ],
+        [
+          4,
+          "Materiale"
+        ],
+        [
+          4,
+          "Cura"
+        ],
+        [
+          4,
+          "Istruzioni di montaggio"
+        ],
+        [
+          4,
+          "Suggerimenti e istruzioni per la manutenzione"
+        ],
+        [
+          4,
+          "Materiale"
+        ],
+        [
+          4,
+          "Cura"
+        ],
+        [
+          4,
+          "Istruzioni di montaggio"
+        ],
+        [
+          4,
+          "Suggerimenti e istruzioni per la manutenzione"
+        ],
+        [
+          4,
+          "1 × KALLAX"
+        ],
+        [
+          2,
+          "Recensioni"
+        ],
+        [
+          2,
+          "Recensioni dei clienti"
+        ],
+        [
+          2,
+          "Accessori per KALLAX"
+        ],
+        [
+          2,
+          "Visti di recente"
+        ],
+        [
+          2,
+          "Prodotti correlati"
+        ],
+        [
+          2,
+          "Scopri altre opzioni"
+        ],
+        [
+          2,
+          "Consigliato per te"
+        ],
+        [
+          2,
+          "Qualità"
+        ],
+        [
+          3,
+          "Qualità ed estetica"
+        ],
+        [
+          2,
+          "Dai un'occhiata"
+        ],
+        [
+          2,
+          "Altro da Scaffali KALLAX"
+        ],
+        [
+          2,
+          "Piè di pagina"
+        ],
+        [
+          3,
+          "Iscriviti a IKEA Family"
+        ],
+        [
+          3,
+          "Entra in IKEA Business Network"
+        ],
+        [
+          3,
+          "Aiuto e contatti"
+        ],
+        [
+          3,
+          "Acquistare in IKEA"
+        ],
+        [
+          3,
+          "Il mio account"
+        ],
+        [
+          3,
+          "A proposito di IKEA"
+        ]
+      ]
+    },
+    "images": {
+      "total": 50,
+      "with_alt": 49,
+      "empty_alt": 1,
+      "missing_alt": 0,
+      "missing_alt_src": []
+    },
+    "head": {
+      "canonical": "https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/",
+      "robots": "index, follow",
+      "lang": "it-IT"
+    },
+    "social": {
+      "og:title": "KALLAX Scaffale, bianco, 77x147 cm - IKEA Italia",
+      "og:description": "KALLAX Scaffale, bianco, 77x147 cm. Puoi creare una soluzione in orizzontale o in verticale, usarla contro la parete o come divisorio di una stanza e aggiungere cassetti, ripiani, contenitori e accessori. KALLAX si adatta ai tuoi gusti, al tuo spazio, al tuo budget e alle tue esigenze.",
+      "og:image": "https://www.ikea.com/it/it/images/products/kallax-scaffale-bianco__0644757_pe702939_s5.jpg",
+      "twitter:card": null,
+      "twitter:title": null,
+      "twitter:description": null,
+      "twitter:image": null
+    },
+    "json_ld": {
+      "count": 3,
+      "valid_blocks": 3,
+      "types": [
+        "BreadcrumbList",
+        "Product",
+        "3DModel"
+      ],
+      "errors": []
+    },
+    "links": {
+      "internal": [
+        "https://www.ikea.com/addon-app/storageone/kallax/web/latest/it/it/?productId=80275887",
+        "https://www.ikea.com/it/it/",
+        "https://www.ikea.com/it/it/assembly_instructions/kallax-scaffale-bianco__AA-2703433-1-2.pdf",
+        "https://www.ikea.com/it/it/business-profile/register-network",
+        "https://www.ikea.com/it/it/cat/inserti-e-accessori-per-kallax-58286/",
+        "https://www.ikea.com/it/it/cat/kallax-scaffale-componibile-27534/",
+        "https://www.ikea.com/it/it/cat/librerie-10382/",
+        "https://www.ikea.com/it/it/cat/librerie-e-scaffali-st002/",
+        "https://www.ikea.com/it/it/cat/prodotti-per-organizzazione-della-casa-st001/",
+        "https://www.ikea.com/it/it/cat/prodotti-products/",
+        "https://www.ikea.com/it/it/cat/scaffali-11465/",
+        "https://www.ikea.com/it/it/cat/scaffali-kallax-58285/",
+        "https://www.ikea.com/it/it/cat/sistema-di-scaffali-a-cubo-55012/",
+        "https://www.ikea.com/it/it/customer-service/",
+        "https://www.ikea.com/it/it/customer-service/accessibility/",
+        "https://www.ikea.com/it/it/customer-service/agevolazioni-puba3143db1/",
+        "https://www.ikea.com/it/it/customer-service/contact-us/",
+        "https://www.ikea.com/it/it/customer-service/cookie-policy/",
+        "https://www.ikea.com/it/it/customer-service/knowledge/articles/60cf9cff-0b85-445f-a62a-f17b2a076fa0.html",
+        "https://www.ikea.com/it/it/customer-service/mobile-apps/",
+        "https://www.ikea.com/it/it/customer-service/modello-231-pub39f212a1/",
+        "https://www.ikea.com/it/it/customer-service/payment-options/",
+        "https://www.ikea.com/it/it/customer-service/privacy-policy/",
+        "https://www.ikea.com/it/it/customer-service/product-support/",
+        "https://www.ikea.com/it/it/customer-service/product-support/recalls/",
+        "https://www.ikea.com/it/it/customer-service/responsible-disclosure/",
+        "https://www.ikea.com/it/it/customer-service/returns-claims/guarantee/",
+        "https://www.ikea.com/it/it/customer-service/returns-claims/return-policy/",
+        "https://www.ikea.com/it/it/customer-service/services/",
+        "https://www.ikea.com/it/it/customer-service/services/assembly/",
+        "https://www.ikea.com/it/it/customer-service/services/delivery/",
+        "https://www.ikea.com/it/it/customer-service/services/planning-consultation/",
+        "https://www.ikea.com/it/it/customer-service/shopping-at-ikea/",
+        "https://www.ikea.com/it/it/customer-service/shopping-at-ikea/remote-shopping/",
+        "https://www.ikea.com/it/it/customer-service/spare-parts/",
+        "https://www.ikea.com/it/it/customer-service/stock-availability/",
+        "https://www.ikea.com/it/it/customer-service/terms-conditions/",
+        "https://www.ikea.com/it/it/customer-service/track-manage-order/",
+        "https://www.ikea.com/it/it/favourites/",
+        "https://www.ikea.com/it/it/gift-registry/",
+        "https://www.ikea.com/it/it/ideas/",
+        "https://www.ikea.com/it/it/ikea-business/",
+        "https://www.ikea.com/it/it/ikea-business/benefits/",
+        "https://www.ikea.com/it/it/ikea-business/network/",
+        "https://www.ikea.com/it/it/ikea-family/",
+        "https://www.ikea.com/it/it/life-at-home/",
+        "https://www.ikea.com/it/it/manuals/kallax-scaffale-bianco__AA-2180177-2-2.pdf",
+        "https://www.ikea.com/it/it/newsroom/",
+        "https://www.ikea.com/it/it/offers/",
+        "https://www.ikea.com/it/it/p/kallax-scaffale-effetto-rovere-con-mordente-bianco-00324518/",
+        "https://www.ikea.com/it/it/p/kallax-scaffale-grigio-effetto-legno-40346924/",
+        "https://www.ikea.com/it/it/p/kallax-scaffale-lucido-bianco-10305741/",
+        "https://www.ikea.com/it/it/p/kallax-scaffale-marrone-effetto-noce-90653326/",
+        "https://www.ikea.com/it/it/p/kallax-scaffale-marrone-nero-20275885/",
+        "https://www.ikea.com/it/it/planners/",
+        "https://www.ikea.com/it/it/profile/login/",
+        "https://www.ikea.com/it/it/profile/signup/family/",
+        "https://www.ikea.com/it/it/purchases/withdrawal/",
+        "https://www.ikea.com/it/it/returns/",
+        "https://www.ikea.com/it/it/rooms/",
+        "https://www.ikea.com/it/it/shoppingcart/",
+        "https://www.ikea.com/it/it/stores/",
+        "https://www.ikea.com/it/it/this-is-ikea/",
+        "https://www.ikea.com/it/it/this-is-ikea/climate-environment/",
+        "https://www.ikea.com/it/it/this-is-ikea/community-engagement/",
+        "https://www.ikea.com/it/it/this-is-ikea/sustainable-everyday/",
+        "https://www.ikea.com/it/it/this-is-ikea/whistleblowing-segnala-una-preoccupazione-pub5f090100/",
+        "https://www.ikea.com/it/it/this-is-ikea/work-with-us/"
+      ],
+      "external": [
+        "http://www.agos.it",
+        "https://instagram.com/ikeaitalia/",
+        "https://it.pinterest.com/explore/ikea/",
+        "https://www.facebook.com/IKEAItalia/",
+        "https://www.youtube.com/user/IKEAitalia",
+        "https://x.com/ikeaitalia"
+      ]
+    },
+    "content": {
+      "fold": {
+        "text": "Vai al contenuto principale IT IT italiano Inserisci il codice postale Seleziona il negozio Prodotti Ambienti Offerte Idee e progetti Servizi Cerca Hej! Accedi Lista dei desideri Carrello Approfitta del 10% di sconto sulla tua cucina con IKEA Business Network Prodotti Mobili per organizzare la casa Librerie e scaffali Scaffali KALLAX Scaffale Immagini di 9 KALLAX Salta le immagini Image zoomed out, normal view Il più venduto Image zoomed out, normal view Image zoomed out, normal view Image zoomed out, normal view Image zoomed out, normal view Image zoomed out, normal view Image zoomed out, normal view Tutti i media Altro da KALLAX serie Nuovo prezzo più basso KALLAX Scaffale, bianco, 77x147 cm Prezzo € 55 Prezzo precedente: €69,95 Valido dal 01 set Recensione: 4.7 di 5 stelle. Recensioni totali: 1884 (1884) La base KALLAX è venduta a parte. Scegli colore : Bianco Progettalo tu stesso Personalizza KALLAX utilizzando il nostro strumento di configuratore Come ottenerlo Verifica in corso... Servizi disponibili Raccogli 13 punti con IKEA Family Iscriviti gratuitamente o accedi Scopri cosa puoi ottenere Perché a volte può capitare di cambiare idea Hai ben 365 giorni per rendere i tuoi acquisti e ottenere il rimborso completo. Scopri di più La combinazione perfetta Sfrutta al meglio la tua soluzione con i nostri accessori per KALLAX: contenitori, cassetti e molto altro. Scoprili tutti Panoramica Dettagli prodotto Misure KALLAX 802.758.87 In orizzontale o in verticale, la serie KALLAX ai adatta a ogni gusto, spazio e budget. Personalizza lo scaffale con le strutture interne e i contenitori in base alle tue esigenze.",
+        "chars": 1636,
+        "ctas": [
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "See previous items",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "See next items",
+            "href": "",
+            "styled_as_button": true
+          }
+        ],
+        "headings": [
+          "KALLAX Scaffale, bianco, 77x147 cm",
+          "Scegli colore:",
+          "Progettalo tu stesso",
+          "Come ottenerlo",
+          "Raccogli 13 punti con IKEA Family",
+          "Perché a volte può capitare di cambiare idea",
+          "La combinazione perfetta"
+        ]
+      },
+      "first_paragraph": "Personalizza KALLAX utilizzando il nostro strumento di configuratore",
+      "readability": {
+        "words": 564,
+        "sentences": 37,
+        "paragraphs": 16,
+        "avg_sentence_words": 15.2,
+        "long_sentences": 4,
+        "avg_paragraph_words": 35.2,
+        "long_paragraphs": 2,
+        "flesch_reading_ease": 32.8
+      },
+      "trust": {
+        "price": true,
+        "price_examples": [
+          "€ 55",
+          "€ 55",
+          "€69,95"
+        ],
+        "reviews": true,
+        "shipping_returns": true,
+        "contact": true,
+        "contact_examples": [
+          "https://www.ikea.com/it/it/customer-service/contact-us/",
+          "mailto:clienti@agos.it",
+          "mailto:info@pec.agosducato.it"
+        ],
+        "social_proof": false,
+        "proof_of_work": false,
+        "person_schema": true,
+        "product_schema": true
+      }
+    }
+  },
+  "checks": [
+    {
+      "id": "title_length",
+      "category": "technical",
+      "label": "Title length",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Title is 48 characters: \"KALLAX Scaffale, bianco, 77x147 cm - IKEA Italia\".",
+      "why": "",
+      "fix": "",
+      "data": {
+        "length": 48,
+        "value": "KALLAX Scaffale, bianco, 77x147 cm - IKEA Italia"
+      }
+    },
+    {
+      "id": "title_keyword",
+      "category": "technical",
+      "label": "Keyword in title",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Title contains \"scaffale\".",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "meta_description",
+      "category": "technical",
+      "label": "Meta description",
+      "status": "warn",
+      "severity": "Medium",
+      "finding": "Meta description is 286 characters.",
+      "why": "The meta description is often used as the search snippet and affects click-through rate.",
+      "fix": "Rewrite to 70-160 characters.",
+      "data": {
+        "length": 286,
+        "value": "KALLAX Scaffale, bianco, 77x147 cm. Puoi creare una soluzione in orizzontale o in verticale, usarla contro la parete o come divisorio di una stanza e aggiungere cassetti, ripiani, contenitori e accessori. KALLAX si adatta ai tuoi gusti, al tuo spazio, al tuo budget e alle tue esigenze."
+      }
+    },
+    {
+      "id": "h1_count",
+      "category": "technical",
+      "label": "Single H1",
+      "status": "pass",
+      "severity": "High",
+      "finding": "Exactly one H1: \"KALLAX Scaffale, bianco, 77x147 cm\".",
+      "why": "",
+      "fix": "",
+      "data": {
+        "h1": [
+          "KALLAX Scaffale, bianco, 77x147 cm"
+        ]
+      }
+    },
+    {
+      "id": "heading_hierarchy",
+      "category": "technical",
+      "label": "Heading hierarchy",
+      "status": "warn",
+      "severity": "Low",
+      "finding": "1 hierarchy issue(s): H2 followed by H4 ('Materiale') skips a level",
+      "why": "A logical outline helps screen readers and helps crawlers understand structure.",
+      "fix": "Use headings in order (H1 > H2 > H3) without skipping levels.",
+      "data": {
+        "problems": [
+          "H2 followed by H4 ('Materiale') skips a level"
+        ]
+      }
+    },
+    {
+      "id": "image_alt",
+      "category": "technical",
+      "label": "Image alt text",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "50/50 images (100%) have an alt attribute (1 empty, i.e. marked decorative).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "coverage_pct": 100
+      }
+    },
+    {
+      "id": "canonical",
+      "category": "technical",
+      "label": "Canonical URL",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Canonical: https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/",
+      "why": "",
+      "fix": "",
+      "data": {
+        "canonical": "https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/"
+      }
+    },
+    {
+      "id": "robots_meta",
+      "category": "technical",
+      "label": "Robots meta",
+      "status": "pass",
+      "severity": "High",
+      "finding": "Robots meta: \"index, follow\".",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "lang",
+      "category": "technical",
+      "label": "HTML lang attribute",
+      "status": "pass",
+      "severity": "Low",
+      "finding": "lang=\"it-IT\".",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "open_graph",
+      "category": "technical",
+      "label": "Open Graph tags",
+      "status": "pass",
+      "severity": "Low",
+      "finding": "og:title, og:description, og:image present.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "twitter_card",
+      "category": "technical",
+      "label": "Twitter/X card",
+      "status": "warn",
+      "severity": "Low",
+      "finding": "No twitter:card meta.",
+      "why": "X falls back to OG tags but uses a small preview without twitter:card.",
+      "fix": "Add <meta name=\"twitter:card\" content=\"summary_large_image\">.",
+      "data": {}
+    },
+    {
+      "id": "json_ld",
+      "category": "technical",
+      "label": "Structured data (JSON-LD)",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "3 block(s), types: BreadcrumbList, Product, 3DModel.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "types": [
+          "BreadcrumbList",
+          "Product",
+          "3DModel"
+        ]
+      }
+    },
+    {
+      "id": "link_counts",
+      "category": "technical",
+      "label": "Links",
+      "status": "info",
+      "severity": "Low",
+      "finding": "68 internal and 6 external unique links.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "internal": 68,
+        "external": 6
+      }
+    },
+    {
+      "id": "robots_txt",
+      "category": "technical",
+      "label": "robots.txt",
+      "status": "pass",
+      "severity": "Low",
+      "finding": "https://www.ikea.com/robots.txt found.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "sitemaps_declared": [
+          "https://www.ikea.com/sitemaps/sitemap.xml"
+        ]
+      }
+    },
+    {
+      "id": "sitemap",
+      "category": "technical",
+      "label": "sitemap.xml",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Valid sitemap at https://www.ikea.com/sitemaps/sitemap.xml.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "tried": [
+          {
+            "url": "https://www.ikea.com/sitemaps/sitemap.xml",
+            "status_code": 200,
+            "error": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "lh_performance",
+      "category": "performance",
+      "label": "Mobile performance score",
+      "status": "warn",
+      "severity": "High",
+      "finding": "56/100 (Lighthouse, mobile).",
+      "why": "Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.",
+      "fix": "Open the PSI report and fix the top 'Opportunities' (image size, render-blocking JS/CSS).",
+      "data": {
+        "score": 56
+      }
+    },
+    {
+      "id": "lh_accessibility",
+      "category": "performance",
+      "label": "Accessibility score",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "100/100 (Lighthouse, mobile).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "score": 100
+      }
+    },
+    {
+      "id": "lh_seo",
+      "category": "performance",
+      "label": "Lighthouse SEO score",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "100/100 (Lighthouse, mobile).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "score": 100
+      }
+    },
+    {
+      "id": "cwv_lcp",
+      "category": "performance",
+      "label": "Core Web Vital: LCP",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "LCP = 1.2 s from field (this URL, CrUX p75).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "value": 1174,
+        "source": "field (this URL, CrUX p75)"
+      }
+    },
+    {
+      "id": "cwv_cls",
+      "category": "performance",
+      "label": "Core Web Vital: CLS",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "CLS = 0.01 from field (this URL, CrUX p75).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "value": 0.01,
+        "source": "field (this URL, CrUX p75)"
+      }
+    },
+    {
+      "id": "cwv_inp",
+      "category": "performance",
+      "label": "Core Web Vital: INP",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "INP = 118 ms from field (this URL, CrUX p75).",
+      "why": "",
+      "fix": "",
+      "data": {
+        "value": 118,
+        "source": "field (this URL, CrUX p75)"
+      }
+    },
+    {
+      "id": "value_prop",
+      "category": "content",
+      "label": "Value proposition above the fold",
+      "status": "pass",
+      "severity": "High",
+      "finding": "H1 \"KALLAX Scaffale, bianco, 77x147 cm\" appears in the first 1500 characters with 261 words of copy.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "cta_fold",
+      "category": "content",
+      "label": "Call to action above the fold",
+      "status": "pass",
+      "severity": "High",
+      "finding": "9 action link(s)/button(s) in the opening section, e.g. \"Image zoomed out, normal view\".",
+      "why": "",
+      "fix": "",
+      "data": {
+        "ctas": [
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          },
+          {
+            "label": "Image zoomed out, normal view",
+            "href": "",
+            "styled_as_button": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "keyword_placement",
+      "category": "content",
+      "label": "Keyword placement",
+      "status": "warn",
+      "severity": "Medium",
+      "finding": "\"scaffale\" found in: title, h1; missing from: first_paragraph.",
+      "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
+      "fix": "Use the keyword (or a close variant) naturally in first_paragraph.",
+      "data": {
+        "places": {
+          "title": true,
+          "h1": true,
+          "first_paragraph": false
+        }
+      }
+    },
+    {
+      "id": "readability",
+      "category": "content",
+      "label": "Readability",
+      "status": "not_checked",
+      "severity": "Low",
+      "finding": "Page language is 'it-it'; the sentence-length thresholds and Flesch formula used here are calibrated for English, so readability is not scored.",
+      "why": "",
+      "fix": "",
+      "data": {
+        "words": 564,
+        "sentences": 37,
+        "paragraphs": 16,
+        "avg_sentence_words": 15.2,
+        "long_sentences": 4,
+        "avg_paragraph_words": 35.2,
+        "long_paragraphs": 2,
+        "flesch_reading_ease": 32.8
+      }
+    },
+    {
+      "id": "trust_price",
+      "category": "content",
+      "label": "Price visible",
+      "status": "pass",
+      "severity": "High",
+      "finding": "Found (e.g. € 55, € 55, €69,95).",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "trust_reviews",
+      "category": "content",
+      "label": "Reviews / ratings",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Found.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "trust_shipping_returns",
+      "category": "content",
+      "label": "Shipping & returns info",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Found.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    },
+    {
+      "id": "trust_product_schema",
+      "category": "content",
+      "label": "Product structured data",
+      "status": "pass",
+      "severity": "Medium",
+      "finding": "Found.",
+      "why": "",
+      "fix": "",
+      "data": {}
+    }
+  ],
+  "score": {
+    "total": 87,
+    "categories": {
+      "technical": {
+        "label": "Technical",
+        "score": 92,
+        "earned": 24.0,
+        "possible": 26.0,
+        "breakdown": [
+          {
+            "id": "title_length",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "title_keyword",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "meta_description",
+            "status": "warn",
+            "weight": 2,
+            "points": 1.0
+          },
+          {
+            "id": "h1_count",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "heading_hierarchy",
+            "status": "warn",
+            "weight": 1,
+            "points": 0.5
+          },
+          {
+            "id": "image_alt",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "canonical",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "robots_meta",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "lang",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          },
+          {
+            "id": "open_graph",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          },
+          {
+            "id": "twitter_card",
+            "status": "warn",
+            "weight": 1,
+            "points": 0.5
+          },
+          {
+            "id": "json_ld",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "robots_txt",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          },
+          {
+            "id": "sitemap",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          }
+        ]
+      },
+      "performance": {
+        "label": "Performance",
+        "score": 74,
+        "breakdown": {
+          "lh_performance": 56,
+          "lh_accessibility": 100,
+          "lh_seo": 100
+        }
+      },
+      "content": {
+        "label": "Content & Conversion",
+        "score": 94,
+        "earned": 15.0,
+        "possible": 16.0,
+        "breakdown": [
+          {
+            "id": "value_prop",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "cta_fold",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "keyword_placement",
+            "status": "warn",
+            "weight": 2,
+            "points": 1.0
+          },
+          {
+            "id": "trust_price",
+            "status": "pass",
+            "weight": 3,
+            "points": 3.0
+          },
+          {
+            "id": "trust_reviews",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "trust_shipping_returns",
+            "status": "pass",
+            "weight": 2,
+            "points": 2.0
+          },
+          {
+            "id": "trust_product_schema",
+            "status": "pass",
+            "weight": 1,
+            "points": 1.0
+          }
+        ]
+      }
+    },
+    "weights": {
+      "technical": 0.4,
+      "performance": 0.3,
+      "content": 0.3
+    },
+    "notes": []
+  },
+  "pagespeed": {
+    "ok": true,
+    "error": null,
+    "summary": {
+      "scores": {
+        "performance": 56,
+        "seo": 100,
+        "accessibility": 100
+      },
+      "lab": {
+        "LCP": 9151,
+        "CLS": 0.044,
+        "TBT": 70
+      },
+      "field_page": {
+        "LCP": {
+          "p75": 1174,
+          "category": "FAST"
+        },
+        "CLS": {
+          "p75": 0.01,
+          "category": "FAST"
+        },
+        "INP": {
+          "p75": 118,
+          "category": "FAST"
+        }
+      },
+      "field_origin": {
+        "LCP": {
+          "p75": 1222,
+          "category": "FAST"
+        },
+        "CLS": {
+          "p75": 0.0,
+          "category": "FAST"
+        },
+        "INP": {
+          "p75": 126,
+          "category": "FAST"
+        }
+      },
+      "lighthouse_version": "13.5.0",
+      "fetch_time": "2026-10-18T12:58:52.260Z",
+      "final_url": "https://www.ikea.com/it/it/p/kallax-scaffale-bianco-80275887/"
+    },
+    "strategy": "mobile"
+  },
+  "ai": null,
+  "errors": []
+}

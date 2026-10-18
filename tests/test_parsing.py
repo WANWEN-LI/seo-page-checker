@@ -148,3 +148,19 @@ def test_robots_missing_and_unreachable():
 def test_heading_text_keeps_space_across_inline_tags():
     soup = t.parse("<h1>Understanding the work.<br>Building <span>what</span> helps<span>.</span></h1>")
     assert t.extract_headings(soup)["h1"] == ["Understanding the work. Building what helps."]
+
+
+# --- interstitial / bot-check pages ---------------------------------------
+def test_interstitial_detected_by_title():
+    html = (FIX / "interstitial.html").read_text()
+    facts = t.extract_all(html, URL)
+    assert t.detect_interstitial(facts, "Sit tight") is not None
+
+
+def test_interstitial_detected_by_text_when_page_is_empty():
+    facts = t.extract_all("<html><head><title>Store</title></head><body><p>x</p></body></html>", URL)
+    assert t.detect_interstitial(facts, "Please complete the CAPTCHA to continue") is not None
+
+
+def test_normal_page_not_flagged(good):
+    assert t.detect_interstitial(good, "Handmade ceramic vases. Contact us to book a captcha-free demo.") is None

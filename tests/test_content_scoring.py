@@ -158,3 +158,28 @@ def test_psi_429_message_does_not_leak_key(monkeypatch):
     s = FakeSession([FakeResp(429), FakeResp(429, {"error": {"message": "bad key SECRETKEY"}})])
     r = performance.run_pagespeed("https://example.com/", api_key="SECRETKEY", session=s)
     assert not r["ok"] and "SECRETKEY" not in r["error"] and "rate-limited" in r["error"]
+
+
+def test_fold_text_ignores_html_comments():
+    html = "<body><!-- Google Tag Manager (noscript) --><h1>Vase</h1><!-- <p>old banner</p> --><p>Real copy.</p></body>"
+    text = content.above_the_fold(content.BeautifulSoup(html, "lxml"))["text"]
+    assert "Google Tag Manager" not in text and "old banner" not in text and "Real copy." in text
+
+
+def test_trust_signals_in_italian():
+    html = "<body><h1>Scaffale</h1><p>Prezzo € 55. Servizi di consegna. Cambi e resi. Recensioni totali: 1884</p></body>"
+    t = content.trust_signals(content.BeautifulSoup(html, "lxml"))
+    assert t["shipping_returns"] and t["reviews"] and t["price"]
+
+
+def test_readability_not_scored_for_non_english():
+    html = '<html lang="it-IT"><body><h1>Scaffale</h1>' + "<p>Questa è una frase di prova per il testo.</p>" * 30 + "</body></html>"
+    tech = technical.extract_all(html, URL)
+    checks = {c.id: c for c in content.evaluate(content.extract_all(html), tech, None, None)}
+    assert checks["readability"].status == "not_checked" and "it-it" in checks["readability"].finding
+
+
+def test_cta_verbs_cover_discover_find_choose():
+    html = "<body><h1>Soap</h1><a href='#subscribe'>Discover the €5.99 welcome off</a><button>Choose chamomile →</button></body>"
+    labels = [c["label"] for c in content.above_the_fold(content.BeautifulSoup(html, "lxml"))["ctas"]]
+    assert labels == ["Discover the €5.99 welcome off", "Choose chamomile →"]

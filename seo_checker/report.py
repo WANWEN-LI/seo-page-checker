@@ -43,7 +43,7 @@ def _cwv_rows(checks: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return rows
 
 
-def render_html(report: dict[str, Any], ai_html: str | None = None) -> str:
+def render_html(report: dict[str, Any]) -> str:
     issues, others = split_issues(report.get("checks", []))
     psi = (report.get("pagespeed") or {}).get("summary")
     cats = (report.get("score") or {}).get("categories", {})
@@ -55,7 +55,7 @@ def render_html(report: dict[str, Any], ai_html: str | None = None) -> str:
     }
     return _env.get_template("report.html.j2").render(
         r=report, issues=issues, others=others, psi=psi, cwv=_cwv_rows(report.get("checks", [])),
-        cat_label=CATEGORY_LABELS, sub_for=sub_for, ai=ai_html, tool_version=report.get("tool_version", __version__),
+        cat_label=CATEGORY_LABELS, sub_for=sub_for, tool_version=report.get("tool_version", __version__),
         perf_mix=PERFORMANCE_MIX)
 
 

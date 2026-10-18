@@ -1,0 +1,3148 @@
+[
+  {
+    "tool_version": "0.1.0",
+    "checked_at": "2026-10-18T12:24:08+00:00",
+    "input": {
+      "url": "https://liwanwen.com/",
+      "keyword": "Wanwen Li",
+      "page_type": "portfolio"
+    },
+    "fetch": {
+      "url": "https://liwanwen.com/",
+      "final_url": "https://liwanwen.com/",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 863,
+      "redirects": [],
+      "error_type": null,
+      "error": null
+    },
+    "facts": {
+      "title": "Wanwen Li — Tools, marketing & a curious eye",
+      "meta_description": "Wanwen Li — business-first AI tools, Marketing FDE projects and a growing collection of personal photography.",
+      "headings": {
+        "h1": [
+          "Understanding the work. Building what helps."
+        ],
+        "h2": [
+          "Lifecycle Email Automation",
+          "London Home Finder",
+          "Featured projects",
+          "More Explorations",
+          "Beyond the screen",
+          "Let’s make useful things."
+        ],
+        "h3": [
+          "Lifecycle Email Automation",
+          "London Home Finder",
+          "SEO & growth tools",
+          "Through my lens",
+          "Marketing operations",
+          "London Home Finder",
+          "Lifecycle Email Automation",
+          "SEO & growth tools",
+          "Travel photography",
+          "Personal moments"
+        ],
+        "outline": [
+          [
+            1,
+            "Understanding the work. Building what helps."
+          ],
+          [
+            2,
+            "Lifecycle Email Automation"
+          ],
+          [
+            2,
+            "London Home Finder"
+          ],
+          [
+            2,
+            "Featured projects"
+          ],
+          [
+            3,
+            "Lifecycle Email Automation"
+          ],
+          [
+            3,
+            "London Home Finder"
+          ],
+          [
+            3,
+            "SEO & growth tools"
+          ],
+          [
+            3,
+            "Through my lens"
+          ],
+          [
+            2,
+            "More Explorations"
+          ],
+          [
+            3,
+            "Marketing operations"
+          ],
+          [
+            3,
+            "London Home Finder"
+          ],
+          [
+            3,
+            "Lifecycle Email Automation"
+          ],
+          [
+            3,
+            "SEO & growth tools"
+          ],
+          [
+            2,
+            "Beyond the screen"
+          ],
+          [
+            3,
+            "Travel photography"
+          ],
+          [
+            3,
+            "Personal moments"
+          ],
+          [
+            2,
+            "Let’s make useful things."
+          ]
+        ]
+      },
+      "images": {
+        "total": 6,
+        "with_alt": 6,
+        "empty_alt": 0,
+        "missing_alt": 0,
+        "missing_alt_src": []
+      },
+      "head": {
+        "canonical": null,
+        "robots": null,
+        "lang": "en"
+      },
+      "social": {
+        "og:title": null,
+        "og:description": null,
+        "og:image": null,
+        "twitter:card": null,
+        "twitter:title": null,
+        "twitter:description": null,
+        "twitter:image": null
+      },
+      "json_ld": {
+        "count": 0,
+        "valid_blocks": 0,
+        "types": [],
+        "errors": []
+      },
+      "links": {
+        "internal": [
+          "https://liwanwen.com/",
+          "https://liwanwen.com/about",
+          "https://liwanwen.com/assets/Wanwen-Li-CV.pdf",
+          "https://liwanwen.com/photography",
+          "https://liwanwen.com/projects"
+        ],
+        "external": [
+          "https://github.com/WANWEN-LI",
+          "https://github.com/WANWEN-LI/lifecycle-email-automation"
+        ]
+      },
+      "content": {
+        "fold": {
+          "text": "Skip to content Wanwen Li Home Projects Experience About Photography 中文 Get in touch Understanding the work . Building what helps . Hi, I’m Wanwen. After 4+ years growing Amazon stores, including three running my own, I’m learning to build: marketing automation and data tools, made with AI-assisted coding. Open to internships from Nov 2026 Get to know me ↗ ✦ ✧ Click to meet me Marketing workflows · AI-assisted building Business context · Data & implementation Real local test screens Payment & shipping simulated Featured case · Working local prototype Lifecycle Email Automation A consent-aware post-purchase email journey for Petal / Atelier, a fictional DTC soap brand. Designed, built and tested end to end on my laptop. 1 A journey that reacts Welcome → dispatch → a recommendation if she clicks her scent, a gentle reminder if she doesn’t. 2 Consent first No marketing consent, no promotional emails. Only order updates are sent. 3 Tested, with limits written down All three paths (3 / 3 / 2 emails), duplicate orders, reset and restart recovery. n8n Node.js + SQLite Dittofeed Mailpit Docker Read the case View on GitHub Screens from a sanitised local copy Private prototype Featured case · Working prototype London Home Finder A personal tool that brings London rental listings from 20 agency sources into one map, with filters, a shortlist and a daily email. 1 Data from 20 sources 19 collected automatically every day; the last good data is kept if a run fails. 2 Search the way people decide",
+          "chars": 1507,
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "View on GitHub ↗",
+              "href": "https://github.com/WANWEN-LI/lifecycle-email-automation",
+              "styled_as_button": true
+            }
+          ],
+          "headings": [
+            "Understanding the work. Building what helps.",
+            "Lifecycle Email Automation",
+            "London Home Finder"
+          ]
+        },
+        "first_paragraph": "Hi, I’m Wanwen. After 4+ years growing Amazon stores, including three running my own, I’m learning to build: marketing automation and data tools, made with AI-assisted coding.",
+        "readability": {
+          "words": 209,
+          "sentences": 20,
+          "paragraphs": 15,
+          "avg_sentence_words": 10.4,
+          "long_sentences": 0,
+          "avg_paragraph_words": 13.9,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": 45.2
+        },
+        "trust": {
+          "price": false,
+          "price_examples": [],
+          "reviews": false,
+          "shipping_returns": true,
+          "contact": true,
+          "contact_examples": [
+            "mailto:wanwenli.contact@gmail.com"
+          ],
+          "social_proof": true,
+          "proof_of_work": true,
+          "person_schema": false,
+          "product_schema": false
+        }
+      }
+    },
+    "checks": [
+      {
+        "id": "title_length",
+        "category": "technical",
+        "label": "Title length",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Title is 44 characters: \"Wanwen Li — Tools, marketing & a curious eye\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "length": 44,
+          "value": "Wanwen Li — Tools, marketing & a curious eye"
+        }
+      },
+      {
+        "id": "title_keyword",
+        "category": "technical",
+        "label": "Keyword in title",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Title contains \"Wanwen Li\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "meta_description",
+        "category": "technical",
+        "label": "Meta description",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Meta description is 109 characters.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "length": 109,
+          "value": "Wanwen Li — business-first AI tools, Marketing FDE projects and a growing collection of personal photography."
+        }
+      },
+      {
+        "id": "h1_count",
+        "category": "technical",
+        "label": "Single H1",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Exactly one H1: \"Understanding the work. Building what helps.\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "h1": [
+            "Understanding the work. Building what helps."
+          ]
+        }
+      },
+      {
+        "id": "heading_hierarchy",
+        "category": "technical",
+        "label": "Heading hierarchy",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "17 headings, no skipped levels.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "image_alt",
+        "category": "technical",
+        "label": "Image alt text",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "6/6 images (100%) have an alt attribute (0 empty, i.e. marked decorative).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "coverage_pct": 100
+        }
+      },
+      {
+        "id": "canonical",
+        "category": "technical",
+        "label": "Canonical URL",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No <link rel=\"canonical\"> found.",
+        "why": "Without a canonical, URL variants (query strings, http/https) can split ranking signals.",
+        "fix": "Add <link rel=\"canonical\" href=\"<preferred absolute URL>\">.",
+        "data": {}
+      },
+      {
+        "id": "robots_meta",
+        "category": "technical",
+        "label": "Robots meta",
+        "status": "pass",
+        "severity": "High",
+        "finding": "No robots meta (default is index, follow).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "lang",
+        "category": "technical",
+        "label": "HTML lang attribute",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "lang=\"en\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "open_graph",
+        "category": "technical",
+        "label": "Open Graph tags",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "Missing: og:title, og:description, og:image.",
+        "why": "Without OG tags, shared links on LinkedIn/WhatsApp/Slack show a poor or empty preview.",
+        "fix": "Add the missing og:* meta tags; og:image should be at least 1200x630.",
+        "data": {
+          "missing": [
+            "og:title",
+            "og:description",
+            "og:image"
+          ]
+        }
+      },
+      {
+        "id": "twitter_card",
+        "category": "technical",
+        "label": "Twitter/X card",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "No twitter:card meta.",
+        "why": "X falls back to OG tags but uses a small preview without twitter:card.",
+        "fix": "Add <meta name=\"twitter:card\" content=\"summary_large_image\">.",
+        "data": {}
+      },
+      {
+        "id": "json_ld",
+        "category": "technical",
+        "label": "Structured data (JSON-LD)",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No JSON-LD found.",
+        "why": "Structured data can unlock rich results (price, rating, profile) in search.",
+        "fix": "Add JSON-LD matching the page: Product, Person, Organization, etc.",
+        "data": {}
+      },
+      {
+        "id": "link_counts",
+        "category": "technical",
+        "label": "Links",
+        "status": "info",
+        "severity": "Low",
+        "finding": "5 internal and 2 external unique links.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "internal": 5,
+          "external": 2
+        }
+      },
+      {
+        "id": "robots_txt",
+        "category": "technical",
+        "label": "robots.txt",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "https://liwanwen.com/robots.txt returned HTTP 404.",
+        "why": "Not required, but robots.txt is the standard place to point crawlers to your sitemap.",
+        "fix": "Add a robots.txt with 'User-agent: *', 'Allow: /' and a 'Sitemap:' line.",
+        "data": {}
+      },
+      {
+        "id": "sitemap",
+        "category": "technical",
+        "label": "sitemap.xml",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No valid sitemap found at: https://liwanwen.com/sitemap.xml.",
+        "why": "A sitemap helps search engines discover all your pages, especially on new sites.",
+        "fix": "Generate sitemap.xml listing every public page and reference it in robots.txt.",
+        "data": {
+          "tried": [
+            {
+              "url": "https://liwanwen.com/sitemap.xml",
+              "status_code": 404,
+              "error": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "broken_links",
+        "category": "technical",
+        "label": "Broken links (4xx)",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Checked 7 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "broken": [],
+          "server_errors": [],
+          "unchecked": [],
+          "checked": 7
+        }
+      },
+      {
+        "id": "lh_performance",
+        "category": "performance",
+        "label": "Mobile performance score",
+        "status": "warn",
+        "severity": "High",
+        "finding": "75/100 (Lighthouse, mobile).",
+        "why": "Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.",
+        "fix": "Open the PSI report and fix the top 'Opportunities' (image size, render-blocking JS/CSS).",
+        "data": {
+          "score": 75
+        }
+      },
+      {
+        "id": "lh_accessibility",
+        "category": "performance",
+        "label": "Accessibility score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "96/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 96
+        }
+      },
+      {
+        "id": "lh_seo",
+        "category": "performance",
+        "label": "Lighthouse SEO score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "100/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 100
+        }
+      },
+      {
+        "id": "cwv_lcp",
+        "category": "performance",
+        "label": "Core Web Vital: LCP",
+        "status": "fail",
+        "severity": "Medium",
+        "finding": "LCP = 4.8 s from lab (Lighthouse, single run).",
+        "why": "Google rates LCP good at <= 2.5 s, poor above 4.0 s.",
+        "fix": "Compress and preload the hero image; reduce render-blocking resources.",
+        "data": {
+          "value": 4807,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_cls",
+        "category": "performance",
+        "label": "Core Web Vital: CLS",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "CLS = 0 from lab (Lighthouse, single run).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "value": 0,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_inp",
+        "category": "performance",
+        "label": "Core Web Vital: INP",
+        "status": "not_checked",
+        "severity": "Low",
+        "finding": "INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "value_prop",
+        "category": "content",
+        "label": "Value proposition above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "H1 \"Understanding the work. Building what helps.\" appears in the first 1500 characters with 240 words of copy.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "cta_fold",
+        "category": "content",
+        "label": "Call to action above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "2 action link(s)/button(s) in the opening section, e.g. \"Get in touch\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "View on GitHub ↗",
+              "href": "https://github.com/WANWEN-LI/lifecycle-email-automation",
+              "styled_as_button": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "keyword_placement",
+        "category": "content",
+        "label": "Keyword placement",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "\"Wanwen Li\" found in: title; missing from: h1, first_paragraph.",
+        "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
+        "fix": "Use the keyword (or a close variant) naturally in h1, first_paragraph.",
+        "data": {
+          "places": {
+            "title": true,
+            "h1": false,
+            "first_paragraph": false
+          }
+        }
+      },
+      {
+        "id": "readability",
+        "category": "content",
+        "label": "Readability",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "209 words, avg 10.4 words/sentence, 0 sentence(s) over 25 words, 0 paragraph(s) over 100 words; Flesch reading ease 45.2 (English formula).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "words": 209,
+          "sentences": 20,
+          "paragraphs": 15,
+          "avg_sentence_words": 10.4,
+          "long_sentences": 0,
+          "avg_paragraph_words": 13.9,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": 45.2
+        }
+      },
+      {
+        "id": "trust_contact",
+        "category": "content",
+        "label": "Contact path",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Found (e.g. mailto:wanwenli.contact@gmail.com).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_proof_of_work",
+        "category": "content",
+        "label": "Evidence of work",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Found.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_person_schema",
+        "category": "content",
+        "label": "Person structured data",
+        "status": "fail",
+        "severity": "Low",
+        "finding": "Not found in the page HTML.",
+        "why": "Person schema helps Google connect your name, role and profiles (sameAs).",
+        "fix": "Add Person JSON-LD with name, jobTitle, url and sameAs links.",
+        "data": {}
+      }
+    ],
+    "score": {
+      "total": 85,
+      "categories": {
+        "technical": {
+          "label": "Technical",
+          "score": 84,
+          "earned": 24.5,
+          "possible": 29.0,
+          "breakdown": [
+            {
+              "id": "title_length",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "title_keyword",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "meta_description",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "h1_count",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "heading_hierarchy",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "image_alt",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "canonical",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_meta",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "lang",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "open_graph",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "twitter_card",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "json_ld",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_txt",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "sitemap",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "broken_links",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            }
+          ]
+        },
+        "performance": {
+          "label": "Performance",
+          "score": 84,
+          "breakdown": {
+            "lh_performance": 75,
+            "lh_accessibility": 96,
+            "lh_seo": 100
+          }
+        },
+        "content": {
+          "label": "Content & Conversion",
+          "score": 87,
+          "earned": 13.0,
+          "possible": 15.0,
+          "breakdown": [
+            {
+              "id": "value_prop",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "cta_fold",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "keyword_placement",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "readability",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "trust_contact",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "trust_proof_of_work",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "trust_person_schema",
+              "status": "fail",
+              "weight": 1,
+              "points": 0.0
+            }
+          ]
+        }
+      },
+      "weights": {
+        "technical": 0.4,
+        "performance": 0.3,
+        "content": 0.3
+      },
+      "notes": []
+    },
+    "pagespeed": {
+      "ok": true,
+      "error": null,
+      "summary": {
+        "scores": {
+          "performance": 75,
+          "seo": 100,
+          "accessibility": 96
+        },
+        "lab": {
+          "LCP": 4807,
+          "CLS": 0,
+          "TBT": 7
+        },
+        "field_page": {},
+        "field_origin": {},
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-18T12:24:20.355Z",
+        "final_url": "https://liwanwen.com/"
+      },
+      "strategy": "mobile"
+    },
+    "ai": null,
+    "errors": []
+  },
+  {
+    "tool_version": "0.1.0",
+    "checked_at": "2026-10-18T12:24:31+00:00",
+    "input": {
+      "url": "https://liwanwen.com/about",
+      "keyword": "Wanwen Li",
+      "page_type": "portfolio"
+    },
+    "fetch": {
+      "url": "https://liwanwen.com/about",
+      "final_url": "https://liwanwen.com/about",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 25,
+      "redirects": [],
+      "error_type": null,
+      "error": null
+    },
+    "facts": {
+      "title": "Get to know me | Wanwen Li",
+      "meta_description": "Wanwen Li connects e-commerce experience with AI-assisted tools, working toward Marketing Forward Deployed Engineering. Explore her projects and background.",
+      "headings": {
+        "h1": [
+          "Business context. Builder curiosity."
+        ],
+        "h2": [
+          "From operator to builder",
+          "What I’m looking for",
+          "Where I can contribute",
+          "The path so far",
+          "Technical foundation",
+          "Languages",
+          "Let’s look at what I’m building.",
+          "Let’s make useful things."
+        ],
+        "h3": [
+          "Running the numbers",
+          "Learning to build",
+          "Proving it with projects",
+          "Growth / Digital Marketing Intern",
+          "Marketing Analytics Intern",
+          "CRM / Lifecycle Marketing Intern",
+          "GTM Ops / Customer Success at AI startups",
+          "Understand the workflow",
+          "Build a useful first version",
+          "Connect tools to outcomes",
+          "Politecnico di Torino",
+          "Founder & Operator, Independent Amazon Store",
+          "Amazon Operations Specialist",
+          "Guangdong University of Finance & Economics"
+        ],
+        "outline": [
+          [
+            1,
+            "Business context. Builder curiosity."
+          ],
+          [
+            2,
+            "From operator to builder"
+          ],
+          [
+            3,
+            "Running the numbers"
+          ],
+          [
+            3,
+            "Learning to build"
+          ],
+          [
+            3,
+            "Proving it with projects"
+          ],
+          [
+            2,
+            "What I’m looking for"
+          ],
+          [
+            3,
+            "Growth / Digital Marketing Intern"
+          ],
+          [
+            3,
+            "Marketing Analytics Intern"
+          ],
+          [
+            3,
+            "CRM / Lifecycle Marketing Intern"
+          ],
+          [
+            3,
+            "GTM Ops / Customer Success at AI startups"
+          ],
+          [
+            2,
+            "Where I can contribute"
+          ],
+          [
+            3,
+            "Understand the workflow"
+          ],
+          [
+            3,
+            "Build a useful first version"
+          ],
+          [
+            3,
+            "Connect tools to outcomes"
+          ],
+          [
+            2,
+            "The path so far"
+          ],
+          [
+            3,
+            "Politecnico di Torino"
+          ],
+          [
+            3,
+            "Founder & Operator, Independent Amazon Store"
+          ],
+          [
+            3,
+            "Amazon Operations Specialist"
+          ],
+          [
+            3,
+            "Guangdong University of Finance & Economics"
+          ],
+          [
+            2,
+            "Technical foundation"
+          ],
+          [
+            2,
+            "Languages"
+          ],
+          [
+            2,
+            "Let’s look at what I’m building."
+          ],
+          [
+            2,
+            "Let’s make useful things."
+          ]
+        ]
+      },
+      "images": {
+        "total": 1,
+        "with_alt": 1,
+        "empty_alt": 0,
+        "missing_alt": 0,
+        "missing_alt_src": []
+      },
+      "head": {
+        "canonical": null,
+        "robots": null,
+        "lang": "en"
+      },
+      "social": {
+        "og:title": null,
+        "og:description": null,
+        "og:image": null,
+        "twitter:card": null,
+        "twitter:title": null,
+        "twitter:description": null,
+        "twitter:image": null
+      },
+      "json_ld": {
+        "count": 0,
+        "valid_blocks": 0,
+        "types": [],
+        "errors": []
+      },
+      "links": {
+        "internal": [
+          "https://liwanwen.com/",
+          "https://liwanwen.com/about",
+          "https://liwanwen.com/assets/Wanwen-Li-CV.pdf",
+          "https://liwanwen.com/photography",
+          "https://liwanwen.com/projects"
+        ],
+        "external": [
+          "https://github.com/WANWEN-LI"
+        ]
+      },
+      "content": {
+        "fold": {
+          "text": "Skip to content Wanwen Li Home Projects Experience About Photography 中文 Get in touch A bit about me Business context. Builder curiosity. I’m Wanwen, based in Torino, Italy. I grew Amazon stores for 4+ years and I’m now retraining as a builder. I know the marketing side from the inside: listings, advertising budgets, pricing, inventory and reading customer reviews. At Politecnico di Torino I’m learning Python, SQL and cloud basics, and I use AI coding assistants to turn marketing workflows into working tools. I’m a career changer, not a senior engineer, and I say so plainly. See my work ↗ Read my résumé The person behind the blue hat. From operator to builder Why I’m changing direction, and what I bring with me. 2019 – 2024 Running the numbers At Sunlu, the new store I ran ranked #1 in Prime Day 2020 sales growth among all company stores. I then founded and ran my own Amazon store for three years: product selection, listings, ads, pricing and stock. 2024 – now Learning to build I kept hitting the same wall: the tools I needed didn’t exist, or I couldn’t change them. So I went back to study. MSc at Politecnico di Torino: Python (30/30), databases, IoT and cloud. Now Proving it with projects A rental aggregator with daily data collection, and a consent-aware lifecycle email journey built with n8n and Dittofeed. AI helps me write code; the design decisions, testing and documented limits are mine. What I’m looking for Internships from November 2026, in English-speaking teams in Europe or remote. These are the roles where my experience fits today:",
+          "chars": 1568,
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "See my work ↗",
+              "href": "/projects",
+              "styled_as_button": true
+            }
+          ],
+          "headings": [
+            "Business context. Builder curiosity.",
+            "From operator to builder",
+            "What I’m looking for"
+          ]
+        },
+        "first_paragraph": "A bit about me",
+        "readability": {
+          "words": 488,
+          "sentences": 44,
+          "paragraphs": 28,
+          "avg_sentence_words": 11.1,
+          "long_sentences": 0,
+          "avg_paragraph_words": 17.4,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": 50.2
+        },
+        "trust": {
+          "price": false,
+          "price_examples": [],
+          "reviews": true,
+          "shipping_returns": false,
+          "contact": true,
+          "contact_examples": [
+            "mailto:wanwenli.contact@gmail.com"
+          ],
+          "social_proof": true,
+          "proof_of_work": true,
+          "person_schema": false,
+          "product_schema": false
+        }
+      }
+    },
+    "checks": [
+      {
+        "id": "title_length",
+        "category": "technical",
+        "label": "Title length",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "Title is 26 characters (short; it may not describe the page well): \"Get to know me | Wanwen Li\".",
+        "why": "The title is the main headline in search results and a strong relevance signal.",
+        "fix": "Rewrite to 30-60 characters, most important words first.",
+        "data": {
+          "length": 26,
+          "value": "Get to know me | Wanwen Li"
+        }
+      },
+      {
+        "id": "title_keyword",
+        "category": "technical",
+        "label": "Keyword in title",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Title contains \"Wanwen Li\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "meta_description",
+        "category": "technical",
+        "label": "Meta description",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Meta description is 156 characters.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "length": 156,
+          "value": "Wanwen Li connects e-commerce experience with AI-assisted tools, working toward Marketing Forward Deployed Engineering. Explore her projects and background."
+        }
+      },
+      {
+        "id": "h1_count",
+        "category": "technical",
+        "label": "Single H1",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Exactly one H1: \"Business context. Builder curiosity.\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "h1": [
+            "Business context. Builder curiosity."
+          ]
+        }
+      },
+      {
+        "id": "heading_hierarchy",
+        "category": "technical",
+        "label": "Heading hierarchy",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "23 headings, no skipped levels.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "image_alt",
+        "category": "technical",
+        "label": "Image alt text",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "1/1 images (100%) have an alt attribute (0 empty, i.e. marked decorative).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "coverage_pct": 100
+        }
+      },
+      {
+        "id": "canonical",
+        "category": "technical",
+        "label": "Canonical URL",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No <link rel=\"canonical\"> found.",
+        "why": "Without a canonical, URL variants (query strings, http/https) can split ranking signals.",
+        "fix": "Add <link rel=\"canonical\" href=\"<preferred absolute URL>\">.",
+        "data": {}
+      },
+      {
+        "id": "robots_meta",
+        "category": "technical",
+        "label": "Robots meta",
+        "status": "pass",
+        "severity": "High",
+        "finding": "No robots meta (default is index, follow).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "lang",
+        "category": "technical",
+        "label": "HTML lang attribute",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "lang=\"en\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "open_graph",
+        "category": "technical",
+        "label": "Open Graph tags",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "Missing: og:title, og:description, og:image.",
+        "why": "Without OG tags, shared links on LinkedIn/WhatsApp/Slack show a poor or empty preview.",
+        "fix": "Add the missing og:* meta tags; og:image should be at least 1200x630.",
+        "data": {
+          "missing": [
+            "og:title",
+            "og:description",
+            "og:image"
+          ]
+        }
+      },
+      {
+        "id": "twitter_card",
+        "category": "technical",
+        "label": "Twitter/X card",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "No twitter:card meta.",
+        "why": "X falls back to OG tags but uses a small preview without twitter:card.",
+        "fix": "Add <meta name=\"twitter:card\" content=\"summary_large_image\">.",
+        "data": {}
+      },
+      {
+        "id": "json_ld",
+        "category": "technical",
+        "label": "Structured data (JSON-LD)",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No JSON-LD found.",
+        "why": "Structured data can unlock rich results (price, rating, profile) in search.",
+        "fix": "Add JSON-LD matching the page: Product, Person, Organization, etc.",
+        "data": {}
+      },
+      {
+        "id": "link_counts",
+        "category": "technical",
+        "label": "Links",
+        "status": "info",
+        "severity": "Low",
+        "finding": "5 internal and 1 external unique links.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "internal": 5,
+          "external": 1
+        }
+      },
+      {
+        "id": "robots_txt",
+        "category": "technical",
+        "label": "robots.txt",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "https://liwanwen.com/robots.txt returned HTTP 404.",
+        "why": "Not required, but robots.txt is the standard place to point crawlers to your sitemap.",
+        "fix": "Add a robots.txt with 'User-agent: *', 'Allow: /' and a 'Sitemap:' line.",
+        "data": {}
+      },
+      {
+        "id": "sitemap",
+        "category": "technical",
+        "label": "sitemap.xml",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No valid sitemap found at: https://liwanwen.com/sitemap.xml.",
+        "why": "A sitemap helps search engines discover all your pages, especially on new sites.",
+        "fix": "Generate sitemap.xml listing every public page and reference it in robots.txt.",
+        "data": {
+          "tried": [
+            {
+              "url": "https://liwanwen.com/sitemap.xml",
+              "status_code": 404,
+              "error": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "broken_links",
+        "category": "technical",
+        "label": "Broken links (4xx)",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Checked 6 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "broken": [],
+          "server_errors": [],
+          "unchecked": [],
+          "checked": 6
+        }
+      },
+      {
+        "id": "lh_performance",
+        "category": "performance",
+        "label": "Mobile performance score",
+        "status": "warn",
+        "severity": "High",
+        "finding": "63/100 (Lighthouse, mobile).",
+        "why": "Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.",
+        "fix": "Open the PSI report and fix the top 'Opportunities' (image size, render-blocking JS/CSS).",
+        "data": {
+          "score": 63
+        }
+      },
+      {
+        "id": "lh_accessibility",
+        "category": "performance",
+        "label": "Accessibility score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "96/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 96
+        }
+      },
+      {
+        "id": "lh_seo",
+        "category": "performance",
+        "label": "Lighthouse SEO score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "100/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 100
+        }
+      },
+      {
+        "id": "cwv_lcp",
+        "category": "performance",
+        "label": "Core Web Vital: LCP",
+        "status": "fail",
+        "severity": "Medium",
+        "finding": "LCP = 14.0 s from lab (Lighthouse, single run).",
+        "why": "Google rates LCP good at <= 2.5 s, poor above 4.0 s.",
+        "fix": "Compress and preload the hero image; reduce render-blocking resources.",
+        "data": {
+          "value": 14031,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_cls",
+        "category": "performance",
+        "label": "Core Web Vital: CLS",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "CLS = 0 from lab (Lighthouse, single run).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "value": 0,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_inp",
+        "category": "performance",
+        "label": "Core Web Vital: INP",
+        "status": "not_checked",
+        "severity": "Low",
+        "finding": "INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "value_prop",
+        "category": "content",
+        "label": "Value proposition above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "H1 \"Business context. Builder curiosity.\" appears in the first 1500 characters with 267 words of copy.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "cta_fold",
+        "category": "content",
+        "label": "Call to action above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "2 action link(s)/button(s) in the opening section, e.g. \"Get in touch\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "See my work ↗",
+              "href": "/projects",
+              "styled_as_button": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "keyword_placement",
+        "category": "content",
+        "label": "Keyword placement",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "\"Wanwen Li\" found in: title; missing from: h1, first_paragraph.",
+        "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
+        "fix": "Use the keyword (or a close variant) naturally in h1, first_paragraph.",
+        "data": {
+          "places": {
+            "title": true,
+            "h1": false,
+            "first_paragraph": false
+          }
+        }
+      },
+      {
+        "id": "readability",
+        "category": "content",
+        "label": "Readability",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "488 words, avg 11.1 words/sentence, 0 sentence(s) over 25 words, 0 paragraph(s) over 100 words; Flesch reading ease 50.2 (English formula).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "words": 488,
+          "sentences": 44,
+          "paragraphs": 28,
+          "avg_sentence_words": 11.1,
+          "long_sentences": 0,
+          "avg_paragraph_words": 17.4,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": 50.2
+        }
+      },
+      {
+        "id": "trust_contact",
+        "category": "content",
+        "label": "Contact path",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Found (e.g. mailto:wanwenli.contact@gmail.com).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_proof_of_work",
+        "category": "content",
+        "label": "Evidence of work",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Found.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_person_schema",
+        "category": "content",
+        "label": "Person structured data",
+        "status": "fail",
+        "severity": "Low",
+        "finding": "Not found in the page HTML.",
+        "why": "Person schema helps Google connect your name, role and profiles (sameAs).",
+        "fix": "Add Person JSON-LD with name, jobTitle, url and sameAs links.",
+        "data": {}
+      }
+    ],
+    "score": {
+      "total": 81,
+      "categories": {
+        "technical": {
+          "label": "Technical",
+          "score": 79,
+          "earned": 23.0,
+          "possible": 29.0,
+          "breakdown": [
+            {
+              "id": "title_length",
+              "status": "warn",
+              "weight": 3,
+              "points": 1.5
+            },
+            {
+              "id": "title_keyword",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "meta_description",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "h1_count",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "heading_hierarchy",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "image_alt",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "canonical",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_meta",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "lang",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "open_graph",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "twitter_card",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "json_ld",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_txt",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "sitemap",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "broken_links",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            }
+          ]
+        },
+        "performance": {
+          "label": "Performance",
+          "score": 77,
+          "breakdown": {
+            "lh_performance": 63,
+            "lh_accessibility": 96,
+            "lh_seo": 100
+          }
+        },
+        "content": {
+          "label": "Content & Conversion",
+          "score": 87,
+          "earned": 13.0,
+          "possible": 15.0,
+          "breakdown": [
+            {
+              "id": "value_prop",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "cta_fold",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "keyword_placement",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "readability",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "trust_contact",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "trust_proof_of_work",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "trust_person_schema",
+              "status": "fail",
+              "weight": 1,
+              "points": 0.0
+            }
+          ]
+        }
+      },
+      "weights": {
+        "technical": 0.4,
+        "performance": 0.3,
+        "content": 0.3
+      },
+      "notes": []
+    },
+    "pagespeed": {
+      "ok": true,
+      "error": null,
+      "summary": {
+        "scores": {
+          "performance": 63,
+          "seo": 100,
+          "accessibility": 96
+        },
+        "lab": {
+          "LCP": 14031,
+          "CLS": 0,
+          "TBT": 0
+        },
+        "field_page": {},
+        "field_origin": {},
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-18T12:24:39.945Z",
+        "final_url": "https://liwanwen.com/about"
+      },
+      "strategy": "mobile"
+    },
+    "ai": null,
+    "errors": []
+  },
+  {
+    "tool_version": "0.1.0",
+    "checked_at": "2026-10-18T12:24:50+00:00",
+    "input": {
+      "url": "https://liwanwen.com/projects",
+      "keyword": "Wanwen Li",
+      "page_type": "portfolio"
+    },
+    "fetch": {
+      "url": "https://liwanwen.com/projects",
+      "final_url": "https://liwanwen.com/projects",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 27,
+      "redirects": [],
+      "error_type": null,
+      "error": null
+    },
+    "facts": {
+      "title": "Projects | Wanwen Li",
+      "meta_description": "Wanwen Li connects e-commerce experience with AI-assisted tools, working toward Marketing Forward Deployed Engineering. Explore her projects and background.",
+      "headings": {
+        "h1": [
+          "Real problems. Things I’m building."
+        ],
+        "h2": [
+          "Lifecycle Email Automation",
+          "London Home Finder",
+          "Next on the workbench",
+          "A marketing problem to untangle?",
+          "Let’s make useful things."
+        ],
+        "h3": [
+          "The business problem",
+          "The journey I designed",
+          "Why it matters for FDE",
+          "The problem",
+          "What I built",
+          "Why it matters for marketing roles"
+        ],
+        "outline": [
+          [
+            1,
+            "Real problems. Things I’m building."
+          ],
+          [
+            2,
+            "Lifecycle Email Automation"
+          ],
+          [
+            3,
+            "The business problem"
+          ],
+          [
+            3,
+            "The journey I designed"
+          ],
+          [
+            3,
+            "Why it matters for FDE"
+          ],
+          [
+            4,
+            "Tested"
+          ],
+          [
+            4,
+            "Simulated"
+          ],
+          [
+            4,
+            "Before going live"
+          ],
+          [
+            2,
+            "London Home Finder"
+          ],
+          [
+            3,
+            "The problem"
+          ],
+          [
+            3,
+            "What I built"
+          ],
+          [
+            3,
+            "Why it matters for marketing roles"
+          ],
+          [
+            4,
+            "Verified"
+          ],
+          [
+            4,
+            "Not claimed"
+          ],
+          [
+            4,
+            "Next"
+          ],
+          [
+            2,
+            "Next on the workbench"
+          ],
+          [
+            2,
+            "A marketing problem to untangle?"
+          ],
+          [
+            2,
+            "Let’s make useful things."
+          ]
+        ]
+      },
+      "images": {
+        "total": 1,
+        "with_alt": 1,
+        "empty_alt": 0,
+        "missing_alt": 0,
+        "missing_alt_src": []
+      },
+      "head": {
+        "canonical": null,
+        "robots": null,
+        "lang": "en"
+      },
+      "social": {
+        "og:title": null,
+        "og:description": null,
+        "og:image": null,
+        "twitter:card": null,
+        "twitter:title": null,
+        "twitter:description": null,
+        "twitter:image": null
+      },
+      "json_ld": {
+        "count": 0,
+        "valid_blocks": 0,
+        "types": [],
+        "errors": []
+      },
+      "links": {
+        "internal": [
+          "https://liwanwen.com/",
+          "https://liwanwen.com/about",
+          "https://liwanwen.com/assets/Wanwen-Li-CV.pdf",
+          "https://liwanwen.com/photography"
+        ],
+        "external": [
+          "https://github.com/WANWEN-LI",
+          "https://github.com/WANWEN-LI/lifecycle-email-automation",
+          "https://github.com/WANWEN-LI/lifecycle-email-automation/blob/main/portfolio/case-study-en.md",
+          "https://github.com/WANWEN-LI/lifecycle-email-automation/blob/main/portfolio/evidence/known-limitations.md"
+        ]
+      },
+      "content": {
+        "fold": {
+          "text": "Skip to content Wanwen Li Home Projects Experience About Photography 中文 Get in touch My workbench Real problems. Things I’m building. From a scattered rental search to a lifecycle email journey. I’m learning to take a need, build a tool and improve it with evidence. 50-second walkthrough · real local test screens Lifecycle Email Automation Working local prototype Lifecycle Email Automation A consent-aware post-purchase email journey for Petal / Atelier, a fictional DTC soap brand selling to Germany, France and Italy. Built with n8n, Node.js + SQLite, Dittofeed and a local Mailpit inbox. View on GitHub ↗ The business problem A one-time €9.90 discovery box is an easy first purchase. The question is how to turn that first order into interest in a second one, without emailing people who didn’t opt in. The journey I designed A welcome email confirms the order. The dispatch email invites her to explore her scent. If she clicks, a recommendation follows; if not, a gentle reminder. Without marketing consent, only the two order emails are sent. Why it matters for FDE The role in miniature: turn a marketing brief into a journey, choose and connect the tools, test every branch and write down the limits. Built with AI coding assistance. A personal project, not a client deployment. Green: running locally. Peach: simulated. Purple: planned, not connected. Scope, tests & limits Tested Three paths delivered 3 / 3 / 2 emails as designed. Duplicate orders ignored, invalid emails rejected, safe callbacks after reset, full stop-and-restart recovery.",
+          "chars": 1556,
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "View on GitHub ↗",
+              "href": "https://github.com/WANWEN-LI/lifecycle-email-automation",
+              "styled_as_button": true
+            }
+          ],
+          "headings": [
+            "Real problems. Things I’m building.",
+            "Lifecycle Email Automation"
+          ]
+        },
+        "first_paragraph": "From a scattered rental search to a lifecycle email journey. I’m learning to take a need, build a tool and improve it with evidence.",
+        "readability": {
+          "words": 330,
+          "sentences": 23,
+          "paragraphs": 11,
+          "avg_sentence_words": 14.3,
+          "long_sentences": 1,
+          "avg_paragraph_words": 30.0,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": 61.0
+        },
+        "trust": {
+          "price": true,
+          "price_examples": [
+            "€9.90",
+            "€9.90"
+          ],
+          "reviews": false,
+          "shipping_returns": true,
+          "contact": true,
+          "contact_examples": [
+            "mailto:wanwenli.contact@gmail.com"
+          ],
+          "social_proof": true,
+          "proof_of_work": true,
+          "person_schema": false,
+          "product_schema": false
+        }
+      }
+    },
+    "checks": [
+      {
+        "id": "title_length",
+        "category": "technical",
+        "label": "Title length",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "Title is 20 characters (short; it may not describe the page well): \"Projects | Wanwen Li\".",
+        "why": "The title is the main headline in search results and a strong relevance signal.",
+        "fix": "Rewrite to 30-60 characters, most important words first.",
+        "data": {
+          "length": 20,
+          "value": "Projects | Wanwen Li"
+        }
+      },
+      {
+        "id": "title_keyword",
+        "category": "technical",
+        "label": "Keyword in title",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Title contains \"Wanwen Li\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "meta_description",
+        "category": "technical",
+        "label": "Meta description",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Meta description is 156 characters.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "length": 156,
+          "value": "Wanwen Li connects e-commerce experience with AI-assisted tools, working toward Marketing Forward Deployed Engineering. Explore her projects and background."
+        }
+      },
+      {
+        "id": "h1_count",
+        "category": "technical",
+        "label": "Single H1",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Exactly one H1: \"Real problems. Things I’m building.\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "h1": [
+            "Real problems. Things I’m building."
+          ]
+        }
+      },
+      {
+        "id": "heading_hierarchy",
+        "category": "technical",
+        "label": "Heading hierarchy",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "18 headings, no skipped levels.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "image_alt",
+        "category": "technical",
+        "label": "Image alt text",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "1/1 images (100%) have an alt attribute (0 empty, i.e. marked decorative).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "coverage_pct": 100
+        }
+      },
+      {
+        "id": "canonical",
+        "category": "technical",
+        "label": "Canonical URL",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No <link rel=\"canonical\"> found.",
+        "why": "Without a canonical, URL variants (query strings, http/https) can split ranking signals.",
+        "fix": "Add <link rel=\"canonical\" href=\"<preferred absolute URL>\">.",
+        "data": {}
+      },
+      {
+        "id": "robots_meta",
+        "category": "technical",
+        "label": "Robots meta",
+        "status": "pass",
+        "severity": "High",
+        "finding": "No robots meta (default is index, follow).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "lang",
+        "category": "technical",
+        "label": "HTML lang attribute",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "lang=\"en\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "open_graph",
+        "category": "technical",
+        "label": "Open Graph tags",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "Missing: og:title, og:description, og:image.",
+        "why": "Without OG tags, shared links on LinkedIn/WhatsApp/Slack show a poor or empty preview.",
+        "fix": "Add the missing og:* meta tags; og:image should be at least 1200x630.",
+        "data": {
+          "missing": [
+            "og:title",
+            "og:description",
+            "og:image"
+          ]
+        }
+      },
+      {
+        "id": "twitter_card",
+        "category": "technical",
+        "label": "Twitter/X card",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "No twitter:card meta.",
+        "why": "X falls back to OG tags but uses a small preview without twitter:card.",
+        "fix": "Add <meta name=\"twitter:card\" content=\"summary_large_image\">.",
+        "data": {}
+      },
+      {
+        "id": "json_ld",
+        "category": "technical",
+        "label": "Structured data (JSON-LD)",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No JSON-LD found.",
+        "why": "Structured data can unlock rich results (price, rating, profile) in search.",
+        "fix": "Add JSON-LD matching the page: Product, Person, Organization, etc.",
+        "data": {}
+      },
+      {
+        "id": "link_counts",
+        "category": "technical",
+        "label": "Links",
+        "status": "info",
+        "severity": "Low",
+        "finding": "4 internal and 4 external unique links.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "internal": 4,
+          "external": 4
+        }
+      },
+      {
+        "id": "robots_txt",
+        "category": "technical",
+        "label": "robots.txt",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "https://liwanwen.com/robots.txt returned HTTP 404.",
+        "why": "Not required, but robots.txt is the standard place to point crawlers to your sitemap.",
+        "fix": "Add a robots.txt with 'User-agent: *', 'Allow: /' and a 'Sitemap:' line.",
+        "data": {}
+      },
+      {
+        "id": "sitemap",
+        "category": "technical",
+        "label": "sitemap.xml",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No valid sitemap found at: https://liwanwen.com/sitemap.xml.",
+        "why": "A sitemap helps search engines discover all your pages, especially on new sites.",
+        "fix": "Generate sitemap.xml listing every public page and reference it in robots.txt.",
+        "data": {
+          "tried": [
+            {
+              "url": "https://liwanwen.com/sitemap.xml",
+              "status_code": 404,
+              "error": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "broken_links",
+        "category": "technical",
+        "label": "Broken links (4xx)",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Checked 8 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "broken": [],
+          "server_errors": [],
+          "unchecked": [],
+          "checked": 8
+        }
+      },
+      {
+        "id": "lh_performance",
+        "category": "performance",
+        "label": "Mobile performance score",
+        "status": "warn",
+        "severity": "High",
+        "finding": "81/100 (Lighthouse, mobile).",
+        "why": "Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.",
+        "fix": "Open the PSI report and fix the top 'Opportunities' (image size, render-blocking JS/CSS).",
+        "data": {
+          "score": 81
+        }
+      },
+      {
+        "id": "lh_accessibility",
+        "category": "performance",
+        "label": "Accessibility score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "96/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 96
+        }
+      },
+      {
+        "id": "lh_seo",
+        "category": "performance",
+        "label": "Lighthouse SEO score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "100/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 100
+        }
+      },
+      {
+        "id": "cwv_lcp",
+        "category": "performance",
+        "label": "Core Web Vital: LCP",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "LCP = 3.9 s from lab (Lighthouse, single run).",
+        "why": "Google rates LCP good at <= 2.5 s, poor above 4.0 s.",
+        "fix": "Compress and preload the hero image; reduce render-blocking resources.",
+        "data": {
+          "value": 3899,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_cls",
+        "category": "performance",
+        "label": "Core Web Vital: CLS",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "CLS = 0 from lab (Lighthouse, single run).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "value": 0,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_inp",
+        "category": "performance",
+        "label": "Core Web Vital: INP",
+        "status": "not_checked",
+        "severity": "Low",
+        "finding": "INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "value_prop",
+        "category": "content",
+        "label": "Value proposition above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "H1 \"Real problems. Things I’m building.\" appears in the first 1500 characters with 251 words of copy.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "cta_fold",
+        "category": "content",
+        "label": "Call to action above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "2 action link(s)/button(s) in the opening section, e.g. \"Get in touch\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "View on GitHub ↗",
+              "href": "https://github.com/WANWEN-LI/lifecycle-email-automation",
+              "styled_as_button": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "keyword_placement",
+        "category": "content",
+        "label": "Keyword placement",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "\"Wanwen Li\" found in: title; missing from: h1, first_paragraph.",
+        "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
+        "fix": "Use the keyword (or a close variant) naturally in h1, first_paragraph.",
+        "data": {
+          "places": {
+            "title": true,
+            "h1": false,
+            "first_paragraph": false
+          }
+        }
+      },
+      {
+        "id": "readability",
+        "category": "content",
+        "label": "Readability",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "330 words, avg 14.3 words/sentence, 1 sentence(s) over 25 words, 0 paragraph(s) over 100 words; Flesch reading ease 61.0 (English formula).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "words": 330,
+          "sentences": 23,
+          "paragraphs": 11,
+          "avg_sentence_words": 14.3,
+          "long_sentences": 1,
+          "avg_paragraph_words": 30.0,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": 61.0
+        }
+      },
+      {
+        "id": "trust_contact",
+        "category": "content",
+        "label": "Contact path",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Found (e.g. mailto:wanwenli.contact@gmail.com).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_proof_of_work",
+        "category": "content",
+        "label": "Evidence of work",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Found.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_person_schema",
+        "category": "content",
+        "label": "Person structured data",
+        "status": "fail",
+        "severity": "Low",
+        "finding": "Not found in the page HTML.",
+        "why": "Person schema helps Google connect your name, role and profiles (sameAs).",
+        "fix": "Add Person JSON-LD with name, jobTitle, url and sameAs links.",
+        "data": {}
+      }
+    ],
+    "score": {
+      "total": 84,
+      "categories": {
+        "technical": {
+          "label": "Technical",
+          "score": 79,
+          "earned": 23.0,
+          "possible": 29.0,
+          "breakdown": [
+            {
+              "id": "title_length",
+              "status": "warn",
+              "weight": 3,
+              "points": 1.5
+            },
+            {
+              "id": "title_keyword",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "meta_description",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "h1_count",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "heading_hierarchy",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "image_alt",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "canonical",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_meta",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "lang",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "open_graph",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "twitter_card",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "json_ld",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_txt",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "sitemap",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "broken_links",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            }
+          ]
+        },
+        "performance": {
+          "label": "Performance",
+          "score": 88,
+          "breakdown": {
+            "lh_performance": 81,
+            "lh_accessibility": 96,
+            "lh_seo": 100
+          }
+        },
+        "content": {
+          "label": "Content & Conversion",
+          "score": 87,
+          "earned": 13.0,
+          "possible": 15.0,
+          "breakdown": [
+            {
+              "id": "value_prop",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "cta_fold",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "keyword_placement",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "readability",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "trust_contact",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "trust_proof_of_work",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "trust_person_schema",
+              "status": "fail",
+              "weight": 1,
+              "points": 0.0
+            }
+          ]
+        }
+      },
+      "weights": {
+        "technical": 0.4,
+        "performance": 0.3,
+        "content": 0.3
+      },
+      "notes": []
+    },
+    "pagespeed": {
+      "ok": true,
+      "error": null,
+      "summary": {
+        "scores": {
+          "performance": 81,
+          "seo": 100,
+          "accessibility": 96
+        },
+        "lab": {
+          "LCP": 3899,
+          "CLS": 0,
+          "TBT": 28
+        },
+        "field_page": {},
+        "field_origin": {},
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-18T12:25:01.766Z",
+        "final_url": "https://liwanwen.com/projects"
+      },
+      "strategy": "mobile"
+    },
+    "ai": null,
+    "errors": []
+  },
+  {
+    "tool_version": "0.1.0",
+    "checked_at": "2026-10-18T12:25:14+00:00",
+    "input": {
+      "url": "https://liwanwen.com/photography",
+      "keyword": "Wanwen Li",
+      "page_type": "portfolio"
+    },
+    "fetch": {
+      "url": "https://liwanwen.com/photography",
+      "final_url": "https://liwanwen.com/photography",
+      "status_code": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 22,
+      "redirects": [],
+      "error_type": null,
+      "error": null
+    },
+    "facts": {
+      "title": "Photography | Wanwen Li",
+      "meta_description": "Wanwen Li — business-first AI tools, Marketing FDE projects and a growing collection of personal photography.",
+      "headings": {
+        "h1": [
+          "A curious eye. A life outside the screen."
+        ],
+        "h2": [
+          "Travel photography",
+          "Personal moments",
+          "Let’s make useful things."
+        ],
+        "h3": [
+          "The collection starts here."
+        ],
+        "outline": [
+          [
+            1,
+            "A curious eye. A life outside the screen."
+          ],
+          [
+            2,
+            "Travel photography"
+          ],
+          [
+            3,
+            "The collection starts here."
+          ],
+          [
+            2,
+            "Personal moments"
+          ],
+          [
+            2,
+            "Let’s make useful things."
+          ]
+        ]
+      },
+      "images": {
+        "total": 1,
+        "with_alt": 0,
+        "empty_alt": 1,
+        "missing_alt": 0,
+        "missing_alt_src": []
+      },
+      "head": {
+        "canonical": null,
+        "robots": null,
+        "lang": "en"
+      },
+      "social": {
+        "og:title": null,
+        "og:description": null,
+        "og:image": null,
+        "twitter:card": null,
+        "twitter:title": null,
+        "twitter:description": null,
+        "twitter:image": null
+      },
+      "json_ld": {
+        "count": 0,
+        "valid_blocks": 0,
+        "types": [],
+        "errors": []
+      },
+      "links": {
+        "internal": [
+          "https://liwanwen.com/",
+          "https://liwanwen.com/about",
+          "https://liwanwen.com/assets/Wanwen-Li-CV.pdf",
+          "https://liwanwen.com/photography"
+        ],
+        "external": [
+          "https://github.com/WANWEN-LI"
+        ]
+      },
+      "content": {
+        "fold": {
+          "text": "Skip to content Wanwen Li Home Projects Experience About Photography 中文 Get in touch Away from the workbench A curious eye. A life outside the screen. Places I’ve walked through with my camera: wide views, small details, and the quiet moments in between. Shot on a Sony camera, edited with a light, consistent touch. Travel Personal moments Travel photography The collection starts here. Travel photographs will appear here when I’m ready to share them. Personal moments A first portrait, with more moments to come. × Let’s make useful things. wanwenli.contact@gmail.com Get in touch ↗ Open to growth, marketing analytics and GTM internships from November 2026. Always curious about a good problem. © 2026 Wanwen Li GitHub Résumé",
+          "chars": 730,
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "wanwenli.contact@gmail.com",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "Get in touch ↗",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": true
+            }
+          ],
+          "headings": [
+            "A curious eye. A life outside the screen.",
+            "Travel photography",
+            "Personal moments",
+            "Let’s make useful things."
+          ]
+        },
+        "first_paragraph": "Away from the workbench",
+        "readability": {
+          "words": 68,
+          "sentences": 7,
+          "paragraphs": 5,
+          "avg_sentence_words": 9.7,
+          "long_sentences": 0,
+          "avg_paragraph_words": 13.6,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": null
+        },
+        "trust": {
+          "price": false,
+          "price_examples": [],
+          "reviews": false,
+          "shipping_returns": false,
+          "contact": true,
+          "contact_examples": [
+            "mailto:wanwenli.contact@gmail.com"
+          ],
+          "social_proof": false,
+          "proof_of_work": true,
+          "person_schema": false,
+          "product_schema": false
+        }
+      }
+    },
+    "checks": [
+      {
+        "id": "title_length",
+        "category": "technical",
+        "label": "Title length",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "Title is 23 characters (short; it may not describe the page well): \"Photography | Wanwen Li\".",
+        "why": "The title is the main headline in search results and a strong relevance signal.",
+        "fix": "Rewrite to 30-60 characters, most important words first.",
+        "data": {
+          "length": 23,
+          "value": "Photography | Wanwen Li"
+        }
+      },
+      {
+        "id": "title_keyword",
+        "category": "technical",
+        "label": "Keyword in title",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Title contains \"Wanwen Li\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "meta_description",
+        "category": "technical",
+        "label": "Meta description",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Meta description is 109 characters.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "length": 109,
+          "value": "Wanwen Li — business-first AI tools, Marketing FDE projects and a growing collection of personal photography."
+        }
+      },
+      {
+        "id": "h1_count",
+        "category": "technical",
+        "label": "Single H1",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Exactly one H1: \"A curious eye. A life outside the screen.\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "h1": [
+            "A curious eye. A life outside the screen."
+          ]
+        }
+      },
+      {
+        "id": "heading_hierarchy",
+        "category": "technical",
+        "label": "Heading hierarchy",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "5 headings, no skipped levels.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "image_alt",
+        "category": "technical",
+        "label": "Image alt text",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "1/1 images (100%) have an alt attribute (1 empty, i.e. marked decorative).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "coverage_pct": 100
+        }
+      },
+      {
+        "id": "canonical",
+        "category": "technical",
+        "label": "Canonical URL",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No <link rel=\"canonical\"> found.",
+        "why": "Without a canonical, URL variants (query strings, http/https) can split ranking signals.",
+        "fix": "Add <link rel=\"canonical\" href=\"<preferred absolute URL>\">.",
+        "data": {}
+      },
+      {
+        "id": "robots_meta",
+        "category": "technical",
+        "label": "Robots meta",
+        "status": "pass",
+        "severity": "High",
+        "finding": "No robots meta (default is index, follow).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "lang",
+        "category": "technical",
+        "label": "HTML lang attribute",
+        "status": "pass",
+        "severity": "Low",
+        "finding": "lang=\"en\".",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "open_graph",
+        "category": "technical",
+        "label": "Open Graph tags",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "Missing: og:title, og:description, og:image.",
+        "why": "Without OG tags, shared links on LinkedIn/WhatsApp/Slack show a poor or empty preview.",
+        "fix": "Add the missing og:* meta tags; og:image should be at least 1200x630.",
+        "data": {
+          "missing": [
+            "og:title",
+            "og:description",
+            "og:image"
+          ]
+        }
+      },
+      {
+        "id": "twitter_card",
+        "category": "technical",
+        "label": "Twitter/X card",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "No twitter:card meta.",
+        "why": "X falls back to OG tags but uses a small preview without twitter:card.",
+        "fix": "Add <meta name=\"twitter:card\" content=\"summary_large_image\">.",
+        "data": {}
+      },
+      {
+        "id": "json_ld",
+        "category": "technical",
+        "label": "Structured data (JSON-LD)",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No JSON-LD found.",
+        "why": "Structured data can unlock rich results (price, rating, profile) in search.",
+        "fix": "Add JSON-LD matching the page: Product, Person, Organization, etc.",
+        "data": {}
+      },
+      {
+        "id": "link_counts",
+        "category": "technical",
+        "label": "Links",
+        "status": "info",
+        "severity": "Low",
+        "finding": "4 internal and 1 external unique links.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "internal": 4,
+          "external": 1
+        }
+      },
+      {
+        "id": "robots_txt",
+        "category": "technical",
+        "label": "robots.txt",
+        "status": "warn",
+        "severity": "Low",
+        "finding": "https://liwanwen.com/robots.txt returned HTTP 404.",
+        "why": "Not required, but robots.txt is the standard place to point crawlers to your sitemap.",
+        "fix": "Add a robots.txt with 'User-agent: *', 'Allow: /' and a 'Sitemap:' line.",
+        "data": {}
+      },
+      {
+        "id": "sitemap",
+        "category": "technical",
+        "label": "sitemap.xml",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "No valid sitemap found at: https://liwanwen.com/sitemap.xml.",
+        "why": "A sitemap helps search engines discover all your pages, especially on new sites.",
+        "fix": "Generate sitemap.xml listing every public page and reference it in robots.txt.",
+        "data": {
+          "tried": [
+            {
+              "url": "https://liwanwen.com/sitemap.xml",
+              "status_code": 404,
+              "error": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "broken_links",
+        "category": "technical",
+        "label": "Broken links (4xx)",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Checked 5 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "broken": [],
+          "server_errors": [],
+          "unchecked": [],
+          "checked": 5
+        }
+      },
+      {
+        "id": "lh_performance",
+        "category": "performance",
+        "label": "Mobile performance score",
+        "status": "warn",
+        "severity": "High",
+        "finding": "86/100 (Lighthouse, mobile).",
+        "why": "Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.",
+        "fix": "Open the PSI report and fix the top 'Opportunities' (image size, render-blocking JS/CSS).",
+        "data": {
+          "score": 86
+        }
+      },
+      {
+        "id": "lh_accessibility",
+        "category": "performance",
+        "label": "Accessibility score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "96/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 96
+        }
+      },
+      {
+        "id": "lh_seo",
+        "category": "performance",
+        "label": "Lighthouse SEO score",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "100/100 (Lighthouse, mobile).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "score": 100
+        }
+      },
+      {
+        "id": "cwv_lcp",
+        "category": "performance",
+        "label": "Core Web Vital: LCP",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "LCP = 3.7 s from lab (Lighthouse, single run).",
+        "why": "Google rates LCP good at <= 2.5 s, poor above 4.0 s.",
+        "fix": "Compress and preload the hero image; reduce render-blocking resources.",
+        "data": {
+          "value": 3653,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_cls",
+        "category": "performance",
+        "label": "Core Web Vital: CLS",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "CLS = 0 from lab (Lighthouse, single run).",
+        "why": "",
+        "fix": "",
+        "data": {
+          "value": 0,
+          "source": "lab (Lighthouse, single run)"
+        }
+      },
+      {
+        "id": "cwv_inp",
+        "category": "performance",
+        "label": "Core Web Vital: INP",
+        "status": "not_checked",
+        "severity": "Low",
+        "finding": "INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "value_prop",
+        "category": "content",
+        "label": "Value proposition above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "H1 \"A curious eye. A life outside the screen.\" appears in the first 1500 characters with 117 words of copy.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "cta_fold",
+        "category": "content",
+        "label": "Call to action above the fold",
+        "status": "pass",
+        "severity": "High",
+        "finding": "3 action link(s)/button(s) in the opening section, e.g. \"Get in touch\".",
+        "why": "",
+        "fix": "",
+        "data": {
+          "ctas": [
+            {
+              "label": "Get in touch",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "wanwenli.contact@gmail.com",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": false
+            },
+            {
+              "label": "Get in touch ↗",
+              "href": "mailto:wanwenli.contact@gmail.com",
+              "styled_as_button": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "keyword_placement",
+        "category": "content",
+        "label": "Keyword placement",
+        "status": "warn",
+        "severity": "Medium",
+        "finding": "\"Wanwen Li\" found in: title; missing from: h1, first_paragraph.",
+        "why": "Like an Amazon listing title, the first words people and crawlers read should match the search term.",
+        "fix": "Use the keyword (or a close variant) naturally in h1, first_paragraph.",
+        "data": {
+          "places": {
+            "title": true,
+            "h1": false,
+            "first_paragraph": false
+          }
+        }
+      },
+      {
+        "id": "readability",
+        "category": "content",
+        "label": "Readability",
+        "status": "not_checked",
+        "severity": "Low",
+        "finding": "Only 68 words in <p> elements in the HTML; too little text to assess.",
+        "why": "",
+        "fix": "",
+        "data": {
+          "words": 68,
+          "sentences": 7,
+          "paragraphs": 5,
+          "avg_sentence_words": 9.7,
+          "long_sentences": 0,
+          "avg_paragraph_words": 13.6,
+          "long_paragraphs": 0,
+          "flesch_reading_ease": null
+        }
+      },
+      {
+        "id": "trust_contact",
+        "category": "content",
+        "label": "Contact path",
+        "status": "pass",
+        "severity": "High",
+        "finding": "Found (e.g. mailto:wanwenli.contact@gmail.com).",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_proof_of_work",
+        "category": "content",
+        "label": "Evidence of work",
+        "status": "pass",
+        "severity": "Medium",
+        "finding": "Found.",
+        "why": "",
+        "fix": "",
+        "data": {}
+      },
+      {
+        "id": "trust_person_schema",
+        "category": "content",
+        "label": "Person structured data",
+        "status": "fail",
+        "severity": "Low",
+        "finding": "Not found in the page HTML.",
+        "why": "Person schema helps Google connect your name, role and profiles (sameAs).",
+        "fix": "Add Person JSON-LD with name, jobTitle, url and sameAs links.",
+        "data": {}
+      }
+    ],
+    "score": {
+      "total": 85,
+      "categories": {
+        "technical": {
+          "label": "Technical",
+          "score": 79,
+          "earned": 23.0,
+          "possible": 29.0,
+          "breakdown": [
+            {
+              "id": "title_length",
+              "status": "warn",
+              "weight": 3,
+              "points": 1.5
+            },
+            {
+              "id": "title_keyword",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "meta_description",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "h1_count",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "heading_hierarchy",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "image_alt",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "canonical",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_meta",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "lang",
+              "status": "pass",
+              "weight": 1,
+              "points": 1.0
+            },
+            {
+              "id": "open_graph",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "twitter_card",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "json_ld",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "robots_txt",
+              "status": "warn",
+              "weight": 1,
+              "points": 0.5
+            },
+            {
+              "id": "sitemap",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "broken_links",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            }
+          ]
+        },
+        "performance": {
+          "label": "Performance",
+          "score": 91,
+          "breakdown": {
+            "lh_performance": 86,
+            "lh_accessibility": 96,
+            "lh_seo": 100
+          }
+        },
+        "content": {
+          "label": "Content & Conversion",
+          "score": 86,
+          "earned": 12.0,
+          "possible": 14.0,
+          "breakdown": [
+            {
+              "id": "value_prop",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "cta_fold",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "keyword_placement",
+              "status": "warn",
+              "weight": 2,
+              "points": 1.0
+            },
+            {
+              "id": "trust_contact",
+              "status": "pass",
+              "weight": 3,
+              "points": 3.0
+            },
+            {
+              "id": "trust_proof_of_work",
+              "status": "pass",
+              "weight": 2,
+              "points": 2.0
+            },
+            {
+              "id": "trust_person_schema",
+              "status": "fail",
+              "weight": 1,
+              "points": 0.0
+            }
+          ]
+        }
+      },
+      "weights": {
+        "technical": 0.4,
+        "performance": 0.3,
+        "content": 0.3
+      },
+      "notes": []
+    },
+    "pagespeed": {
+      "ok": true,
+      "error": null,
+      "summary": {
+        "scores": {
+          "performance": 86,
+          "seo": 100,
+          "accessibility": 96
+        },
+        "lab": {
+          "LCP": 3653,
+          "CLS": 0,
+          "TBT": 0
+        },
+        "field_page": {},
+        "field_origin": {},
+        "lighthouse_version": "13.5.0",
+        "fetch_time": "2026-10-18T12:25:21.388Z",
+        "final_url": "https://liwanwen.com/photography"
+      },
+      "strategy": "mobile"
+    },
+    "ai": null,
+    "errors": []
+  }
+]

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SEO report · https://liwanwen.com/photography</title>
+<style>
+:root {
+  --page: #f9f9f7; --surface: #fcfcfb; --border: #e4e3de;
+  --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #75746f;
+  --meter: #2a78d6; --meter-track: #e8e7e2;
+  --good: #0ca30c; --warning: #fab219; --critical: #d03b3b; --neutral: #8a8984;
+  --good-text: #006300; --critical-text: #b32727;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: #0d0d0d; --surface: #1a1a19; --border: #33332f;
+    --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #9a998f;
+    --meter: #3987e5; --meter-track: #383835;
+    --good-text: #4fd14f; --critical-text: #f07a7a;
+  }
+}
+:root[data-theme="dark"] {
+  --page: #0d0d0d; --surface: #1a1a19; --border: #33332f;
+  --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #9a998f;
+  --meter: #3987e5; --meter-track: #383835;
+  --good-text: #4fd14f; --critical-text: #f07a7a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink);
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 40px 0 12px; }
+h3 { font-size: 15px; margin: 24px 0 8px; color: var(--ink-2); }
+a { color: var(--meter); }
+.meta { color: var(--ink-2); font-size: 13px; margin: 0; word-break: break-all; }
+.meta b { color: var(--ink); font-weight: 600; }
+.notice { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--warning);
+  border-radius: 8px; padding: 10px 14px; margin: 16px 0 0; font-size: 14px; }
+.notice p { margin: 2px 0; }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 24px; }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.tile .label { font-size: 13px; color: var(--ink-2); margin: 0; }
+.tile .value { font-size: 34px; font-weight: 650; margin: 4px 0 0; font-variant-numeric: tabular-nums; }
+.tile .value small { font-size: 14px; color: var(--ink-3); font-weight: 500; }
+.tile .sub { font-size: 12px; color: var(--ink-3); margin: 6px 0 0; }
+.tile.total { border-color: var(--meter); }
+.meter { height: 6px; border-radius: 3px; background: var(--meter-track); margin-top: 10px; overflow: hidden; }
+.meter span { display: block; height: 100%; background: var(--meter); border-radius: 3px; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; font-size: 14px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-2); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.status { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; font-weight: 600; font-size: 13px; }
+.status i { font-style: normal; display: inline-grid; place-items: center; width: 18px; height: 18px;
+  border-radius: 50%; color: #fff; font-size: 11px; font-weight: 700; }
+.s-pass i { background: var(--good); } .s-warn i { background: var(--warning); color: #3a2a00; }
+.s-fail i { background: var(--critical); } .s-info i, .s-not_checked i { background: var(--neutral); }
+.sev { font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--border);
+  color: var(--ink-2); white-space: nowrap; }
+.sev-High { color: var(--ink); border-color: var(--ink-3); }
+.issue-why, .issue-fix { color: var(--ink-2); margin: 4px 0 0; font-size: 13px; }
+.issue-fix b, .issue-why b { color: var(--ink); font-weight: 600; }
+details { margin-top: 12px; }
+summary { cursor: pointer; color: var(--ink-2); font-size: 14px; }
+.delta-up { color: var(--good-text); font-weight: 600; } .delta-down { color: var(--critical-text); font-weight: 600; }
+.delta-flat { color: var(--ink-3); }
+footer { margin-top: 48px; color: var(--ink-3); font-size: 12px; }
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .table-wrap { overflow-x: auto; }
+  table { min-width: 620px; }
+  table.compact { min-width: 0; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>Page SEO &amp; conversion report</h1>
+<p class="meta"><b>https://liwanwen.com/photography</b></p>
+<p class="meta">Checked 2026-10-18T12:25:14+00:00 · Keyword: Wanwen Li · Page type: portfolio</p>
+
+
+<div class="tiles">
+  <div class="tile total">
+  <p class="label">Total</p>
+  <p class="value">85<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Total 85 out of 100"><span style="width: 85%"></span></div>
+<p class="sub">Weighted: Technical 40 · Performance 30 · Content 30</p></div>
+    <div class="tile">
+  <p class="label">Technical</p>
+  <p class="value">79<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Technical 79 out of 100"><span style="width: 79%"></span></div>
+<p class="sub">15 scored checks</p></div>
+    <div class="tile">
+  <p class="label">Performance</p>
+  <p class="value">91<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Performance 91 out of 100"><span style="width: 91%"></span></div>
+<p class="sub">0.6 Perf + 0.2 A11y + 0.2 SEO (Lighthouse)</p></div>
+    <div class="tile">
+  <p class="label">Content &amp; Conversion</p>
+  <p class="value">86<small>/100</small></p>
+  <div class="meter" role="img" aria-label="Content &amp; Conversion 86 out of 100"><span style="width: 86%"></span></div>
+<p class="sub">6 scored checks</p></div>
+</div>
+
+<h2>Issues to fix (11)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Status</th><th>Severity</th><th>Check</th><th>What we found · why it matters · how to fix</th></tr></thead>
+  <tbody>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-High">High</span></td>
+    <td>Mobile performance score<div class="meta">Performance</div></td>
+    <td>86/100 (Lighthouse, mobile).
+<p class="issue-why"><b>Why:</b> Slow mobile pages lose visitors before they see the offer; speed is also a ranking signal.</p><p class="issue-fix"><b>Fix:</b> Open the PSI report and fix the top &#39;Opportunities&#39; (image size, render-blocking JS/CSS).</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>Title length<div class="meta">Technical</div></td>
+    <td>Title is 23 characters (short; it may not describe the page well): &#34;Photography | Wanwen Li&#34;.
+<p class="issue-why"><b>Why:</b> The title is the main headline in search results and a strong relevance signal.</p><p class="issue-fix"><b>Fix:</b> Rewrite to 30-60 characters, most important words first.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>Canonical URL<div class="meta">Technical</div></td>
+    <td>No &lt;link rel=&#34;canonical&#34;&gt; found.
+<p class="issue-why"><b>Why:</b> Without a canonical, URL variants (query strings, http/https) can split ranking signals.</p><p class="issue-fix"><b>Fix:</b> Add &lt;link rel=&#34;canonical&#34; href=&#34;&lt;preferred absolute URL&gt;&#34;&gt;.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>Structured data (JSON-LD)<div class="meta">Technical</div></td>
+    <td>No JSON-LD found.
+<p class="issue-why"><b>Why:</b> Structured data can unlock rich results (price, rating, profile) in search.</p><p class="issue-fix"><b>Fix:</b> Add JSON-LD matching the page: Product, Person, Organization, etc.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>sitemap.xml<div class="meta">Technical</div></td>
+    <td>No valid sitemap found at: https://liwanwen.com/sitemap.xml.
+<p class="issue-why"><b>Why:</b> A sitemap helps search engines discover all your pages, especially on new sites.</p><p class="issue-fix"><b>Fix:</b> Generate sitemap.xml listing every public page and reference it in robots.txt.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>Keyword placement<div class="meta">Content &amp; Conversion</div></td>
+    <td>&#34;Wanwen Li&#34; found in: title; missing from: h1, first_paragraph.
+<p class="issue-why"><b>Why:</b> Like an Amazon listing title, the first words people and crawlers read should match the search term.</p><p class="issue-fix"><b>Fix:</b> Use the keyword (or a close variant) naturally in h1, first_paragraph.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Medium">Medium</span></td>
+    <td>Core Web Vital: LCP<div class="meta">Performance</div></td>
+    <td>LCP = 3.7 s from lab (Lighthouse, single run).
+<p class="issue-why"><b>Why:</b> Google rates LCP good at &lt;= 2.5 s, poor above 4.0 s.</p><p class="issue-fix"><b>Fix:</b> Compress and preload the hero image; reduce render-blocking resources.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-fail"><i aria-hidden="true">✕</i>Fail</span></td>
+    <td><span class="sev sev-Low">Low</span></td>
+    <td>Person structured data<div class="meta">Content &amp; Conversion</div></td>
+    <td>Not found in the page HTML.
+<p class="issue-why"><b>Why:</b> Person schema helps Google connect your name, role and profiles (sameAs).</p><p class="issue-fix"><b>Fix:</b> Add Person JSON-LD with name, jobTitle, url and sameAs links.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Low">Low</span></td>
+    <td>Open Graph tags<div class="meta">Technical</div></td>
+    <td>Missing: og:title, og:description, og:image.
+<p class="issue-why"><b>Why:</b> Without OG tags, shared links on LinkedIn/WhatsApp/Slack show a poor or empty preview.</p><p class="issue-fix"><b>Fix:</b> Add the missing og:* meta tags; og:image should be at least 1200x630.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Low">Low</span></td>
+    <td>Twitter/X card<div class="meta">Technical</div></td>
+    <td>No twitter:card meta.
+<p class="issue-why"><b>Why:</b> X falls back to OG tags but uses a small preview without twitter:card.</p><p class="issue-fix"><b>Fix:</b> Add &lt;meta name=&#34;twitter:card&#34; content=&#34;summary_large_image&#34;&gt;.</p></td>
+  </tr>
+  <tr>
+    <td><span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td>
+    <td><span class="sev sev-Low">Low</span></td>
+    <td>robots.txt<div class="meta">Technical</div></td>
+    <td>https://liwanwen.com/robots.txt returned HTTP 404.
+<p class="issue-why"><b>Why:</b> Not required, but robots.txt is the standard place to point crawlers to your sitemap.</p><p class="issue-fix"><b>Fix:</b> Add a robots.txt with &#39;User-agent: *&#39;, &#39;Allow: /&#39; and a &#39;Sitemap:&#39; line.</p></td>
+  </tr>
+  </tbody>
+</table></div>
+
+
+<details>
+  <summary>Passed and informational checks (18)</summary>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Status</th><th>Check</th><th>Finding</th></tr></thead>
+    <tbody>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Keyword in title<div class="meta">Technical</div></td><td>Title contains &#34;Wanwen Li&#34;.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Meta description<div class="meta">Technical</div></td><td>Meta description is 109 characters.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Single H1<div class="meta">Technical</div></td><td>Exactly one H1: &#34;A curious eye. A life outside the screen.&#34;.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Heading hierarchy<div class="meta">Technical</div></td><td>5 headings, no skipped levels.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Image alt text<div class="meta">Technical</div></td><td>1/1 images (100%) have an alt attribute (1 empty, i.e. marked decorative).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Robots meta<div class="meta">Technical</div></td><td>No robots meta (default is index, follow).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>HTML lang attribute<div class="meta">Technical</div></td><td>lang=&#34;en&#34;.</td></tr>
+    <tr><td><span class="status s-info"><i aria-hidden="true">i</i>Info</span></td><td>Links<div class="meta">Technical</div></td><td>4 internal and 1 external unique links.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Broken links (4xx)<div class="meta">Technical</div></td><td>Checked 5 links: 0 returned 4xx, 0 returned 5xx, 0 could not be checked (robots.txt or network).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Accessibility score<div class="meta">Performance</div></td><td>96/100 (Lighthouse, mobile).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Lighthouse SEO score<div class="meta">Performance</div></td><td>100/100 (Lighthouse, mobile).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Core Web Vital: CLS<div class="meta">Performance</div></td><td>CLS = 0 from lab (Lighthouse, single run).</td></tr>
+    <tr><td><span class="status s-not_checked"><i aria-hidden="true">–</i>Not checked</span></td><td>Core Web Vital: INP<div class="meta">Performance</div></td><td>INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Value proposition above the fold<div class="meta">Content &amp; Conversion</div></td><td>H1 &#34;A curious eye. A life outside the screen.&#34; appears in the first 1500 characters with 117 words of copy.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Call to action above the fold<div class="meta">Content &amp; Conversion</div></td><td>3 action link(s)/button(s) in the opening section, e.g. &#34;Get in touch&#34;.</td></tr>
+    <tr><td><span class="status s-not_checked"><i aria-hidden="true">–</i>Not checked</span></td><td>Readability<div class="meta">Content &amp; Conversion</div></td><td>Only 68 words in &lt;p&gt; elements in the HTML; too little text to assess.</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Contact path<div class="meta">Content &amp; Conversion</div></td><td>Found (e.g. mailto:wanwenli.contact@gmail.com).</td></tr>
+    <tr><td><span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td>Evidence of work<div class="meta">Content &amp; Conversion</div></td><td>Found.</td></tr>
+    </tbody>
+  </table></div>
+</details>
+
+<h2>PageSpeed Insights (mobile)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Metric</th><th>Value</th><th>Source</th></tr></thead>
+  <tbody>
+<tr><td>Lighthouse performance</td><td class="num">86</td><td>lab</td></tr><tr><td>Lighthouse seo</td><td class="num">100</td><td>lab</td></tr><tr><td>Lighthouse accessibility</td><td class="num">96</td><td>lab</td></tr><tr><td>LCP <span class="status s-warn"><i aria-hidden="true">!</i>Warning</span></td><td class="num">3.7 s</td><td>lab (Lighthouse, single run)</td></tr><tr><td>CLS <span class="status s-pass"><i aria-hidden="true">✓</i>Pass</span></td><td class="num">0</td><td>lab (Lighthouse, single run)</td></tr><tr><td>INP <span class="status s-not_checked"><i aria-hidden="true">–</i>Not checked</span></td><td class="num">n/a</td><td>INP needs real-user data; no CrUX field data for this page or origin (common for low-traffic sites).</td></tr>  </tbody>
+</table></div>
+<p class="meta">Lighthouse 13.5.0 · fetched 2026-10-18T12:25:21.388Z. Lab scores vary between runs.</p>
+<footer>Generated by Listing &amp; Page SEO Checker v0.1.0 · Scoring rules are documented in the project README.
+Scores reflect automated heuristics on the fetched HTML and Google PageSpeed Insights at the time of the check.</footer>
+</main>
+</body>
+</html>

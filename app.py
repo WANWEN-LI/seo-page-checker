@@ -63,6 +63,20 @@ def show_report(r: dict, key: str) -> None:
         st.dataframe(df, hide_index=True, width="stretch")
     else:
         st.success("No failing or warning checks.")
+    ai = r.get("ai")
+    if ai and not ai["ok"]:
+        st.caption(f"AI suggestions: {ai['error']}")
+    elif ai:
+        st.markdown("**AI suggestions** — based only on the findings above; review before use")
+        if ai["fixes"]:
+            st.dataframe(pd.DataFrame([{"#": i, "Fix": f["title"], "Impact": f["impact"], "Effort": f["effort"],
+                                        "Evidence": f["evidence"], "Action": f["action"]}
+                                       for i, f in enumerate(ai["fixes"], 1)]), hide_index=True, width="stretch")
+        c1, c2 = st.columns(2)
+        for col, name, rows in ((c1, "Title options", ai["titles"]), (c2, "Meta description options", ai["descriptions"])):
+            col.markdown(f"*{name}*")
+            for t in rows:
+                col.markdown(f"- {t['text']}  \n  `{t['chars']} chars{'' if t['in_range'] else ' — outside target range'}`")
     with st.expander("All checks (raw)"):
         st.dataframe(pd.DataFrame([{"Status": STATUS_TEXT[c["status"]], "Check": c["label"], "Finding": c["finding"]}
                                    for c in r["checks"]]), hide_index=True, width="stretch")
@@ -82,10 +96,13 @@ with tab_check:
         c1, c2 = st.columns(2)
         keyword = c1.text_input("Target keyword (optional)")
         page_type = c2.selectbox("Page type (optional)", ["(not set)", *PAGE_TYPES])
-        c3, c4, c5 = st.columns(3)
+        c3, c4, c5, c6 = st.columns(4)
         run_psi = c3.checkbox("Run PageSpeed Insights", value=True)
         check_links = c4.checkbox("Check for broken links", value=True)
-        save = c5.checkbox("Save to history", value=True)
+        has_ai = bool(os.getenv("ANTHROPIC_API_KEY"))
+        run_ai = c5.checkbox("AI suggestions (Claude)", value=has_ai, disabled=not has_ai,
+                             help=None if has_ai else "Set ANTHROPIC_API_KEY in .env to enable.")
+        save = c6.checkbox("Save to history", value=True)
         submitted = st.form_submit_button("Run check", type="primary")
 
     if submitted:
@@ -100,7 +117,7 @@ with tab_check:
                 for u in urls:
                     st.write(f"{u} — fetching, analysing" + (", running PageSpeed (30–60 s)…" if run_psi else "…"))
                     r = analyze(u, keyword or None, None if page_type == "(not set)" else page_type,
-                                fetcher, check_links, run_psi)
+                                fetcher, check_links, run_psi, run_ai)
                     if save and r["checks"]:
                         history.save(r)
                     results.append(r)

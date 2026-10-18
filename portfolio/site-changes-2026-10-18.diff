@@ -1,0 +1,129 @@
+--- before/index.html
++++ after/index.html
+@@ -6 +6,11 @@
+-<meta name="description" content="Wanwen Li — business-first AI tools, Marketing FDE projects and a growing collection of personal photography.">
++<meta name="description" content="Wanwen Li builds marketing automation and data tools with AI-assisted coding, drawing on 4+ years growing Amazon stores.">
++<link rel="canonical" href="https://liwanwen.com/">
++<meta property="og:type" content="website">
++<meta property="og:url" content="https://liwanwen.com/">
++<meta property="og:title" content="Wanwen Li — Tools, marketing &amp; a curious eye">
++<meta property="og:description" content="Wanwen Li builds marketing automation and data tools with AI-assisted coding, drawing on 4+ years growing Amazon stores.">
++<meta property="og:image" content="https://liwanwen.com/assets/wanwen-avatar-beret.jpg">
++<meta property="og:image:width" content="1000">
++<meta property="og:image:height" content="1000">
++<meta property="og:image:alt" content="Portrait of Wanwen Li wearing a beige beret">
++<meta name="twitter:card" content="summary">
+@@ -9,0 +20,3 @@
++<link rel="preconnect" href="https://fonts.googleapis.com">
++<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&amp;display=swap">
+@@ -12,0 +26 @@
++<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Wanwen Li","url":"https://liwanwen.com/","image":"https://liwanwen.com/assets/wanwen-avatar-beret.jpg","sameAs":["https://github.com/WANWEN-LI"]}</script>
+@@ -110 +124 @@
+-<video data-loop autoplay muted loop playsinline preload="auto" poster="assets/petal/demo-poster.jpg" aria-label="15-second loop of the Petal / Atelier email journey">
++<video data-loop muted loop playsinline preload="none" poster="assets/petal/demo-poster.jpg" aria-label="15-second loop of the Petal / Atelier email journey">
+@@ -174 +188 @@
+-<video data-loop autoplay muted loop playsinline preload="auto" poster="assets/lhf/lhf-poster.jpg" aria-label="12-second loop of London Home Finder">
++<video data-loop muted loop playsinline preload="none" poster="assets/lhf/lhf-poster.jpg" aria-label="12-second loop of London Home Finder">
+@@ -519 +533 @@
+-<img src="assets/portrait-natural.png" alt="Wanwen’s approved personal portrait preview" width="1254" height="1254" loading="lazy">
++<img src="assets/portrait-natural-700.webp" alt="Wanwen’s approved personal portrait preview" width="700" height="700" loading="lazy">
+@@ -560,2 +573,0 @@
+-<script>(function(){var r=matchMedia("(prefers-reduced-motion: reduce)");function s(){document.querySelectorAll("video[data-loop]").forEach(function(v){if(r.matches){v.removeAttribute("autoplay");v.pause();
+-try{v.currentTime=0}catch(e){}}else{v.play&&v.play().catch(function(){})}})}s();r.addEventListener&&r.addEventListener("change",s)})();</script>
+--- before/about.html
++++ after/about.html
+@@ -6 +6,11 @@
+-<meta name="description" content="Wanwen Li connects e-commerce experience with AI-assisted tools, working toward Marketing Forward Deployed Engineering. Explore her projects and background.">
++<meta name="description" content="About Wanwen Li: 4+ years growing Amazon stores, now building AI-assisted marketing tools and working toward Marketing FDE.">
++<link rel="canonical" href="https://liwanwen.com/about">
++<meta property="og:type" content="website">
++<meta property="og:url" content="https://liwanwen.com/about">
++<meta property="og:title" content="About Wanwen Li | From Amazon Operator to Builder">
++<meta property="og:description" content="About Wanwen Li: 4+ years growing Amazon stores, now building AI-assisted marketing tools and working toward Marketing FDE.">
++<meta property="og:image" content="https://liwanwen.com/assets/wanwen-avatar-beret.jpg">
++<meta property="og:image:width" content="1000">
++<meta property="og:image:height" content="1000">
++<meta property="og:image:alt" content="Portrait of Wanwen Li wearing a beige beret">
++<meta name="twitter:card" content="summary">
+@@ -8 +18 @@
+-<title>Get to know me | Wanwen Li</title>
++<title>About Wanwen Li | From Amazon Operator to Builder</title>
+@@ -9,0 +20,3 @@
++<link rel="preconnect" href="https://fonts.googleapis.com">
++<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&amp;display=swap">
+@@ -70 +83 @@
+-<img src="assets/portrait-natural.png" width="1254" height="1254" alt="Wanwen Li wearing her blue knitted hat">
++<img src="assets/portrait-natural-700.webp" width="700" height="700" fetchpriority="high" alt="Wanwen Li wearing her blue knitted hat">
+--- before/projects.html
++++ after/projects.html
+@@ -6 +6,11 @@
+-<meta name="description" content="Wanwen Li connects e-commerce experience with AI-assisted tools, working toward Marketing Forward Deployed Engineering. Explore her projects and background.">
++<meta name="description" content="Projects by Wanwen Li: a lifecycle email automation journey and London Home Finder, a rental search tool built with AI-assisted coding.">
++<link rel="canonical" href="https://liwanwen.com/projects">
++<meta property="og:type" content="website">
++<meta property="og:url" content="https://liwanwen.com/projects">
++<meta property="og:title" content="Projects by Wanwen Li | Marketing Automation &amp; Data Tools">
++<meta property="og:description" content="Projects by Wanwen Li: a lifecycle email automation journey and London Home Finder, a rental search tool built with AI-assisted coding.">
++<meta property="og:image" content="https://liwanwen.com/assets/wanwen-avatar-beret.jpg">
++<meta property="og:image:width" content="1000">
++<meta property="og:image:height" content="1000">
++<meta property="og:image:alt" content="Portrait of Wanwen Li wearing a beige beret">
++<meta name="twitter:card" content="summary">
+@@ -8 +18 @@
+-<title>Projects | Wanwen Li</title>
++<title>Projects by Wanwen Li | Marketing Automation &amp; Data Tools</title>
+@@ -9,0 +20,3 @@
++<link rel="preconnect" href="https://fonts.googleapis.com">
++<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&amp;display=swap">
+--- before/photography.html
++++ after/photography.html
+@@ -6 +6,11 @@
+-<meta name="description" content="Wanwen Li — business-first AI tools, Marketing FDE projects and a growing collection of personal photography.">
++<meta name="description" content="Travel photography and personal moments by Wanwen Li, a marketing tools builder with a curious eye beyond the screen.">
++<link rel="canonical" href="https://liwanwen.com/photography">
++<meta property="og:type" content="website">
++<meta property="og:url" content="https://liwanwen.com/photography">
++<meta property="og:title" content="Photography by Wanwen Li | Travel &amp; Personal Moments">
++<meta property="og:description" content="Travel photography and personal moments by Wanwen Li, a marketing tools builder with a curious eye beyond the screen.">
++<meta property="og:image" content="https://liwanwen.com/assets/wanwen-avatar-beret.jpg">
++<meta property="og:image:width" content="1000">
++<meta property="og:image:height" content="1000">
++<meta property="og:image:alt" content="Portrait of Wanwen Li wearing a beige beret">
++<meta name="twitter:card" content="summary">
+@@ -8 +18 @@
+-<title>Photography | Wanwen Li</title>
++<title>Photography by Wanwen Li | Travel &amp; Personal Moments</title>
+@@ -9,0 +20,3 @@
++<link rel="preconnect" href="https://fonts.googleapis.com">
++<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&amp;display=swap">
+--- before/style.css
++++ after/style.css
+@@ -1 +1 @@
+-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600;650;700&display=swap');
++
+--- before/app.js
++++ after/app.js
+@@ -20,0 +21,2 @@
++// Loop videos: load and play only while on screen; respect reduced motion (replaces the old inline autoplay script).
++(()=>{const vids=[...document.querySelectorAll('video[data-loop]')];if(!vids.length)return;const rm=matchMedia('(prefers-reduced-motion: reduce)');const visible=new Set();const play=v=>{v.preload='auto';v.play().catch(()=>{})};const stop=v=>{v.pause();if(rm.matches){try{v.currentTime=0}catch(e){}}};const sync=()=>vids.forEach(v=>(visible.has(v)&&!rm.matches)?play(v):stop(v));if(!('IntersectionObserver' in window)){vids.forEach(v=>visible.add(v));sync();}else{const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?visible.add(e.target):visible.delete(e.target));sync()},{rootMargin:'200px 0px'});vids.forEach(v=>io.observe(v));}rm.addEventListener&&rm.addEventListener('change',sync)})();
+--- before/robots.txt
++++ after/robots.txt
+@@ -0,0 +1,4 @@
++User-agent: *
++Allow: /
++
++Sitemap: https://liwanwen.com/sitemap.xml
+--- before/sitemap.xml
++++ after/sitemap.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
++  <url><loc>https://liwanwen.com/</loc><lastmod>2026-10-18</lastmod></url>
++  <url><loc>https://liwanwen.com/about</loc><lastmod>2026-10-18</lastmod></url>
++  <url><loc>https://liwanwen.com/projects</loc><lastmod>2026-10-18</lastmod></url>
++  <url><loc>https://liwanwen.com/photography</loc><lastmod>2026-10-18</lastmod></url>
++</urlset>

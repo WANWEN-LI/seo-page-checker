@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any
 
-from . import __version__, content, performance, scoring, technical
+from . import __version__, ai_suggest, content, performance, scoring, technical
 from .fetcher import Fetcher
 
 PAGE_TYPES = ("product", "landing", "portfolio")
@@ -13,7 +13,7 @@ PAGE_TYPES = ("product", "landing", "portfolio")
 
 def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
             fetcher: Fetcher | None = None, check_links: bool = True,
-            run_psi: bool = True) -> dict[str, Any]:
+            run_psi: bool = True, run_ai: bool = False) -> dict[str, Any]:
     fetcher = fetcher or Fetcher()
     report: dict[str, Any] = {
         "tool_version": __version__,
@@ -24,6 +24,7 @@ def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
         "checks": [],
         "score": None,
         "pagespeed": None,
+        "ai": None,
         "errors": [],
     }
     if page_type and page_type not in PAGE_TYPES:
@@ -39,6 +40,13 @@ def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
     facts = technical.extract_all(page.text, page_url)
     content_facts = content.extract_all(page.text)
     report["facts"] = {**facts, "content": content_facts}
+
+    blocked = technical.detect_interstitial(facts, content_facts["fold"]["text"])
+    if blocked:
+        report["fetch"]["error_type"] = "interstitial"
+        report["errors"].append(f"Page could not be audited: the server returned a bot-check, queue or "
+                                f"access page instead of the real page ({blocked}). No score was calculated.")
+        return report
 
     checks = technical.evaluate(facts, keyword=keyword, page_url=page_url)
     checks += technical.check_robots_and_sitemap(fetcher, page_url)
@@ -59,4 +67,6 @@ def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
 
     report["checks"] = [c.to_dict() for c in checks]
     report["score"] = scoring.score_report(report["checks"])
+    if run_ai:
+        report["ai"] = ai_suggest.suggest(report)
     return report

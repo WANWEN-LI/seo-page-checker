@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page SEO &amp; Conversion Checker | Wanwen Li</title>
+<meta name="description" content="A Python tool that audits a page's technical SEO, mobile speed and conversion basics, scores it 0–100 with transparent rules, and tracks before/after fixes.">
+<link rel="canonical" href="https://liwanwen.com/seo-checker/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://liwanwen.com/seo-checker/">
+<meta property="og:title" content="Page SEO &amp; Conversion Checker | Wanwen Li">
+<meta property="og:description" content="Audits technical SEO, mobile speed and conversion basics with a transparent 0–100 score and before/after tracking.">
+<meta property="og:image" content="https://liwanwen.com/assets/wanwen-avatar-beret.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg">
+<style>
+:root { --page:#f9f9f7; --surface:#fcfcfb; --border:#e4e3de; --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#75746f; --accent:#2a78d6; }
+@media (prefers-color-scheme: dark) { :root { --page:#0d0d0d; --surface:#1a1a19; --border:#33332f; --ink:#f0efec; --ink-2:#c3c2b7; --ink-3:#9a998f; --accent:#3987e5; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--page); color:var(--ink); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+main { max-width:880px; margin:0 auto; padding:40px 16px 72px; }
+a { color:var(--accent); }
+.back { font-size:14px; }
+h1 { font-size:32px; line-height:1.2; margin:16px 0 8px; letter-spacing:-.01em; }
+.lead { font-size:18px; color:var(--ink-2); margin:0 0 24px; }
+h2 { font-size:20px; margin:40px 0 12px; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:16px; }
+.card h3 { margin:0 0 6px; font-size:16px; }
+.card p { margin:0; color:var(--ink-2); font-size:14px; }
+table { width:100%; border-collapse:collapse; background:var(--surface); border:1px solid var(--border); border-radius:12px; overflow:hidden; font-size:15px; }
+th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--ink-2); }
+tr:last-child td { border-bottom:0; }
+td.num { font-variant-numeric:tabular-nums; white-space:nowrap; }
+.note { color:var(--ink-3); font-size:13px; }
+ul { padding-left:20px; } li { margin:4px 0; }
+.btn { display:inline-block; padding:10px 16px; border-radius:999px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; font-size:15px; }
+@media (max-width:720px) { .grid { grid-template-columns:1fr; } h1 { font-size:26px; } .wrap { overflow-x:auto; } table { min-width:560px; } }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="/">← Wanwen Li</a>
+<h1>Page SEO &amp; Conversion Checker</h1>
+<p class="lead">Paste a URL and get a 0–100 score plus a ranked list of fixes for technical SEO, mobile speed and conversion. Every issue says what was found, why it matters and how to fix it.</p>
+<p><a class="btn" href="https://github.com/WANWEN-LI/seo-page-checker">View the code on GitHub</a></p>
+
+<h2>What it checks</h2>
+<div class="grid">
+  <div class="card"><h3>Technical SEO</h3><p>Title, meta description, H1 and heading order, image alt text, canonical, robots, Open Graph, JSON-LD, broken links, robots.txt, sitemap.</p></div>
+  <div class="card"><h3>Mobile performance</h3><p>Google PageSpeed Insights: Lighthouse scores and Core Web Vitals, with real-user data when Google has it.</p></div>
+  <div class="card"><h3>Content &amp; conversion</h3><p>The listing checks I used on Amazon for years: a clear offer at the top, a call to action, keyword placement, readability, and trust signals (price, reviews, delivery, contact).</p></div>
+</div>
+
+<h2>Example reports</h2>
+<div class="wrap"><table>
+  <thead><tr><th>Page</th><th>Type</th><th>Score</th><th>Report</th></tr></thead>
+  <tbody>
+    <!-- SCORES: filled from examples/*/raw.json when the page is published -->
+    <tr><td>liwanwen.com (this site), before fixes</td><td>Portfolio</td><td class="num">{{PORTFOLIO_BEFORE}}</td><td><a href="reports/portfolio-before-home.html">Home</a> · <a href="reports/portfolio-before-about.html">About</a></td></tr>
+    <tr><td>Petal / Atelier demo shop (my own project)</td><td>Shop</td><td class="num">{{PETAL}}</td><td><a href="reports/petal-store.html">Open</a></td></tr>
+    <tr><td>IKEA Italia, KALLAX product page</td><td>Product</td><td class="num">{{IKEA}}</td><td><a href="reports/ikea-product.html">Open</a></td></tr>
+  </tbody>
+</table></div>
+<p class="note">The IKEA report comes from a single read-only check of a public page ({{IKEA_DATE}}), run to show how the tool handles a large e-commerce product page. It is not affiliated with or endorsed by IKEA. The Petal / Atelier shop is a local demo, so its Performance score is N/A: PageSpeed only tests public URLs.</p>
+
+<h2>Before / after on this site</h2>
+<p>I ran the tool on my own portfolio, applied its top fixes, and will publish the measured comparison here after the update is live. The fixes were: compressing a 2.3 MB portrait to 57 KB, loading videos only when they scroll into view, and adding canonical tags, a sitemap, structured data and unique titles and descriptions.</p>
+<p class="note">Only measured numbers are shown. Lighthouse scores vary between runs, and I make no claims about rankings or traffic until Search Console has real data.</p>
+
+<h2>How the score works</h2>
+<ul>
+  <li>Each check passes (1 point), warns (0.5) or fails (0), weighted by impact (3 / 2 / 1).</li>
+  <li>Total = 40% Technical + 30% Performance + 30% Content &amp; Conversion. A category that couldn't be measured is shown as N/A and left out of the total, never estimated.</li>
+  <li>It respects robots.txt, waits at least 1 s between requests to the same site, reads public pages only, and refuses to score bot-check or queue pages.</li>
+</ul>
+<p class="note">Built with Python (requests, BeautifulSoup), the PageSpeed Insights API, Streamlit and Jinja2, plus optional Claude suggestions. MIT licensed.</p>
+</main>
+</body>
+</html>
