@@ -6,6 +6,8 @@ import argparse
 import json
 import sys
 
+from dotenv import load_dotenv
+
 from .analyzer import PAGE_TYPES, analyze
 from .fetcher import Fetcher
 
@@ -18,19 +20,28 @@ def print_summary(report: dict) -> None:
         print(f"  ERROR  {err}", file=sys.stderr)
     for c in report["checks"]:
         print(f"  {ICONS[c['status']]:<5} [{c['severity']:<6}] {c['label']}: {c['finding']}", file=sys.stderr)
+    sc = report.get("score")
+    if sc:
+        cats = "  ".join(f"{v['label']}: {v['score'] if v['score'] is not None else 'N/A'}"
+                         for v in sc["categories"].values())
+        print(f"  SCORE  {sc['total'] if sc['total'] is not None else 'N/A'}/100  ({cats})", file=sys.stderr)
+        for n in sc["notes"]:
+            print(f"  NOTE   {n}", file=sys.stderr)
 
 
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(prog="seo_checker", description="Audit public pages for technical SEO.")
+    ap = argparse.ArgumentParser(prog="seo_checker", description="Audit public pages for SEO, performance and conversion.")
     ap.add_argument("urls", nargs="+")
     ap.add_argument("--keyword")
     ap.add_argument("--page-type", choices=PAGE_TYPES)
     ap.add_argument("--no-link-check", action="store_true", help="skip broken-link requests")
+    ap.add_argument("--no-psi", action="store_true", help="skip the PageSpeed Insights API call")
     ap.add_argument("--out", help="write JSON to this file instead of stdout")
     args = ap.parse_args(argv)
+    load_dotenv()
 
     fetcher = Fetcher()
-    reports = [analyze(u, args.keyword, args.page_type, fetcher, not args.no_link_check) for u in args.urls]
+    reports = [analyze(u, args.keyword, args.page_type, fetcher, not args.no_link_check, not args.no_psi) for u in args.urls]
     for r in reports:
         print_summary(r)
     payload = json.dumps(reports[0] if len(reports) == 1 else reports, indent=2, ensure_ascii=False)

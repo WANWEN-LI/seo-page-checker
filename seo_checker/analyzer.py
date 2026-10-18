@@ -5,14 +5,15 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any
 
-from . import __version__, technical
+from . import __version__, content, performance, scoring, technical
 from .fetcher import Fetcher
 
 PAGE_TYPES = ("product", "landing", "portfolio")
 
 
 def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
-            fetcher: Fetcher | None = None, check_links: bool = True) -> dict[str, Any]:
+            fetcher: Fetcher | None = None, check_links: bool = True,
+            run_psi: bool = True) -> dict[str, Any]:
     fetcher = fetcher or Fetcher()
     report: dict[str, Any] = {
         "tool_version": __version__,
@@ -21,6 +22,8 @@ def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
         "fetch": None,
         "facts": None,
         "checks": [],
+        "score": None,
+        "pagespeed": None,
         "errors": [],
     }
     if page_type and page_type not in PAGE_TYPES:
@@ -34,10 +37,26 @@ def analyze(url: str, keyword: str | None = None, page_type: str | None = None,
 
     page_url = page.final_url or url
     facts = technical.extract_all(page.text, page_url)
-    report["facts"] = facts
+    content_facts = content.extract_all(page.text)
+    report["facts"] = {**facts, "content": content_facts}
+
     checks = technical.evaluate(facts, keyword=keyword, page_url=page_url)
     checks += technical.check_robots_and_sitemap(fetcher, page_url)
     if check_links:
         checks.append(technical.check_broken_links(fetcher, facts["links"]))
+
+    if run_psi:
+        psi = performance.run_pagespeed(page_url)
+    else:
+        psi = {"ok": False, "error": "PageSpeed Insights disabled for this run (--no-psi).", "skipped": True}
+    report["pagespeed"] = psi
+    if not psi["ok"]:
+        report["errors"].append(f"Performance N/A: {psi['error']}")
+    checks += performance.evaluate(psi)
+
+    valid_type = page_type if page_type in PAGE_TYPES else None
+    checks += content.evaluate(content_facts, facts, keyword, valid_type)
+
     report["checks"] = [c.to_dict() for c in checks]
+    report["score"] = scoring.score_report(report["checks"])
     return report
