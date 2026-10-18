@@ -1,5 +1,7 @@
 # liwanwen.com 接入 Google Search Console 和 GA4（操作步骤）
 
+> **更新（2026-10-19）**：GA4 曾经上线过，后来撤掉了。网站访问量很小，主要是 HR 在看，不值得为它加同意横幅。现在只用 Search Console，它不需要 cookie。下面关于 GA4 的步骤只作参考。
+
 这些步骤需要用你自己的 Google 账号来操作。全部做完后，工具和案例文档才能引用**真实的收录与访问数据**。在拿到 Search Console 数据之前，案例里一律不写"排名提升"或"流量提升"。
 
 前提：用浏览器打开 https://liwanwen.com 能正常显示网站。

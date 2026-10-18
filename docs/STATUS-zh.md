@@ -20,7 +20,7 @@
 - **Search Console**：TXT 验证记录已加到 Netlify DNS。
 
 ## 进行中 / 待办
-- **GA4**（衡量 ID `G-8566HQJMFM`）：先同意、再加载的横幅已接到 6 个页面（`dist/assets/analytics-consent.js`），2026-10-19 已上线。线上检查了首页、About、/seo-checker/、/petal/：横幅都会出现；点"接受"前对 Google 的请求为 0，点"接受"后才加载 gtag 并发送数据。
+- **GA4**：2026-10-19 上线过（先同意、再加载的横幅），当天又撤掉了。原因：网站主要是给 HR 看的，访问量很小，不值得为它加横幅。现在网站不加载任何统计脚本，线上检查了 6 个页面，对 Google 的请求都是 0。以后如果要重新接入，模板在 `wanwen-portfolio/integrations/analytics-consent.js`（衡量 ID `G-8566HQJMFM`）。
 - **Search Console**：在"站点地图"里提交完整网址 `https://liwanwen.com/sitemap.xml`。
 - 等 Search Console 积累 2–4 周数据后，导出效果报告，再更新案例文档。只引用真实数据。
 
