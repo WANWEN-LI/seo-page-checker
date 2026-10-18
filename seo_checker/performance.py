@@ -10,6 +10,7 @@ from __future__ import annotations
 import ipaddress
 import os
 import socket
+import time
 from typing import Any
 from urllib.parse import urlparse
 
@@ -19,6 +20,8 @@ from .models import Check
 
 PSI_ENDPOINT = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed"
 PSI_TIMEOUT = 120.0  # PSI runs a full Lighthouse audit; 30-60 s is normal
+RETRIES_ON_429 = 1
+RETRY_DELAY = 5.0
 CATEGORY = "performance"
 
 # Google's published Core Web Vitals thresholds (good, needs improvement); above = poor.
@@ -64,19 +67,26 @@ def run_pagespeed(url: str, api_key: str | None = None, strategy: str = "mobile"
     if api_key:
         params.append(("key", api_key))
     http = session or requests
-    try:
-        resp = http.get(PSI_ENDPOINT, params=params, timeout=PSI_TIMEOUT)
-    except requests.Timeout:
-        return {"ok": False, "error": f"PageSpeed Insights did not respond within {PSI_TIMEOUT:.0f}s."}
-    except requests.RequestException as exc:
-        return {"ok": False, "error": f"PageSpeed Insights request failed: {type(exc).__name__}"}
+    for attempt in range(1 + RETRIES_ON_429):
+        try:
+            resp = http.get(PSI_ENDPOINT, params=params, timeout=PSI_TIMEOUT)
+        except requests.Timeout:
+            return {"ok": False, "error": f"PageSpeed Insights did not respond within {PSI_TIMEOUT:.0f}s."}
+        except requests.RequestException as exc:
+            return {"ok": False, "error": f"PageSpeed Insights request failed: {type(exc).__name__}"}
+        if resp.status_code != 429 or attempt == RETRIES_ON_429:
+            break
+        time.sleep(RETRY_DELAY)
 
     if resp.status_code != 200:
         try:
             msg = resp.json().get("error", {}).get("message", "")
         except ValueError:
             msg = "non-JSON response from Google"
-        hint = " (quota exceeded; set PAGESPEED_API_KEY in .env)" if resp.status_code == 429 else ""
+        hint = ""
+        if resp.status_code == 429:
+            hint = (" (rate-limited by Google; a newly created key can take a few minutes to activate, retry later)"
+                    if api_key else " (anonymous quota exceeded; set PAGESPEED_API_KEY in .env)")
         # never echo the key back
         if api_key:
             msg = msg.replace(api_key, "***")

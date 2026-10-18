@@ -122,3 +122,39 @@ def test_fold_heading_matches_h1_with_split_punctuation():
     tech = technical.extract_all(html, URL)
     checks = {c.id: c for c in content.evaluate(content.extract_all(html), tech, None, None)}
     assert checks["value_prop"].status == "pass"
+
+
+class FakeResp:
+    def __init__(self, status, payload=None):
+        self.status_code, self._payload, self.text = status, payload, "<html>Sorry</html>"
+
+    def json(self):
+        if self._payload is None:
+            raise ValueError
+        return self._payload
+
+
+class FakeSession:
+    def __init__(self, responses):
+        self.responses, self.calls = list(responses), 0
+
+    def get(self, *a, **kw):
+        self.calls += 1
+        return self.responses.pop(0)
+
+
+def test_psi_retries_once_on_429(monkeypatch):
+    monkeypatch.setattr(performance, "is_public_url", lambda u: (True, ""))
+    monkeypatch.setattr(performance, "RETRY_DELAY", 0)
+    ok = {"lighthouseResult": {"categories": {"performance": {"score": 0.5}}}}
+    s = FakeSession([FakeResp(429), FakeResp(200, ok)])
+    r = performance.run_pagespeed("https://example.com/", api_key="k", session=s)
+    assert r["ok"] and s.calls == 2
+
+
+def test_psi_429_message_does_not_leak_key(monkeypatch):
+    monkeypatch.setattr(performance, "is_public_url", lambda u: (True, ""))
+    monkeypatch.setattr(performance, "RETRY_DELAY", 0)
+    s = FakeSession([FakeResp(429), FakeResp(429, {"error": {"message": "bad key SECRETKEY"}})])
+    r = performance.run_pagespeed("https://example.com/", api_key="SECRETKEY", session=s)
+    assert not r["ok"] and "SECRETKEY" not in r["error"] and "rate-limited" in r["error"]
